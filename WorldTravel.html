@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Global Quests</title>
+      <!-- Gallery css -->
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 20%;
+      flex: 20%;
+      max-width: 20%;
+      padding: 0 4px;
+      float: left;
+      width: 20px;
+      padding: 5px;
+      /* background-color: #ccc; */
+      height: 250px;
+    }
+
+    .column1 {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    body {
+      background-color : lightgrey;
+    }
+
+  /*Contact US Form*/
+    #dropdownLogo {
+      /* float: right; */
+      overflow: hidden;
+      }
+
+    /* Dropdown button */
+    #dropdownLogo {
+      position: absolute;
+      top: 5px;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font: inherit; /* Important for vertical align on mobile phones */
+      margin: 0; /* Important for vertical align on mobile phones */
+    }
+
+    #myform {
+     margin:0 auto;
+     width:500px;
+     padding:14px;
+    }
+    label {
+     width: 10em;
+     float: left;
+     margin-right: 0.5em;
+     display: block;
+     vertical-align: middle;
+    }
+    .submit {
+     float:right;
+    }
+    fieldset {
+     background:#EBF4FB none repeat scroll 0 0;
+     border:2px solid #B7DDF2;
+     width: 450px;
+    }
+    legend {
+     color: #fff;
+     background: #80D3E2;
+     border: 1px solid #781351;
+     padding: 2px 6px
+    }
+    .elements {
+     padding:10px;
+    }
+    p {
+     border-bottom:1px solid #B7DDF2;
+     color:#666666;
+     font-size:12px;
+     margin-bottom:20px;
+     padding-bottom:10px;
+    }
+    span {
+     color:#666666;
+     font-size:12px;
+     margin-bottom:1px;
+
+    }
+    .navbar-right {
+      float: right;
+      font-size: 20px;
+      border: none;
+      outline: none;
+      /* color: white; */
+      padding: 14px 16px;
+      /* background-color: inherit; */
+      margin: 0;
+      background-color: #333;
+      font-family: Arial;
+    }
+    .btn{
+      padding: 4px 12px;
+      margin-bottom: 0;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333333;
+      text-align: center;
+      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #f5f5f5;
+      border: 1px solid #B7DDF2;
+
+    }
+    .btn:hover{
+      color: #333333;
+      background-color: #e6e6e6;
+    }
+      /* Navbar container */
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      font-family: Arial;
+    }
+
+    /* Links inside the navbar */
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdownLogo {
+      vertical-align: middle;
+      overflow: hidden;
+    }
+
+    /* The dropdown container */
+    .dropdown {
+      float: left;
+      vertical-align: middle;
+      overflow: hidden;
+      }
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font: inherit; /* Important for vertical align on mobile phones */
+      margin: 0; /* Important for vertical align on mobile phones */
+    }
+
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+      cursor: pointer;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      width: 100%;
+      left: 0;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 5;
+    }
+
+    /* Mega Menu header, if needed */
+    .dropdown-content .header {
+      background: #8b95a6;
+      padding: 10px;
+      color: white;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Create three equal columns that floats next to each other */
+
+    /* Style links inside the columns */
+    .column a {
+      float: none;
+      color: black;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    /* Add a background color on hover */
+    .column a:hover {
+      background-color: #ddd;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    h4{
+    	Color: white;
+      font: inherit;
+      align:right;
+    }
+    .spanny {
+      float: right;
+      color: white;
+      font-family: "Arial";
+      font-size: 15px;
+    }
+    .spanny:hover {
+      cursor:pointer;
+    }
+
+    .tabcontent {
+      font-weight: normal;
+    }
+
+  </style>
+  <!-- Slideshow CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+<!-- End of Slideshow CSS -->
+<!-- Meet the team CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+  html {
+      box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+    </style>
+<!-- End of Meet the Team -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $("#btn").click(function(e){
+    var jsonData = {};
+
+     var formData = $("#myform").serializeArray();
+    // console.log(formData);
+
+     $.each(formData, function() {
+          if (jsonData[this.name]) {
+             if (!jsonData[this.name].push) {
+                 jsonData[this.name] = [jsonData[this.name]];
+             }
+             jsonData[this.name].push(this.value || '');
+         } else {
+             jsonData[this.name] = this.value || '';
+         }
+
+
+     });
+     console.log(jsonData);
+   $.ajax(
+   {
+    url : "action.php",
+    type: "POST",
+    data : jsonData,
+
+   });
+      e.preventDefault();
+  });
+  });
+
+  </script>
+  <!-- END OF CONTACT US FORM -->
+  </head>
+
+  <body>
+    <!--DROP DOWN MENU-->
+    <div class="navbar">
+      <div class="dropdown dropbtn">
+        <button class="tablinks dropdown dropbtn" onclick="openCity(event, 'HOME')" id="defaultOpen">HOME</button>
+      </div>
+      <div class="dropdown dropbtn">
+        <button class="tablinks dropdown dropbtn">CONTINENTS
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <br>
+        <br>
+        <div class="dropdown-content">
+          <div class="header">
+            <h2>Continents</h2>
+          </div>
+          <div>
+            <div class="column">
+              <h3>Europe</h3>
+              <a onclick="openCity(event, 'SPAIN')">Spain</a>
+              <a onclick="openCity(event, 'FRANCE')">France</a>
+              <a onclick="openCity(event, 'ITALY')">Italy</a>
+              <a onclick="openCity(event, 'ENGLAND')">England</a>
+            </div>
+            <div class="column">
+              <h3>Asia</h3>
+              <a onclick="openCity(event, 'CHINA')">China</a>
+              <a onclick="openCity(event, 'JAPAN')">Japan</a>
+              <a onclick="openCity(event, 'THAILAND')">Thailand</a>
+              <a onclick="openCity(event, 'KOREA')">Korea</a>
+            </div>
+            <div class="column">
+              <h3>Americas</h3>
+              <a onclick="openCity(event, 'New_York_City')">New York City</a>
+              <a onclick="openCity(event, 'NEW ORLEANS')">New Orleans</a>
+              <a onclick="openCity(event, 'PERU')">Peru</a>
+              <a onclick="openCity(event, 'COLOMBIA')">Colombia</a>
+            </div>
+            <div class="column">
+              <h3>Africa</h3>
+              <a onclick="openCity(event, 'Egypt')">Egypt</a>
+              <a onclick="openCity(event, 'South Africa')">South Africa</a>
+              <a onclick="openCity(event, 'Ethiopia')">Ethiopia</a>
+              <a onclick="openCity(event, 'Morocco')">Morocco</a>
+            </div>
+            <div class="column">
+              <h3>Australia</h3>
+              <a onclick="openCity(event, 'SPAIN')">Link 1</a>
+              <a onclick="openCity(event, 'SPAIN')">Link 2</a>
+              <a onclick="openCity(event, 'SPAIN')">Link 3</a>
+              <a onclick="openCity(event, 'SPAIN')">Link 4</a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown dropbtn">
+          <button class="tablinks dropdown dropbtn" onclick="openCity(event, 'HACKS')">HACKS</button>
+        </div>
+        <div class="dropdown dropbtn">
+          <button class="tablinks dropdown dropbtn" onclick="openCity(event, 'PROGRAMS')">PROGRAMS</button>
+        </div>
+        <div class="dropdown dropbtn">
+          <button class="tablinks dropdown dropbtn" onclick="openCity(event, 'GALLERY')">GALLERY</button>
+        </div>
+        <div class="dropdown dropbtn">
+            <button class="tablinks dropdown dropbtn" onclick="openCity(event, 'CONTACT US')">CONTACT US</button>
+        </div>
+        <div class="dropdown dropbtn">
+        <button class="tablinks dropdown dropbtn" onclick="openCity(event, 'PYT')">PLAN YOUR TRIP</button>
+      </div>
+      <div class="navbar-right">
+        <span class="spanny" onclick="openCity(event, 'HOME')">GLOBAL QUESTS</span>
+      </div>
+    </div>
+
+
+
+
+    <div id="HOME" class="tabcontent">
+      <center><h1>Global Quests</h1></center>
+            <h2>MEET THE TEAM</h2>
+      <br>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="/w3images/team1.jpg" alt="" style="width:100%">
+            <div class="container">
+              <h2 class="title">Akshita Kunala</h2>
+              <h2>Co-Coder</h2>
+              <br>I'm a senior at South Forsyth High School. I love to draw, read and write!</br>
+              <br>Kunalaakshita@gmail.com</br>
+              <br><button class="button">Contact</button><br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row"
+        <div class="column">
+          <div class="card">
+            <img src="https://pbs.twimg.com/media/DmiabU-UwAAdwp8.jpg" alt="" style="width:40%">
+            <div class="container">
+              <h2>Sophia Palomino</h2>
+              <br>I'm a senior at Grady High School.I am really cool!</br>
+              <class="title">Co-Coder</class>
+              <p>danasophiap@gmail.com</p>
+              <br><button class="button">Contact</button><br>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="column">
+            <div class="card">
+              <img src="/w3images/team3.jpg" alt="" style="width:100%">
+              <div class="container">
+                <h2>Deja Hintzen</h2>
+                <class="title">Co-Coder</class>
+              <br>I am a asenior at Duluth High School. I love to play video games and create music!</br>
+              <br>Dhintzen10@gmail.com</br>
+              <br><button class="button">Contact</button><br>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+    <div id="CONTINENTS" class="tabcontent">
+      <h3>CONTINENTS</h3>
+      <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="HACKS" class="tabcontent">
+      <center><h1>PACKING AND TRAVELLING HACKS</h1></center>
+      <dd><center><iframe width="560" height="315" src="https://www.youtube.com/embed/-PcrLWkxZSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+      <center><h2>1. Wear the heavier clothing on the flight<h2>
+      <h4>Wearing more of your heavier items on the flight will allow you to have more room in your bag<h4>
+      <center><img src="https://brunettefromwallstreet.com/wp-content/uploads/2018/12/chic-winter-airport-outfit.jpg" style="width:40%"></center>
+
+      <h2>2. Packing cubes<h2>
+      <h4>You can compartimalize your suitcase with packing cubes that will keep your shirts, pants, and accessories separate. You can find some <a href="https://www.amazon.com/CGBE-Travel-Packing-Luggage-Organizer/dp/B07R51DZDW/ref=sr_1_2_sspa?keywords=packing+cubes&qid=1562785022&s=gateway&sr=8-2-spons&psc=1"target="_blank">here</a> on Amazon.<h4>
+      <center><img src="https://cdn.blessthisstuff.com/imagens/stuff/vasco-travel-packing-cubes.jpg" style="width:40%"></center>
+
+      <h2>3. Roll your clothes<h2>
+      <h4>Rolling your clothes rather than folding them allows for more space in your suitcase for more clothes or accessories and will eliminate wrinkles.<h4>
+      <center><img src="http://organizingedge.com/wp-content/uploads/2018/06/How-to-Roll-Clothes-for-Packing-Cubes.jpg" style="width:40%"></center>
+
+      <h2>4. Always pack an empty water bottle<h2>
+      <h4>Once you get through security, you can fill your water bottle at a water fountain to avoid having to pay money every time you need water.<h4>
+      <center><img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/02/18/16/reusable-water-bottles-istock.jpg?w968h681" style="width:40%"></center></center></dd>
+
+    </div>
+
+    <div id="PROGRAMS" class="tabcontent">
+      <h3>PROGRAMS</h3>
+      <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="GALLERY" class="tabcontent">
+      <!-- Photo Grid -->
+      <div class="row">
+        <div class="column1">
+          <img src="https://www.touropia.com/gfx/d/best-places-to-visit-in-usa/orlando.jpg?v=ebe1017033950f50bd70537740fc33fb" style="width:100%"> <!--disney in orlando -->
+          <img src="https://www.nycgo.com/images/venues/152/tripadvisortimessquare_taggeryanceyiv_5912__x_large.jpg" style="width:100%"> <!--New York Times Square -->
+          <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2016/07/Eiffel-Tower-in-Paris1.jpg" style="width:100%"> <!-- Eiffel Tower in Paris -->
+          <img src="https://www.webjet.com.au/travel/wp-content/uploads/2018/07/Sydney_Opera_House_New_South_Wales_Australia.jpg" style="width:100%"> <!-- Opera House in Sydney, Australia -->
+          <img src="https://cdn.vox-cdn.com/thumbor/JleQQsL53GYFG9cAQTqMUfJHaMs=/0x0:1375x772/1200x800/filters:focal(578x276:798x496)/cdn.vox-cdn.com/uploads/chorus_image/image/54092381/Final_JI_Rendering.1491410610.jpg" style="width:100%">
+          <img src="https://www.fodors.com/wp-content/uploads/2018/03/Ultimate-Things-To-Do-Bahamas-Visit-Atlantis-Resort-Waterpark.jpg" style="width:100%"> <!-- Bahamas Atlantis Resort Waterpark -->
+          <img src="https://about-france.com/photos/louvre.jpg" style="width:100%"> <!-- louvre museum in Paris, France -->
+          <img src="https://www.touropia.com/gfx/d/world-famous-canals/venice.jpg?v=1" style="width:100%"> <!-- Grand Canal in Venice, Italy -->
+        </div>
+        <div class="column1">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Statue_of_Liberty_7.jpg" style="width:100%"> <!-- Statue of Libery in New York -->
+          <img src="https://www.worldatlas.com/r/w728-h425-c728x425/upload/f8/0c/3b/rocky-mountains-alberta-canada.jpg" style="width:100%"> <!-- Rocky Mountains located at Alberta, Canada -->
+          <img src="https://www.mydomaine.com/thmb/McY2WOE-Lq2CoqCXwCUOcpcXetg=/980x700/filters:no_upscale():max_bytes(150000):strip_icc()/cdn.cliqueinc.com__cache__posts__269911__best-places-to-visit-in-south-america-269911-1539883076436-image.700x0c-076ced1dc893433b9bcad7f0e72b96e2.jpg" style="width:100%"> <!-- The Hilly Parks in Santiago, Chilé -->
+          <img src="https://d36tnp772eyphs.cloudfront.net/blogs/1/2019/01/Himeji-Japan-at-Himeji-Castle-in-spring-season-with-cherry-blossoms-1200x854.jpg" style="width:100%"> <!-- Cherry Blossom during the spring season in Japan -->
+          <img src="https://www.planetware.com/photos-large/F/france-paris-notre-dame.jpg" style="width:100%"> <!-- Notre Dame in Paris, France -->
+          <img src="https://www.insidehimalayas.com/wp-content/uploads/2016/04/nepal-everest-1.jpg" style="width:100%"> <!-- Himalayas in Nepal -->
+          <img src="https://www.chinadiscovery.com/assets/images/travel-guide/beijing/temple-of-heaven/temple-heaven-768.jpg" style="width:100%"> <!-- Temple of Heaven in Beijing, China -->
+        </div>
+        <div class="column1">
+          <img src="https://www.tripsavvy.com/thmb/Cxhfj8XgxjjYlZhExMSbP_okBto=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/summer-at-the-beach-591648687-5b6b9479c9e77c005054be22.jpg" style="width:100%"> <!-- Golden Gate Bridge in San Fransico, California -->
+          <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F1600x1000%2Fpublic%2F1544206294%2Frome-coloseum-ATTRACT1218.jpg%3Fitok%3DupE4xoC0&w=400&c=sc&poi=face&q=85" style="width:100%"> <!-- The famous Colosseum at Rome -->
+          <img src="http://hyperallergic.com/wp-content/uploads/2015/04/20090529_Great_Wall_8185.jpg" style="width:100%"> <!-- The Great Wall Of China -->
+          <img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_2138,w_3809,x_0,y_0/f_auto,q_auto,w_1100/v1554744380/shape/mentalfloss/556629-istock-852755038_primary.jpg" style="width:100%">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDYdt0BRevhbnrAfiud0dE-YpDOLUXPiZ-9NLD53CcAfOsTVpftQ" style="width:100%">
+          <img src="http://www.smh.com.au/content/dam/images/h/1/1/9/m/1/image.imgtype.articleLeadwide.620x349.png/1529283370863.png" style="width:100%">
+          <img src="https://www.ytravelblog.com/wp-content/uploads/2011/09/108275-575-1024x6462.jpg" style="width:100%">
+          <img src="https://www.planetware.com/photos-large/ENG/lincoln.jpg" style="width:100%">
+        </div>
+        <div class="column1">
+          <img src="https://www.tourist-destinations.net/wp-content/uploads/2013/07/Waikiki-Beach-HotelsHawaii-1024x640.jpg" style="width:100%">
+          <img src="https://secretldn.com/wp-content/uploads/2017/06/Girl-with-Dolphin-Tower-Bridge-London.jpg" style="width:100%"> <!--London bridge-->
+          <img src="https://www.tombarefoot.com/img/maui-helicopter-tours-and-activities.jpg" style="width:100%"> <!--maui -->
+          <img src="https://wp.taxi2airport.com/wp-content/uploads/2017/08/The_Leaning_Tower_of_Pisa_SB-672x1024.jpeg" style="width:100%">
+          <img src="http://3.bp.blogspot.com/-lmqoa17Cixk/VHgXKX9LIiI/AAAAAAAAASw/hwlknCII1Tg/s1600/7-Most-Popular-Tourist-Attractions-Around-the-World5.jpg" style="width:100%">
+          <img src="https://www.touropia.com/gfx/d/largest-castles-in-the-world/himeji_castle.jpg?v=1" style="width:100%">
+        </div>
+      </div>
+    </div>
+
+    <div id="CONTACT US" class="tabcontent">
+      <h3>CONTACT US</h3>
+      <strong>E-Mail:</strong> <span style="font:inherit; align: left; text color: #000">globalquests@gmail.com</span>
+      <div id="header">
+       For furthur guidance, fill out the form below!
+      </div>
+
+      <form id="myform" type="post">
+        <fieldset>
+          <legend>CONTACT FORM  </legend>
+          <p>If you have furthur questions please fill out this form and awaite for response.</p>
+          <div class="elements">
+            <label for="name">Name :</label>
+            <input  required="required" type="text"  value="" name="fname"  size="20"  />
+          </div>
+        <div class="elements">
+            <label for="Age">Email :</label>
+            <input required="required" type="text" value="" name="Email" size="25" />
+          </div>
+          <div class="elements">
+              <label for="Age">Message :</label>
+              <input required="required" type="text" value="" name="Message" size="50" />
+            </div>
+
+          <div class="submit">
+             <input type="submit" id="btn" name="btn" class="btn" value="Submit" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div id="PYT" class="tabcontent">
+      <h3>PLAN YOUR TRIP </h3>
+      <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="SPAIN" class="tabcontent">
+      <h1><center>SPAIN</center></h1>
+      <h3 style="font:inherit; align: left;">Madrid, the capital of Spain, is a cosmopolitan city that combines the most modern infrastructures and the status as an economic, financial, administrative and service centre, with a large cultural and artistic heritage, a legacy of centuries of exciting history. Strategically located in the geographic centre of the Iberian Peninsula at an altitude of 646 m above sea level, Madrid has one of the most important historic centres of all the great European cities. This heritage merges seamlessly with the city's modern and convenient infrastructures, a wide-ranging offer of accommodation and services, and all the latest state-of-the-art technologies in audiovisual and communications media. These conditions, together with all the drive of a dynamic and open society –as well as high-spirited and friendly– have made this metropolis one of the great capitals of the Western world.</h3>
+
+      <!-- Slideshow-->
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <center><img src = "https://themomentkeepers.com/wp-content/uploads/2017/06/TMK-madrid-17.jpg" style="width:100%"></center>
+          <div class="text">Madrid</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="https://www.bcdtravel.com/move-global/wp-content/uploads/sites/142/Move_MarketMonitor_Spain_image_Aug2018.jpg" style="width:100%">
+          <div class="text" style="color: white;">Barcelona</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="https://www.adventureinyou.com/wp-content/uploads/2016/09/Spain_banner.jpg" style="width:100%;">
+          <div class="text" style="color:white;">La Sagrada Familia</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="https://static.toiimg.com/photo/50638228/.jpg" style="width:100%;">
+          <div class="text" style="color:white;">Aqueduct of Segovia</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    <!-- end of slideshow -->
+        <h2><center> TOP THINGS TO DO IN SPAIN:</center></h2>
+            <dt><strong> Royal Palace of Madrid:</strong></dt>
+            <dd style="font:Verdana;">The Royal Palace is one of the top tourist attractions in Madrid. It is the official residence for the Royal family, but these days they only use it for state ceremonies. The rest of the time its open to the public. Otherwise known in Spanish as the Palacio Real, the Royal Palace was built during the 18th and 19th centuries, and is a monumental building.
+            <a href="https://entradas.patrimonionacional.es/en-GB/informacion-recinto/6/palacio-real-de-madrid#up"target="_blank">Click here to buy tickets!</a>
+            <br>
+            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5889953868714!2d-3.7165006847946693!3d40.41795497936503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287e7da4a9c1%3A0x2e7fec79d6ce4851!2sRoyal+Palace+of+Madrid!5e0!3m2!1sen!2sus!4v1562855286021!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe></center></dd>
+            <br>
+            <dt><strong>Museo del Prado:</strong></dt>
+            <dd>The Prado has one of the largest art collections in the world, and is best known for its diverse assortment of works by Velasquez, Goya and El Greco.
+            <a href="https://www.museodelprado.es/en/visit-the-museum"target="_blank">Click here to buy tickets!</a>
+            <br>
+            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.777402082395!2d-3.694315784794782!3d40.41378177936551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289d66d8a2ed%3A0x1094f07d93ad885a!2sMuseo+Nacional+del+Prado!5e0!3m2!1sen!2sus!4v1562855220418!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+            <!-- </br> -->
+            </dd>
+            <dt><strong>Plaza Mayor:</strong></dt>
+            <dd>The Plaza Mayor, a grand arcaded square in the center of Madrid is very popular with tourists and locals alike.The symmetrical rectangular square features a uniform architecture. The name of the plaza has changed over time. Originally it was called the "Plaza del Arrabal" but became known as the "Plaza Mayor". It's free to roam around and there are restaurants around the plaza to eat.</dd>
+            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1518.8527286592712!2d-3.7082802918377653!3d40.41537539484135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287ed85fe0d9%3A0xd202c4f0d67625e8!2sPlaza+Mayor%2C+Madrid%2C+Spain!5e0!3m2!1sen!2sus!4v1562855407683!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+            <dt><strong>Puerta del Sol:</strong></dt>
+            <dd>Puerta del Sol’s third and largest statue is found in the centre of the square and depicts King Charles III of Spain on horseback. During his reign, the monarch introduced so many progressive reforms and gave the city such a makeover that he earned the moniker Madrid’s best mayor.The square also contains the famous clock whose bells mark the traditional eating of the Twelve Grapes and the beginning of a new year. It's free to roam and has many stores around the plaza to shop at.
+            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.636541019766!2d-3.7056720847947675!3d40.41690187936512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422880a07d7dc7%3A0x694aee57da1dc679!2sPuerta+del+Sol%2C+Madrid%2C+Spain!5e0!3m2!1sen!2sus!4v1562856847854!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+            <dt><strong>Seville Cathedral:</strong></dt>
+            <dd>The Seville Cathedral is the largest gothic Cathedral in the world. It was built to demonstrate the city's wealth, as it had become a major trading center in the years after the Reconquista in 1248. In July 1401, city leaders decided to build a new cathedral to replace the grand mosque that served as the cathedral until then.
+            <a href="https://www.lacatedraldesevilla.org/en/index.html"target="_blank">Click here to buy tickets!</a>
+            <br>
+            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.169453696212!2d-5.995295484892488!3d37.385824679832126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1755b54781%3A0xe49da05de71e6de5!2sCatedral+de+Sevilla!5e0!3m2!1sen!2sus!4v1562857103665!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+            <dt><strong>Basilica La Sagrada Familia</strong></dt>
+            <dd>The Temple Expiatori de la Sagrada Família is a large unfinished Roman Catholic church in Barcelona. Designed by Catalan architect Antoni Gaudí, his work on the building is part of a UNESCO World Heritage Site. In November 2010, Pope Benedict XVI consecrated the church and proclaimed it a minor basilica. It has been under construction for over a century.
+            <a href="https://sagradafamilia.org/en/tickets"target="_blank">Click here to buy tickets!</a>
+            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.6397231988503!2d2.172167115238452!3d41.403629879262674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2dcd83dfb93%3A0x9bd8aac21bc3c950!2sLa+Sagrada+Familia!5e0!3m2!1sen!2sus!4v1562857810025!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+            <dt><strong>Parque Guell</strong></dt>
+            <dd>Park Guell is one of the most beautiful icons of the city. It's a work of Antoni Gaudí located in the upper part of Barcelona, which has wonderful views of the city. You can enjoy a fantastic green walk surrounded by a modernist works. You can also visit Gaudi's House Museum within the park.
+            <a href="https://www.tripadvisor.com/Attraction_Review-g187497-d246190-Reviews-Gaudi_House_Museum-Barcelona_Catalonia.html"target="_blank">Click here to visit the museum!</a>
+            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.1392965394143!2d2.1505058152388403!3d41.41449477926169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2ae52d441ab%3A0x899a0ba01aaace58!2sPark+G%C3%BCell!5e0!3m2!1sen!2sus!4v1562858914535!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+            <dt><strong>Aqueduct of Segovia</strong></dt>
+            <dd>The Aqueduct of Segovia was built during the second half of the 1st century A.D. under the rule of the Roman Empire and supplied water from the Frío River to the city into the 20th century. The remaining portion of the structure stands 28.5 meters tall at its maximum height and nearly 6 additional meters deep in the main section.
+            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.5470313220103!2d-4.119247434776962!3d40.947593679307005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd413edd1a42faab%3A0x1c54c7c2757b5e2c!2sAqueduct+of+Segovia!5e0!3m2!1sen!2sus!4v1562859745943!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+
+    </div>
+
+    <div id="FRANCE" class="tabcontent">
+      <h1><center>FRANCE</center></h1>
+      <h3 style="font:inherit; align: left;">France is located in northwestern Europe. Historically and culturally among the most important nations in the Western world, France has also played a highly significant role in international affairs, with former colonies in every corner of the globe. Bounded by the Atlantic Ocean and the Mediterranean Sea, the Alps and the Pyrenees, France has long provided a geographic, economic, and linguistic bridge joining northern and southern Europe. It is Europe’s most important agricultural producer and one of the world’s leading industrial powers. There are many things to do in France</h3>
+
+      <!-- Slideshow-->
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <center><img src = "https://experienceluxury.co/wp-content/uploads/2017/06/shutterstock_206806969.jpg" style="width:100%"></center>
+          <div class="text">French Riviera</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/06/74/aa/fc.jpg" style="width:100%">
+          <div class="text" style="color: black;">Eiffel Tower</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="https://presse.louvre.fr/wp-content/uploads/2018/12/974498-500x333.png" style="width:100%;">
+          <div class="text" style="color:black;">The Louvre</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="https://www.tripsavvy.com/thmb/2Xce0Pss5h0ClxOFaZEEDCuz-L4=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-470636431-56a404c35f9b58b7d0d4f3db.jpg" style="width:100%;">
+          <div class="text" style="color:black;">Arc de Triomphe</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    <!-- end of slideshow -->
+
+
+      <h2><center> TOP THINGS TO DO IN FRANCE:</center></h2>
+      <dt><strong>Eiffel Tower</strong></dt>
+      <dd>In 1889, Paris hosted an World’s Fair to mark the 100-year anniversary of the French Revolution. More than 100 artists submitted competing plans for a monument to be built on the Champ-de-Mars, located in central Paris, and serve as the exposition’s entrance. The commission was granted to Eiffel et Compagnie, a consulting and construction firm owned by the acclaimed bridge builder, architect and metals expert Alexandre-Gustave Eiffel.
+      <a href= "https://ticket.toureiffel.fr/index-css5-sete-lgen-pg1.html#_ga=2.174774690.187586482.1562865463-1797234606.1562865463"target="_blank">Click here to visit the tower!</a>
+      <br>
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10500.90203941118!2d2.2913514888427806!3d48.85391001859102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6701f7e8337b5%3A0xa2cb58dd28914524!2sEiffel+Tower%2C+Paris%2C+France!5e0!3m2!1sen!2sus!4v1562865569215!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+      </br></dd>
+      <dt><strong>Louvre Museum</strong></dt>
+      <dd>The Louvre was originally built as a fortress in 1190, but was reconstructed in the 16th century to serve as a royal palace. It is the world's largest art museum. It is home to the Mona Lisa, the Code of Hammurabi, and the Venus de Milo. It has  a collection that spans work from ancient civilizations to the mid-19th century.
+      <a href="https://www.ticketlouvre.fr/louvre/b2c/index.cfm/home"target="_blank">Click here to buy your tickets!</a>
+      <br>
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8741023651387!2d2.335455315509727!3d48.86061107928771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sLouvre+Museum!5e0!3m2!1sen!2sus!4v1562866152533!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+      </br></dd>
+      <dt><strong>Arc de Triomphe</strong></dt>
+      <dd>Arc de Triomphe is a massive triumphal arch and one of the world’s best-known commemorative monuments. It stands at the centre of the Place Charles de Gaulle, the western terminus of the avenue des Champs-Élysées. Napoleon I commissioned the triumphal arch in 1806—after his great victory at the Battle of Austerlitz —to celebrate the military achievements of the French armies. The arch, designed by Jean-François-Thérèse Chalgrin, is 164 feet high and 148 feet wide. It sits in a circular plaza from which 12 grand avenues radiate, forming a star.
+      <a href="http://www.paris-arc-de-triomphe.fr/en/Prepare-for-your-visit/Practical-information#tarifs"target="_blank">Prepare for your visit by checking this website out!</a>
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.18344976472!2d2.2928269155102368!3d48.873779279288975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fec746d386b%3A0x8710a9c7965c5fa9!2sL&#39;Arc+de+Triomphe+de+l&#39;Etoile%2C+75017+Paris%2C+France!5e0!3m2!1sen!2sus!4v1562866587672!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <dt><strong>Palace of Versailles</strong></dt>
+      <dd>Palace of Versailles, former French royal residence and centre of government, now a national landmark. It is located in the city of Versailles, Yvelines department, Île-de-France region, northern France, 10 miles west-southwest of Paris. As the centre of the French court, Versailles was one of the grandest theatres of European absolutism.
+      <a href="http://en.chateauversailles.fr/plan-your-visit/tickets-and-prices"target="_blank">Click here to get your tickets!</a>
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.796371728445!2d2.118166715507564!3d48.804864879282306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67d94d7b14c75%3A0x538fcc15f59ce8f!2sPalace+of+Versailles!5e0!3m2!1sen!2sus!4v1562868045211!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <dt><strong>French Rivera</strong></dt>
+      <dd>The French Riviera, also known as the Côte d’Azur, is a dreamy French region that extends east along the coast from Menton and Monaco to Théoule sur Mer and up into the Southern Alps. The Riviera contains several cities (Nice and Cannes among them), 14 natural parks, Roman ruins, medieval villages and whale watching just off shore.
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d742263.193202726!2d5.9603083695709165!3d43.38819690991362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cebc738732d97f%3A0x594966412c5651c0!2sFrench+Riviera%2C+France!5e0!3m2!1sen!2sus!4v1562871436695!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <dt><strong>Mont Blanc</strong></dt>
+      <dd> Mont Blanc is the highest mountain in the Alps and the highest in Europe west of the Caucasus peaks of Russia and Georgia. It rises 4,808 m above sea level and is ranked 11th in the world in topographic prominence. The mountain stands in a range called the Graian Alps, between the regions of Aosta Valley, Italy, and Savoie and Haute-Savoie, France.
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11114.936578545392!2d6.879064137027261!3d45.8566198157187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47894f66f2e1ac3d%3A0x90db2377ade4f72a!2sMont+Blanc+du+Tacul!5e0!3m2!1sen!2sus!4v1562871604337!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+    </div>
+    <div id="ITALY" class="tabcontent">
+      <h1><center>ITALY</center></h1>
+      <h3 style="font:inherit; align: left;">Italy occupies a peninsula that juts deep into the Mediterranean Sea. Italy is often described as a country shaped like a boot. At its broad top stand the Alps, which are among the world’s most rugged mountains. Italy’s highest points are along Monte Rosa, which peaks in Switzerland, and along Mont Blanc, which peaks in France. The western Alps overlook a landscape of Alpine lakes and glacier-carved valleys that stretch down to the Po River and the Piedmont. Tuscany, to the south of the cisalpine region, is perhaps the country’s best-known region. South of Rome the Apennines narrow and are flanked by two wide coastal plains, one facing the Tyrrhenian Sea and the other the Adriatic Sea. Much of the lower Apennine chain is near-wilderness, hosting a wide range of species rarely seen elsewhere in western Europe, such as wild boars, wolves, asps, and bears. The southern Apennines are also tectonically unstable, with several active volcanoes, including Vesuvius, which from time to time belches ash and steam into the air above Naples and its island-strewn bay. At the bottom of the country, in the Mediterranean Sea, lie the islands of Sicily and Sardinia. </h3>
+      <h2><center> TOP THINGS TO DO IN ITALY:</center></h2>
+      <dt><strong>St. Peter's Basilica</strong></dt>
+      <dd>St. Peter’s Basilica present basilica of St. Peter in Vatican City (an enclave in Rome), begun by Pope Julius II in 1506 and completed in 1615 under Paul V. It is designed as a three-aisled Latin cross with a dome at the crossing, directly above the high altar, which covers the shrine of St. Peter the Apostle. The edifice—the church of the popes—is a major pilgrimage site.
+      <a href="http://www.st-peters-basilica-tickets.com/"target="_blank">Click here to visit the museum!</a>
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5939.134158108291!2d12.449559330638865!3d41.90216670000736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6061b7149b59%3A0x724bf077cd875283!2sSt.+Peter&#39;s+Basilica!5e0!3m2!1sen!2sus!4v1562940261101!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <dt><strong>Roman Colosseum</strong></dt>
+      <dd> The construction of the Colosseum was begun in 72 CE in the reign of Vespasian on the site that was once the lake and gardens of Emperor Nero’s Golden House. The Roman Colosseum is the most famous monument to have survived from the classical world. It was built nearly two thousand years ago for the purpose of hosting violent gladiator games. Thousands of men and animals fought for their lives in the sandy arena.
+      <a href="https://www.coopculture.it/en/colosseo-e-shop.cfm"target="_blank">Click here to buy your tickets!</a>
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.123073808989!2d12.490042215255027!3d41.890210179221135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColosseum!5e0!3m2!1sen!2sus!4v1562940807720!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <dt><strong>Trevi Fountain</strong></dt>
+      <dd>Trevi Fountain is the most beautiful fountain in Rome.Measuring some 20 meters in width by 26 meters in height, Trevi Fountain is also the largest fountain in the city.The origins of the fountain go back to the year 19 B.C., in which period the fountain formed the end of the Aqua Virgo aqueduct.The first fountain was built during the Renaissance, under the direction of Pope Nicholas V.
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.185908852081!2d12.481422671283722!3d41.90081698612629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6053278340d5%3A0xf676f1e1cc02bbb6!2sTrevi+Fountain!5e0!3m2!1sen!2sus!4v1562941006718!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <dt><strong>Galleria Borghese</strong></dt>
+      <dd>The Galleria Borghese is housed in the Villa Borghese.  It is one of the most renowned art museums in the world. The building’s gardens are also a popular attraction and the third largest park in Rome.
+      <a href="http://www.borghesegallerytickets.com/"target="_blank">Click here to visit the museum!</a>
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.1416103424676!2d12.480552182962136!3d41.9113144148458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61021d3c538f%3A0xeb3d7c3dff838e44!2sVilla+Borghese!5e0!3m2!1sen!2sus!4v1562942304707!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <dt><strong>Roman Forum</strong></dt>
+      <dd>The Roman Forum was a site located at the center of the ancient city of Rome and the location of important religious, political and social activities. Historians believe people first began publicly meeting in the open-air Forum around 500 B.C., when the Roman Republic was founded. The rectangular-shaped area, sited on low-lying land between Palatine Hill and Capitoline Hill, was home to many of the ancient city’s most impressive temples and monuments. Today, the Roman Forum is one of the most famous tourist sites in the world, attracting more than 4.5 million.
+      <a href="https://www.tripadvisor.com/AttractionProductReview-g187791-d12934912-Explore_Ancient_Rome_Ultimate_Roman_Forum_and_Palatine_Hill-Rome_Lazio.html"target="_blank">Buy your tickets here for a bundle!</a>
+      <center> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.018357929971!2d12.483136315255132!3d41.89246227922098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b383a9cdef%3A0xfa914007c0ec7de6!2sRoman+Forum!5e0!3m2!1sen!2sus!4v1562942646812!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+      </dd>
+      <dt><strong>Sistine Chapel</strong></dt>
+      <dd> The chapel’s exterior is drab and unadorned, but its interior walls and ceiling are decorated with frescoes by many Florentine Renaissance masters. The frescoes on the side walls of the chapel were painted from 1481 to 1483.The most important artworks in the chapel are the frescoes by Michelangelo on the ceiling and on the west wall behind the altar. The frescoes on the ceiling, collectively known as the Sistine Ceiling, were commissioned by Pope Julius II in 1508 and were painted by Michelangelo in the years from 1508 to 1512. They depict incidents and personages from the Old Testament. The Last Judgment fresco on the west wall was painted by Michelangelo for Pope Paul III in the period from 1534 to 1541. These two gigantic frescoes are among the greatest achievements of Western painting. A 10-year-long cleaning and restoration of the Sistine Ceiling completed in 1989 removed several centuries’ accumulation of dirt, smoke, and varnish. Cleaning and restoration of the Last Judgment was completed in 1994.
+      <a href="https://www.vaticantickets.org/home/?utm_expid=74432767-5.7WylDYttS1OfvqrVvwSozQ.1&utm_referrer=https%3A%2F%2Fwww.bing.com%2Fsearch%3Fq%3Dsistine%2520chapel%2520tickets%26qs%3Dn%26form%3DQBRE%26sp%3D-1%26ghc%3D1%26pq%3Dsistine%2520chapel%2520ticket%26sc%3D8-21%26sk%3D%26cvid%3DE4DE2A289A6A4636B624AA5A74F35057"target="_blank">Click here to get your tickets!</a>
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.530799797718!2d12.45229481525552!3d41.90294677922017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6065c523afdb%3A0xab16c8877fb53e22!2sSistine+Chapel!5e0!3m2!1sen!2sus!4v1562944095705!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+      </dd>
+      <dt><strong>Piazza San Marco</strong></dt>
+      <dd>Piazza San Marco was established during the ninth century, but adopted its current size and form in 1177, and was paved one hundred years later. It is a plaza where one can hear the clock on the hour and see a bunch of pigeons. It is a central point of Venice.
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1399.884569901474!2d12.337533108206078!3d45.43415489477514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1d77a81271d%3A0x36aff9788aefe39!2sPiazza+San+Marco%2C+30100+Venezia+VE%2C+Italy!5e0!3m2!1sen!2sus!4v1562945355885!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <dt><strong>Rialto Bridge</strong></dt>
+      <dd>Rialto Bridge, stone-arch bridge crossing over the narrowest point of the Grand Canal in the heart of Venice. Built in the closing years of the 16th century, the Rialto Bridge is the oldest bridge across the canal and is renowned as an architectural and engineering achievements of the Renaissance. It was designed and built by Antonio da Ponte and his nephew, Antonio Contino, following a design competition in the city.
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.5791573792612!2d12.333709315380807!3d45.43798417910056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1c7faa33a3b%3A0x732011a1298ecc89!2sRialto+Bridge!5e0!3m2!1sen!2sus!4v1562945717199!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <dt><strong>Piazzale Michealangelo</strong></dt>
+      <dd>This Florentine piazza was designed by architect Giuseppe Poggi and built in 1869 on a hill just south of the historic center, during the redevelopment of Oltrarno, the South bank of the Arno river. It has a panoramic view of the city.
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.4782008981747!2d11.262867415320429!3d43.76293137911762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a53f743663843%3A0xb4f768e1820d5119!2sPiazzale+Michelangelo!5e0!3m2!1sen!2sus!4v1562945955739!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <dt><strong>Florence Accademia Gallery</strong></dt>
+      <dd> It houses the "David" of Michelangelo sculpted between 1501-1504 to be an outside decoration of the Cathedral of Florence, it became instead a symbol of the Florentine State commitment to freedom and independence, as well as a symbol of the Medici's defeat in 1494. It still personifies energy, vigor and courage, symbolizing the whole mankind fight for survival. His anatomy, later reproduced by Michelangelo’s contemporaries, was carefully depicted, thanks to the in-depth studies carried out by the great artist.
+      <a href="http://www.accademia-tickets.com/"target="_blank">Buy tickets to the museum!</a>
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.808663387183!2d11.256979415320943!3d43.776830479117216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a541b5298099d%3A0x913850ffe35c42ed!2sGalleria+dell&#39;Accademia!5e0!3m2!1sen!2sus!4v1562946423311!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+      </dd>
+      <dt><strong>Piazza dei Miracoli</strong></dt>
+      <dd>It is one of the most striking squares in the world, a masterful expression of human creativity. Since 1982 it has been a UNESCO World Heritage Site. It was renamed the Piazza dei Miracoli (“Square of Miracles”) by Gabriele d’Annunzio due to the sheer amount of masterpieces it hosts, all of which are in absolute harmony. Standing beside the greenest of lawns, the Cathedral, the Leaning Tower, the Baptistery and Monumental Cemetery are resplendent in their beauty vaunting a curious architectural perfection that combines the triumphant Pisan Romanesque with classical, early Christian, Lombard and Eastern motifs.
+      <a href="http://www.towerofpisa.org/tickets/"target="_blank">Click here to visit the Leaning Tower!</a>
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.403114494548!2d10.394408315319009!3d43.72295197911896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d591a6c44e88cd%3A0x32eca9b1d554fc03!2sLeaning+Tower+of+Pisa!5e0!3m2!1sen!2sus!4v1562946675594!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+      </dd>
+      <dt><strong>Amalfi Coast</strong></dt>
+      <dd>The Amalfi Coast is a stretch of coastline on the northern coast of the Salerno Gulf on the Tyrrhenian Sea, located in the Province of Salerno of southern Italy. The Amalfi Coast is a popular tourist destination for the region and Italy as a whole, attracting thousands of tourists annually. In 1997, the Amalfi Coast was listed as a UNESCO World Heritage Site.
+      <a href="https://www.tripadvisor.com/Attractions-g187779-Activities-c42-Amalfi_Coast_Province_of_Salerno_Campania.html"target="_blank">Click here to pick a tour!</a>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.840487628038!2d14.600590365212502!3d40.63339962934056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b95adc34c71a1%3A0x4ce8cf14c94f4cdc!2sAmalfi+Coast!5e0!3m2!1sen!2sus!4v1562946794727!5m2!1sen!2sus" width="600px" height="450px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+      <div style= "padding-left:300px;"><img src="https://d1bv4heaa2n05k.cloudfront.net/user-images/1535025032242/shutterstock-1142567063_main_1535025093424.jpeg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+      </div>
+      </dd>
+    </div>
+
+
+    <div id="ENGLAND" class="tabcontent">
+
+    </div>
+
+
+
+    <div id="PERU" class="tabcontent">
+      <h1><center>PERU</center></h1>
+      <h3 style="font:inherit; align: left;"> Peru is home to </h3>
+
+    </div>
+
+
+    <div id="COLOMBIA" class="tabcontent">
+
+    </div>
+
+<!-- New York City Start  -->
+    <div id="New_York_City" class="tabcontent">
+      <h1><center>NEW YORK CITY</center></h1>
+      <h3>New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centersSquare. As one of the world’s leading metropolises for art, fashion, food and theater, New York is a city every traveler should visit. Whether you come for a day trip or for an extended stay, choosing what to see and do is the toughest part – the possibilities are endless.</h3>
+      <br>
+      <br>
+      <dd><h2><u>TOP PLACES TO GO IN NEW YORK CITY</u></h2></dd>
+      <dd><strong>Central Park:</strong></dd>
+      <dd style="font:Verdana;">Central Park is an urban park in Manhattan, New York City. It is located between the Upper West Side and Upper East Side, roughly bounded by Fifth Avenue on the east, Central Park West on the west, Central Park South on the south, and Central Park North on the north. Visiting Central Park was one of the highlights of a to New York City. Even the overcast skies and occasional drops of rain couldn’t detract from the beauty of New York City’s largest outdoor park space.</dd>
+      <br>
+      <center><img src="https://www.planetware.com/photos-large/USNY/new-york-city-central-park-1.jpg" style="width:40%"></center>
+      <center><h4><a href="https://www.google.com/maps/place/Central+Park/@40.7828647,-73.9675438,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2589a018531e3:0xb9df1f7387a94119!8m2!3d40.7828647!4d-73.9653551"target="_blank">New York, NY</a></h4></center>
+      <br>
+      <br>
+      <dd><strong>Times Square:</strong></dd>
+      <dd style="font:Verdana;">The Theater District is the teeming heart of Midtown West. In the pedestrian plazas of Times Square, costumed characters beckon to energetic crowds under the pulsing lights of towering digital billboards. Times Square in NYC is world renowned for tourist attractions for so many reasons. From fine dining and shopping to fantastic entertainment, there is something for everyone.</dd>
+      <br>
+      <center><img src="https://wp.zillowstatic.com/streeteasy/2/GettyImages-613081510-b35a8b.jpg" style="width:40%"></center>
+      <center><h4>Theater District</h4></center>
+      <br>
+      <br>
+      <dd><strong>Statue of Liberty:</strong></dd>
+      <dd style="font:Verdana;">Central Park is an urban park in Manhattan, New York City. It is located between the Upper West Side and Upper East Side, roughly bounded by Fifth Avenue on the east, Central Park West on the west, Central Park South on the south, and Central Park North on the north. Visiting Central Park was one of the highlights of a to New York City. Even the overcast skies and occasional drops of rain couldn’t detract from the beauty of New York City’s largest outdoor park space.</dd>
+      <br>
+      <center><img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Statue_of_Liberty%2C_NY.jpg" style="width:40%"></center>
+      <center><h4><a href="https://www.google.com/maps/place/Statue+of+Liberty+National+Monument/@40.6892494,-74.0466891,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25090129c363d:0x40c6a5770d25022b!8m2!3d40.6892494!4d-74.0445004"target="_blank">New York, NY 10004</a></h4></center>
+      <br>
+      <br>
+      <dd><h2><u>THE RESTAURANTS</u></h2></dd>
+      <dd><h4>New York City has some of the most grand and fancy restaurants in all of North America. The food does not disappoint and will leave you wanting to visit again and again. Popular restaurant in NYC include:</h4></dd>
+      <dd><strong>THE GRILL:</strong></dd>
+      <dd style="font:Verdana;">THE GRILL is a historically based American chophouse set in midcentury New York. It takes great inspiration from history. Both the time the Seagram Building was built and the restaurants that existed at that time. It is the precursor to the NY Steakhouse, when things were still intricate and elegant. It celebrates all the animals of the land and some of our favorites from the sea. </dd>
+      <center><img src="https://pixel.nymag.com/imgs/listings/restaurants/the-grill/the-grill-01.w1200.h630.jpg" style="width:40%"></center>
+      <center><h4><a href="https://www.google.com/maps/place/THE+GRILL/@40.7583177,-73.9740568,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258fca8594cf1:0xad791e0af9bb2041!8m2!3d40.7583177!4d-73.9718681"target="_blank">99 E 52nd St, New York, NY 10022</a></h4></center>
+      <br>
+      <br>
+      <dd><strong>Per Se:</strong></dd>
+      <dd style="font:Verdana;">The restaurant is Chef Keller’s second three-Michelin-starred property featuring his daily nine-course tasting menu and a nine-course vegetable tasting menu using classic French technique and the finest quality ingredients available.</dd>
+      <center><img src="https://cdn.vox-cdn.com/thumbor/eFrbsduhNRFu0UJbWM7smwzi-7Y=/110x0:1887x1333/1200x800/filters:focal(110x0:1887x1333)/cdn.vox-cdn.com/uploads/chorus_image/image/47598573/PerSediningroom.0.0.jpg" style="width:40%"></center>
+      <center><h4><a href="https://www.google.com/maps/place/Per+Se/@40.7682407,-73.9850916,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258f62fec73a7:0x5e24118dffac8a65!8m2!3d40.7682407!4d-73.98290296"target="_blank">10 Columbus Cir, New York, NY 10019</a></h4></center>
+      <br>
+      <br>
+      <dd><strong>Alta:</strong></dd>
+      <dd style="font:Verdana;">Alta occupies a charming 19th century townhouse in the heart of West Village. Their main dining area has a soaring 27-foot ceiling, and dates back to the early part of the century. There is a warm welcoming feeling as soon as you step through the doors. In the winter, they have two wood burning fireplaces to keep you warm. In the summer, the doors are open and you feel as if you could be close to the Mediterranean.</dd>
+      <center><img src="https://si.wsj.net/public/resources/images/BN-WN321_NYALTA_GR_20171210133713.jpg" style="width:40%"></center>
+      <center><h4><a href="https://www.google.com/maps/place/Alta/@40.7344108,-74.0003888,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25996e4df5357:0xd163192fb383bf8d!8m2!3d40.7344108!4d-73.9982001"target="_blank">64 W 10th St, New York, NY 10011</a></h4></center>
+      <br>
+      <br>
+      <br>
+      <dd><h2><u>THE CULTURE</u></h2></dd>
+      <dd><h4>New York City is home to people from all over the world. The city is very diverse and anywhere you go, you will meet people from different countries. One minute you can be in China and the next you are in Italy. NYC also is home to many different cultural events such as:</h4></dd>
+      <dd><strong>Go Africa Carnival:</strong></dd>
+      <center><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F49456754%2F143311254343%2F1%2Foriginal.jpg?w=1000&auto=compress&rect=0%2C220%2C1334%2C667&s=0cb06c4f8628331aa3a3c0d77a25f546" style="width:40%"></center>
+      <br>
+      <br>
+      <dd><strong>India Pride Parade:</strong></dd>
+      <center><img src="https://www.washingtonpost.com/resizer/yOBjVaWBdKsYZ8B_k4GpL_KbWtU=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/IB4QP3FRGQI6RC2TKAIWO2HETE.jpg" style="width:40%"></center>
+      <br>
+      <br>
+      <dd><strong>Guyana Day Culture Festival:</strong></dd>
+      <center><img src="https://www.caribbeanlifenews.com/assets/photos/2017/3/2017-03-03-tc-guyana-republic-anniversary-cl01_z.jpg " style="width:40%"></center>
+      <center><h4>You can check out more cultural events in NYC <a href="https://www.eventbrite.com/d/ny--new-york/cultural-events/"target="_blank">here</a></h4></center>
+      <br>
+      <br>
+      </div>
+<!-- New York City end -->
+
+<!-- New Orleans Start -->
+  <div id="NEW ORLEANS" class="tabcontent">
+    <h1><center>NEW ORLEANS</center></h1>
+    <h3>New Orleans is a city filled with friendly people, amazing food, awesome live music and memorable attractions. It’s a city where anyone can find something to enjoy, and adventures are constantly underway</h3>
+    <center><img src="https://myalternatelife.com/wp-content/uploads/2014/09/travel-fund-new-orleans.jpg" style="width:45%"></center>
+    <br>
+    <br>
+    <dd><h2><u>THE FLAVORFUL FOOD</u></h2></dd>
+    <dd><h4>One of the best things about New Orleans is the amazing and flavorful foods there. Some of the best restaurants New Orleans has to offer include:</h4></dd>
+    <dd><strong>GW Fins:</strong></dd>
+    <dd style="font:Verdana;">The energy in GW Fins’ dining room is constantly palpable.  The contemporary space is at once relaxed and exhilarating, creating a magnificent dining experience. </dd>
+    <br>
+    <center><img src="https://gwfins.com/wp-content/uploads/2016/01/contact-sm.jpg" style="width:40%"></center>
+    <center><h4><a href="https://www.google.com/maps/place/GW+Fins/@29.9555463,-90.0710273,17z/data=!3m1!4b1!4m5!3m4!1s0x8620a60c15e16df1:0x1ac94cc330cae640!8m2!3d29.9555463!4d-90.0688386"target="_blank">808 Bienville St, New Orleans, LA 70112</a></h4></center>
+    <br>
+    <br>
+    <dd><strong>Doris Metropolitan:</strong></dd>
+    <dd style="font:Verdana;">Doris Metropolitan is in the heart of New Orlean’s iconic French Quarter and have expertly prepared menus using flavors and techniques that play on Middle Eastern heritage to shine a spotlight on dry aged beef and the highest quality meats, which are offered alongside vegetable-forward appetizers, exotic and local seafood, a thoughtfully sourced caviar menu, and seasonal sides.</dd>
+    <center><img src="https://i.pinimg.com/originals/4a/fe/c0/4afec064b285f3aabc33aef08131e3c7.jpg" style="width:40%"></center>
+    <center><h4><a href="https://www.google.com/maps/place/Doris+Metropolitan+New+Orleans/@29.9570095,-90.0661965,17z/data=!3m1!4b1!4m5!3m4!1s0x8620a6118b52e2c3:0xc6d32f9a31ffed3!8m2!3d29.9570095!4d-90.0640078"target="_blank">620 Chartres St, New Orleans, LA 70130</a></h4></center>
+    <br>
+    <br>
+    <dd><strong>High Hat Cafe:</strong></dd>
+    <dd style="font:Verdana;">The High Hat Cafe is a casual neighborhood spot serving food from the Mississippi Delta and Louisiana. Catfish is the star of the menu with strong support from Smoked Roasted Chicken, Delta Tamales, BBQ Shrimp, Slow Roasted Pork, and Fresh Gulf Fish.</dd>
+    <center><img src="https://www.epicurious.com/images/articlesguides/diningtravel/restaurants/high-hat-cafe_612.jpg" style="width:40%"></center>
+    <center><h4><a href="https://www.google.com/maps/place/The+High+Hat+Cafe/@29.935089,-90.1064875,17z/data=!3m1!4b1!4m5!3m4!1s0x8620a5ae425f2cf9:0x4b7bed152f837a33!8m2!3d29.935089!4d-90.1042988"target="_blank">4500 Freret St, New Orleans, LA 70115</a></h4></center>
+    <br>
+    <br>
+    <br>
+    <dd><h2><u>THE LIVE MUSIC</u></h2></dd>
+    <dd><h4>There's live music all over the city at all hours of the day. Known as “the birthplace of jazz,” the city is home to a number of intimate concert venues (that generally charge cheap admission fees), plus there’s almost always a festival of some sort happening.</dd></h4>
+    <center><img src="https://i0.wp.com/www.suncountryview.com/wp-content/uploads/2018/05/New-Orleans-Music_Header_1200x800.jpg?fit=1200%2C800" style="width:40%"></center>
+    <br>
+    <br>
+  </div>
+
+
+
+<!-- Start of Egypt -->
+  <div id="Egypt" class="tabcontent">
+    <h1><center>EGYPT</center></h1>
+    <h3>Egypt is known for its ancient treasures and outstanding history; however, there is more to Egypt than you might expect. From surreal waters and wide beaches with golden sand to remarkable architecture and natural therapies, Egypt is definitely a bucket-list worthy country.</h3>
+    <br>
+    <center><img src="https://www.travelweekly.com/uploadedImages/TW_Elearn/Sales/Strategic_Content/Hero_CentralHolidays_TL.jpg?width=780&height=440&scale=both&mode=crop" style="width:50%"></center>
+    <br>
+    <br>
+    <dd><h2><u>TOP PLACES TO GO IN EGYPT</u></h2></dd>
+    <dd><strong>Cairo:</strong></dd>
+    <dd style="font:Verdana;">Cairo can be overwhelming, as there's so much to see and do everywhere you turn. From Islamic Cairo's bustling Khan El-Khalili bazaar to the ancient Pyramids of Giza to the picturesque Nile River, you'll be immersed in this Egyptian city's history and culture. One of the biggest things that attracts millions of tourists to Cairo are the pyramids. No trip to Cairo is complete without a stop at one of the many pyramids that are found scattered across the Egyptian desert A visit to Cairo will put you deep into Arab culture. This includes learning and experiencing everything from their cuisine to hospitality to their arts and lifestyles first-hand.</dd>
+    <br>
+    <center><img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Great_Pyramid_of_Giza.jpg" style="width:40%"></center>
+    <center><h4>Pyramids of Giza</h4></center>
+    <br>
+    <br>
+    <dd><strong>Alexandria:</strong></dd>
+    <dd style="font:Verdana;">Today, Alexandria is Egypt’s second largest city and boasts a thriving port along its 32 kilometres of coastline. It is home to the medieval Citadel of Qaitbay, the royal Montazah palace, Bibliotheca library and lots of other gems to explore.</dd>
+    <br>
+    <center><img src="https://images.adsttc.com/media/images/54c2/8545/e58e/ced7/eb00/0081/large_jpg/Bibliotheca_Alexandrina_plaza_003.jpg?1422034240" style="width:40%"></center>
+    <center><h4>Bibliotheca Alexandrina</h4></center>
+    <dd><h2><u>WHERE TO EAT IN EGYPT</u></h2></dd>
+    <dd><strong>Samakmak:</strong></dd>
+    <br>
+    <center><img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/57/fe/5c/simples-e-limpo.jpg" style="width:40%"></center>
+    <center><h4><a href="https://www.google.com/maps/place/Samakmak/@30.0656663,31.1987106,17z/data=!3m1!4b1!4m5!3m4!1s0x1458411660fed801:0xcbe629efdf3305d5!8m2!3d30.0656663!4d31.2008993"target="_blank">60 Sidi Yakout, As Sayalah Gharb, Qesm Al Gomrok, Alexandria Governorate, Egypt</a></h4></center>
+    <br>
+    <br>
+    <dd><strong>Chez Gabi:</strong></dd>
+    <br>
+    <center><img src="https://img2.10bestmedia.com/Images/Photos/353276/Dining-Room--2-_54_990x660.jpg" style="width:40%"></center>
+    <center><h4><a href="https://www.google.com/maps/place/Chez+Gaby+au+Ritrovo/@31.1968944,29.9002649,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5c3ecf2b0f575:0xac381826bc8a96e6!8m2!3d31.1968944!4d29.9024536"target="_blank">22 El Horreya Rd, 21599 Alexandria, Egypt</a></h4></center>
+  </div>
+
+<!-- End of Egypt -->
+
+<!-- Start of South Africa -->
+<div id="South Africa" class="tabcontent">
+  <h1><center>SOUTH AFRICA</center></h1>
+  <h3>South Africa is a country on the southernmost tip of the African continent, marked by several distinct ecosystems. Inland safari destination Kruger National Park is populated by big game. The Western Cape offers beaches, lush winelands around Stellenbosch and Paarl, craggy cliffs at the Cape of Good Hope, forest and lagoons along the Garden Route, and the city of Cape Town, beneath flat-topped Table Mountain. Located in the extreme southern part of the African continent, South Africa makes a unique tourist destination. Home to one of the most diverse landscapes, abundant wildlife and world renowned cities, these are some great reasons to visit South Africa, any visitor will be amazed by what the country has to offer.</h3>
+  <br>
+  <center><img src="https://dak95nwic4sny.cloudfront.net/73/south-africa-43313807-1533658538-ImageGalleryLightboxLarge.jpg" style="width:40%"></center>
+  <br>
+  <br>
+  <dd><h2><u>THE MUSEUMS</u></h2></dd>
+  <dd><h4>South Africa offers visitors a wide variety of museums they must visit on their journey. You will never be short of museums and galleries to visit. Some popular museums in South Africa include:</h4></dd>
+  <dd><strong>Zeitz MOCAA:</strong></dd>
+  <dd style="font:Verdana;">The Zeitz Museum of Contemporary Art Africa is a contemporary art museum located at the V&A Waterfront in Cape Town, South Africa. It is the largest museum of contemporary African art in the world.</dd>
+  <br>
+  <center><img src="https://images.graph.cool/v1/cj6c28vh912680101ozc2paxj/cjnkj9t5c35gl0105ho42rbnb/0x0:1600x1132/960x960/306_mu_mb_zeitz_mocaa_exterior_03.jpg" style="width:40%"></center>
+  <center><h4><a href="https://www.google.com/maps/place/Zeitz+Museum+of+Contemporary+Art+Africa/@-33.9083737,18.420793,17z/data=!3m1!4b1!4m5!3m4!1s0x1dcc67596cf4d0dd:0x8f7985bd761d1118!8m2!3d-33.9083737!4d18.4229817"target="_blank">V&A Waterfront, Silo District, S Arm Rd, Waterfront, Cape Town, 8001, South Africa</a></h4></center>
+  <br>
+  <br>
+  <dd><strong>South African National Art Museum:</strong></dd>
+  <dd style="font:Verdana;">Situated in the Martin Melck House in the Cape Town City Centre, this museum is home to a large collection of African gold items, including ancient gold artefacts and objects from West Africa and other old civilisations of Southern Africa. Guided tours of this magnificent museum can be arranged by appointment. Interesting goldsmith workshops are also on offer to visitors. The museum also boasts its own shop filled with unique items and treasures.</dd>
+  <br>
+  <center><img src="https://static.tripexpert.com/images/venue_photos/profile/3339277.jpg?1469806357" style="width:40%"></center>
+  <center><h4><a href="https://www.google.com/maps/place/rain+South+Africa/@-33.919168,18.4174714,17z/data=!3m1!4b1!4m5!3m4!1s0x1dcc6766e4ef039b:0x45f7faef70c6453d!8m2!3d-33.919168!4d18.4196601"target="_blank">96 Strand St, Cape Town City Centre, Cape Town, 8000, South Africa</a></h4></center>
+  <br>
+  <br>
+  <br>
+  <dd><h2><u>TOP PLACES TO GO IN SOUTH AFRICA</u></h2></dd>
+  <dd><strong>Cape Town:</strong></dd>
+  <dd style="font:Verdana;">Whichever time you decide to visit, every single season is amazing in this part of the world. The city caters to a diversity of tastes, preferences, people, and budgetsThe city of Cape Town is home to some of the most amazing views on the planet. From its picturesque Winelands all the way to its rugged coastline at Cape Point, its flawless beaches, and magnificent sunsets, Cape Town’s beautiful scenery will leave you in awe.</dd>
+  <br>
+  <center><img src="https://www.irishtimes.com/polopoly_fs/1.3343154.1514906878!/image/image.jpg_gen/derivatives/box_620_330/image.jpg" style="width:40%"></center>
+  <center><h4><a href="https://www.google.com/maps/place/Chez+Gaby+au+Ritrovo/@31.1968944,29.9002649,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5c3ecf2b0f575:0xac381826bc8a96e6!8m2!3d31.1968944!4d29.9024536"target="_blank">Table Mountain</a></h4></center>
+  <br>
+  <br>
+  <dd><strong>Johannesburg:</strong></dd>
+  <dd style="font:Verdana;">Johannesburg, or Jo’burg, is the economic heart of Africa and the most common entry point into Southern Africa. With more than 3 million people it is also the second largest city on the continent. Historically it is where money is made and fortunes found. It has been stereotyped as a cruel, concrete jungle, plagued by crime, but residents defend it fiercely as a city of opportunity and raw energy.</dd>
+  <br>
+  <center><img src="https://upload.wikimedia.org/wikipedia/en/6/6c/Johannesburg_Skyline.jpg" style="width:40%"></center>
+  <center><h4>Johannesburg Skyline</h4></center>
+  <br>
+  <br>
+  <dd><strong>Addo Elephant National Park:</strong></dd>
+  <dd style="font:Verdana;">Located in the Eastern Cape region of South Africa, the Addo Elephant National Park is one of the country’s larger parks. The Park is famous for its elephant population that has a special, brownish skin color due to the red soil. Amongst the elephants other animals, like ostriches, antelopes and warthogs can be seen.</dd>
+  <br>
+  <center><img src="https://www.zawebsdata.co.za/image/large/addo_ellies.jpg" style="width:40%"></center>
+  <center><h4><a href="https://www.sanparks.org/parks/addo/"target="_blank">Addo Elephant National Park</a></h4></center>
+</div>
+<!-- End of South Africa -->
+
+<!-- Start of Ethiopia -->
+<div id="Ethiopia" class="tabcontent">
+  <h1><center>Ethiopia</center></h1>
+  <h3>Ethiopia, in the Horn of Africa, is a rugged, landlocked country split by the Great Rift Valley. With archaeological finds dating back more than 3 million years, it’s a place of ancient culture. Among its important sites are Lalibela with its rock-cut Christian churches from the 12th–13th centuries.Showcasing ancient history, picturesque landscapes, joyful festivals, and much more, Ethiopia has plenty of choices in store for the curious traveler. Its unique calendar, old alphabet, and numerical system are some of the things that set the country apart.</h3>
+  <br>
+  <center><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Blue_Nile_Falls_Ethiopia.jpg" style="width:40%"></center>
+  <br>
+  <br>
+  <dd><h2><u>THE MUSIC</u></h2></dd>
+  <dd><h4>In the 60s and 70s, Ethiopia became known for its own brand of jazz, but the music scene was entirely shut down during the communist regime that lasted from 1974 until the early 90s. Since then it's made a comeback, and Addis is now an excellent place to hear jazz and other live music.</h4></dd>
+  <br>
+  <center><img src="https://www.musicinafrica.net/sites/default/files/styles/article_slider_large/public/images/article/201604/selam-2016.jpg?itok=GP56HwwU" style="width:40%"></center>
+  <br>
+  <br>
+  <dd><h2><u>GREAT SHOPPING</u></h2></dd>
+  <dd><h4>Ethiopia has a long tradition of beautiful handicrafts including high-quality hand-woven and embroidered materials. You can also find leather goods like sandals and hats. Addis is such a fashionable place that it recently hosted a fashion week, <a href="http://www.hubfashionweekafrica.com/"target="_blank">Hub of Africa</a>, showcasing the works of Ethiopian and other African-born designers.</h4></dd>
+  <br>
+  <center><img src="https://www.fashionghana.com/wp-content/uploads/2015/11/hoafw3.jpg" style="width:40%"></center>
+  <br>
+  <br>
+
+</div>
+<!-- End of Ethiopia -->
+
+<!-- Start of Morocco -->
+<div id="Morocco" class="tabcontent">
+  <h1><center>MOROCCO</center></h1>
+  <h3>Morocco, a North African country bordering the Atlantic Ocean and Mediterranean Sea, is distinguished by its Berber, Arabian and European cultural influences. North Africa’s Morocco is a popular destination, attracting culture lovers, backpackers, adventure travelers, couples, families, foodies, and more.</h3>
+  <br>
+  <center><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Picture_of_Morocco.jpg" style="width:45%"></center>
+  <br>
+  <br>
+  <dd><h2><u>THE CULTURE</u></h2></dd>
+  <dd><h4>In Essaouira, a city in Morocco you will hear the call of prayer from the Mosque, see the men dressed in traditional clothing, the women too. You may not understand the menu and exactly what people are saying (unless you speak French), you will probably see sights in the food markets that perhaps you don’t want to see but this is all part of indulging in the Culture and observing everyday life.</h4></dd>
+  <br>
+  <center><img src="https://photos.travelblog.org/Photos/12229/252721/f/2049068-Main-mosque-Essaouira-1.jpg" style="width:40%"></center>
+  <br>
+  <br>
+  <dd><h2><u>THE ARCHITECTURE</u></h2><dd>
+  <dd><h4>The cultural diversity of Morocco is reflected in the varied architectural beauties that can be found all across the nation. From majestic mosques to traditional riads and from brilliant palaces to sublime centers of religious study, Morocco has many fabulous buildings to admire. Many buildings feature the traditional tilework, known as zellige, as well as decorative carvings, woodwork, and plasterwork.</h4></dd>
+  <br>
+  <center><img src="https://i2.wp.com/blog.tripfez.com/wp-content/uploads/2017/10/5-must-visit-moroccan-architecture.jpg?resize=660%2C400&ssl=1" style="width:40%"></center>
+  <br>
+  <br>
+  <dd><h2><u>TOP PLACES TO GO IN MOROCCO</u></h2></dd>
+  <dd><strong>The Ramparts:</strong></dd>
+  <dd style="font:Verdana;">The symbol of the red city, the ramparts which construction, commissioned by ali Ben Youssef, began in 1126, surround the old town today: the medina. it took decades to build the ramparts so that the adobe and clay-made walls would reach more than 10 km. Those walls are interspersed by 202 square –shaped towers and 10 imposing gates give access to the town.</dd>
+  <br>
+  <center><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Ramparts_of_Essaouira.JPG" style="width:40%"></center>
+  <center><h4><a href="http://www.darzaman.co.uk/guide/ramparts-marrakech/"target="_blank">Check out more about the Ramparts here</a></h4></center>
+  <br>
+  <br>
+  <dd><strong>La Sqala</strong></dd>
+  <dd style="font:Verdana;">La Sqala is one of the loveliest places to get a taste of the ocean. Diners sit in a leafy gazebo garden near the 18th-century Portuguese sea walls, and order the catch of the day for lunch. It's also possible to while away an hour over coffee and fresh juices.</dd>
+  <br>
+  <center><img src="https://img.theculturetrip.com/wp-content/uploads/2017/09/7330357858_db948409d0_k.jpg" style="width:40%"></center>
+  <center><h4><a href="https://www.google.com/maps/place/La+Sqala/@33.602898,-7.6213107,17z/data=!3m1!4b1!4m5!3m4!1s0xda7d286bded69f1:0x14366c0dc062234f!8m2!3d33.602898!4d-7.619122"target="_blank">Boulevard des Almohades, Casablanca 20250, Morocco</a></h4></center>
+</div>
+<!-- End of Morocco -->
+
+
+    <div id="ITALY" class="tabcontent"></div>
+    <div id="ENGLAND" class="tabcontent"></div>
+    <div id="ITALY" class="tabcontent"></div>
+
+
+    <div id="CHINA" class="tabcontent">
+      <h1><center>CHINA</center></h1>
+      <h3 style="font:inherit; align: left;">China is considered to be the oldest civilization with some historians marking 6000 BC as the beginning of the Chinese civilization. Also, it has the world's longest used written language. As of July 2012, China has the largest population in the world with over 1.3 billion people.</h3>
+      <br>
+      <h2 style= "font-family: simplifica"><center> Where to visit in China:</center></h2>
+      <br>
+      <dt><strong> The Great Wall of China:</strong></dt>
+      <dd style="font:Verdana;">The Great Wall of China stretches more than 6,000 kilometers from the fortress of Shanhaiguan in the east all the way to Jiayuguan in the west, passing through Hebei, Tientsin, Beijing, Inner Mongolia, Ningxia, and Gansu.</dd>
+      <br>
+      <center><img src="http://hyperallergic.com/wp-content/uploads/2015/04/20090529_Great_Wall_8185.jpg" height= "450" width="650"></center>
+      <br>
+
+      <dt><strong> The Forbidden City and the Imperial Palace, Beijing:</strong></dt>
+      <dd style="font:Verdana;">China's largest and most important building, the Forbidden City — also known as the Imperial Palace — is situated in the very heart of Beijing and is a must-see when visiting the country. The Temple of Heaven is also located in this vicinity, it is known that the emperors were also known as the sons of heaven as it was believed that emperors received their power from Heaven.</dd>
+      <br>
+      <center><img src="https://cache-graphicslib.viator.com/graphicslib/page-images/742x525/385300_Viator_iStockPhoto_18858.jpg" height= "450" width="650"></center>
+      <br>
+
+      <dt><strong> The Li River:</strong></dt>
+      <dd style="font:Verdana;">The Li River is located on the Northeast corner of Guangxi, known to be China’s most beautiful countryside. The best way to enjoy the river is by taking a cruise.</dd>
+      <br>
+      <center><img src="https://www.planetware.com/photos-large/CHN/china-guilin-li-river-cruise.jpg" height= "450" width="650"></center>
+      <br>
+
+      <dt><strong> The Classic Gardens of Suzhou:</strong></dt>
+      <dd style="font:Verdana;">Known to be the world’s most important historic gardens. The magnificent gardens were established in the 11th century, at a time when the city was experiencing unprecedented growth.</dd>
+      <br>
+      <center><img src="https://cache-graphicslib.viator.com/graphicslib/page-images/742x525/420168_Suzhou_ClassicalGardens_bridge_shutterstock_425547664.jpg" height= "450" width="650"></center>
+      <br>
+
+      <dt><strong> Hong Kong Skyline:</strong></dt>
+      <dd style="font:Verdana;">Hong Kong is known to have the highest concentrations of skyscrapers in the world. One of the best views are from Victoria Peak on Hong Kong Island, where the skyscrapers frame the city’s huge harbor.</dd>
+      <br>
+      <center><img src="https://www.tripsavvy.com/thmb/AdjWUlrz7SShzh53ArnO1-GKTJg=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-586892388-5c7b646fc9e77c0001d19d3b.jpg" height= "450" width=650></center>
+      <br>
+      <h2><center> Where to eat in China:</center></h2>
+      <dt><strong> Wooloomooloo Steakhouse; also known as Wan Chai:</strong></dt>
+      <dd style="font:Verdana;"> Wan Chai is located in Hong Kong, China. It is known to be one of the best high classed restaurants in Hong Kong.</dd>
+      <br>
+      <center><img src="https://www.restaurantandbarhk.com/rbhk/wp-content/uploads/2017/02/RIDA16033b.jpg" height= "250" width="450"></center>
+      <br>
+
+      <dt><strong> Sawasdee Thai Restaurant:</strong></dt>
+      <dd style="font:Verdana;">Sawasdee is located in Hangzhou, China. They are really famous for their Thai Custard. Best of all, it is known to be a moderately priced restaurant. </dd>
+      <br>
+      <center><img src="http://4.bp.blogspot.com/_Liz-VpvKDvo/TSToIlqfc9I/AAAAAAAAFZc/Hz5V5EyvQ08/s576/Thai%2BCustard%2BCover.jpg" height= "250" width="450"></center>
+      <br>
+    </div>
+    <div id="JAPAN" class="tabcontent">
+      <h1><center>Japan</center></h1>
+      <h3 style="font:inherit; align: left;">Japan is an island country in East Asia. Located in the Pacific Ocean, it lies off the eastern coast of the Asian continent and stretches from the Sea of Okhotsk in the north to the East China Sea and the Philippine Sea in the south. </h3>
+      <br>
+      <h2 style= "font-family: simplifica"><center> Where to visit in Japan:</center></h2>
+      <br>
+      <dt><strong> Mount Fuji:</strong></dt>
+      <dd style="font:Verdana;">It is known to be the country’s highest mountain peak, towering 3,776 meters over a largely flat landscape to the south and east. Mount Fuji is climbed by more than a million people each summer as an act of pilgrimage. </dd>
+      <br>
+      <center><img src="https://www.planetware.com/photos-large/JPN/japan-mount-fuji-water-reflection.jpg" height= "450" width="650"></center>
+      <br>
+
+      <dt><strong> Hiroshima Peace Memorial Park:</strong></dt>
+      <dd style="font:Verdana;">It was built to commemorate those who died due to the atomic bombing of Hiroshima and Nagasaki in August 1945. It is visited by more than a million people each year, many who are from overseas.</dd>
+      <br>
+      <center><img src="https://www.hiroshima-navi.or.jp/en/post/assets_c/2017/05/heiwa_koen001_1-thumb-1200x800-5964.jpg" height= "450" width="650"></center>
+      <br>
+
+      <dt><strong> Temple City(Historic Nara):</strong></dt>
+      <dd style="font:Verdana;">The city of Nara is known to be home to a large number of historic buildings, along with important nation treasures and works of art. It consists of Seven Great Temples, one known to be called Todai-ji (Great East Temple). Todai-ji is famous for its Great South Gate and the Hall of the Great Buddha. </dd>
+      <br>
+      <center><img src="https://i.pinimg.com/736x/23/0e/ee/230eeebcfac9ff3fddde7147b5b4ab79.jpg" height= "450" width="650"></center>
+      <br>
+
+      <dt><strong> Osaka Castle:</strong></dt>
+      <dd style="font:Verdana;">Built in 1586 by a famous warrior and politician Toyotomi Hideyoshi. It was the largest and most important fortress in the country. A popular interest in the Osaka Castle Park is the Hokoku Shrine as it is known to Japan’s first Buddhist temple. The shrine features a five-story pagoda along with a number of exquisitely decorated buildings including the Golden Pavilion. </dd>
+      <br>
+      <center><img src="https://www.japan-guide.com/g18/4000_top.jpg" height= "450" width="650"></center>
+      <br>
+
+      <dt><strong> Mount Yoshino:</strong></dt>
+      <dd style="font:Verdana;">Covered in over 30,000 cherry trees, Mount Yoshino is known to be Japan’s most popular cherry blossom viewing spots for centuries. The best time to visit and view the cherry blossom is from April to early May. </dd>
+      <br>
+      <center><img src="https://www.jrailpass.com/blog/wp-content/uploads/2018/01/cherry-blossom-viewing-spots-japan.jpg" height= "450" width="650"></center>
+      <br>
+
+      <h2><center> Where to eat in Japan:</center></h2>
+      <dt><strong> Wooloomooloo Steakhouse; also known as Wan Chai:</strong></dt>
+      <dd style="font:Verdana;"> Wan Chai is located in Hong Kong, China. It is known to be one of the best high classed restaurants in Hong Kong.</dd>
+      <br>
+      <center><img src="https://www.restaurantandbarhk.com/rbhk/wp-content/uploads/2017/02/RIDA16033b.jpg" height= "250" width="450"></center>
+      <br>
+
+      <dt><strong> Sawasdee Thai Restaurant:</strong></dt>
+      <dd style="font:Verdana;">Sawasdee is located in Hangzhou, China. They are really famous for their Thai Custard. Best of all, it is known to be a moderately priced restaurant. </dd>
+      <br>
+      <center><img src="https://www.restaurantandbarhk.com/rbhk/wp-content/uploads/2017/02/RIDA16033b.jpg" height= "250" width="450"></center>
+      <br>
+
+    </div>
+    <div id="THAILAND" class="tabcontent">
+      <h1><center>Thailand</center></h1>
+      <h3 style="font:inherit; align: left;">Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha. In Bangkok, the capital, an ultramodern cityscape rises next to quiet canalside communities and the iconic temples of Wat Arun, Wat Pho and the Emerald Buddha Temple (Wat Phra Kaew). Nearby beach resorts include bustling Pattaya and fashionable Hua Hin.</h3>
+      <br>
+      <h2 style= "font-family: simplifica"><center> Where to visit in Thailand:</center></h2>
+      <br>
+      <dt><strong> Railay Beach:</strong></dt>
+      <dd style="font:Verdana;">Considered to be one of the best beaches in the country. Many hikers and rock-climbers come to experience the climb of a towering limestone cliff. Among the many other active things to do, you can go elephant trekking, whitewater rafting, kayaking, and snorkeling. </dd>
+      <br>
+      <center><img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/be/e8/6f/railay-beach.jpg" height= "450" width="650"></center>
+      <br>
+
+      <dt><strong> The Grand Palace:</strong></dt>
+      <dd style="font:Verdana;">This is located in Bangkok, Thailand. It is the number one sightseeing attraction in the city, staggering in historical significance and craftsmanship. One of the most important relics in the Grand Palace is the Wat Phra Kaeo, Temple of the Emerald Buddha.</dd>
+      <br>
+      <center><img src="http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/attraction-palace/grand-palace/pagePropertiesImage/bangkok-grand-palace.jpg.jpg" height= "450" width="650"></center>
+      <br>
+
+      <dt><strong> Sunday Walking Street:</strong></dt>
+      <dd style="font:Verdana;">On this certain day of the week, street vendors sell all kinds of treats: pad Thai, Chicken Satay, Samosas, Crab Cakes, Fried Bananas, Sweet Rotees, and Fresh fruit shakes. This is usually held during the night and one of the best ways to taste many kinds of food in a cheap way. </dd>
+      <br>
+      <center><img src="http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/magazine/silom-walking-street/allParagraphs/BucketComponent/ListingContainer/04/image/silom-walking-street-8.jpg" height= "450" width="650"></center>
+      <br>
+
+      <dt><strong> Khao Yai National Park:</strong></dt>
+      <dd style="font:Verdana;">Elephants are auspicious in Thailand as statues and paintings of elephants can be seen everywhere you go. The park allows you to view the elephants in their natural habitat, trek with them, bathe them, and feed them. The most memorable part of this trip would be experiencing the sunrise over the lush landscape. </dd>
+      <br>
+      <center><img src="https://blog.airpaz.com/wp-content/uploads/Khao-Yai-National-Park-from-Bangkok-1.png" height= "450" width="650"></center>
+      <br>
+
+      <dt><strong> Floating Markets:</strong></dt>
+      <dd style="font:Verdana;">This is the most fun way to do some shopping and eating while supporting local vendors and observing the local commerce in action. You’d need to wake up early to visit a floating market as vendors are out in the morning with their goods, fresh fruits, vegetables, spices, and tasty dishes.</dd>
+      <br>
+      <center><img src="http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/magazine/5-floating-markets/pagePropertiesImage/best-floating-market.jpg.jpg" height= "450" width="650"></center>
+      <br>
+    </div>
+    <div id="KOREA" class="tabcontent">
+      <h1><center>Korea</center></h1>
+      <h3 style="font:inherit; align: left;">Italy occupies a peninsula that juts deep into the Mediterranean Sea. Italy is often described as a country shaped like a boot. At its broad top stand the Alps, which are among the world’s most rugged mountains. Italy’s highest points are along Monte Rosa, which peaks in Switzerland, and along Mont Blanc, which peaks in France. The western Alps overlook a landscape of Alpine lakes and glacier-carved valleys that stretch down to the Po River and the Piedmont. Tuscany, to the south of the cisalpine region, is perhaps the country’s best-known region. South of Rome the Apennines narrow and are flanked by two wide coastal plains, one facing the Tyrrhenian Sea and the other the Adriatic Sea. Much of the lower Apennine chain is near-wilderness, hosting a wide range of species rarely seen elsewhere in western Europe, such as wild boars, wolves, asps, and bears. The southern Apennines are also tectonically unstable, with several active volcanoes, including Vesuvius, which from time to time belches ash and steam into the air above Naples and its island-strewn bay. At the bottom of the country, in the Mediterranean Sea, lie the islands of Sicily and Sardinia. </h3>
+    </div>
+
+<!-- slideshow JS-->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-- end of slideshow JS-->
+
+
+  <!--Tabs HTML -->
+  <script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+  <script>
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
+</html>

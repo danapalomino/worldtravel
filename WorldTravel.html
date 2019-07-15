@@ -284,7 +284,7 @@
 <style>
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
+/* .mySlides {display: none} */
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -439,8 +439,9 @@ img {vertical-align: middle;}
     .button:hover {
       background-color: #555;
     }
-    </style>
+  </style>
 <!-- End of Meet the Team -->
+
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
@@ -525,10 +526,10 @@ img {vertical-align: middle;}
             </div>
             <div class="column">
               <h3>Australia</h3>
-              <a onclick="openCity(event, 'SPAIN')">Link 1</a>
-              <a onclick="openCity(event, 'SPAIN')">Link 2</a>
-              <a onclick="openCity(event, 'SPAIN')">Link 3</a>
-              <a onclick="openCity(event, 'SPAIN')">Link 4</a>
+              <a onclick="openCity(event, 'SYDNEY')">Sydney</a>
+              <a onclick="openCity(event, 'MELBOURNE')">Melbourne</a>
+              <a onclick="openCity(event, 'CAIRNS')">Cairns</a>
+              <a onclick="openCity(event, 'GOLDCOAST')">Gold Coast</a>
             </div>
             </div>
           </div>
@@ -545,9 +546,6 @@ img {vertical-align: middle;}
         <div class="dropdown dropbtn">
             <button class="tablinks dropdown dropbtn" onclick="openCity(event, 'CONTACT US')">CONTACT US</button>
         </div>
-        <div class="dropdown dropbtn">
-        <button class="tablinks dropdown dropbtn" onclick="openCity(event, 'PYT')">PLAN YOUR TRIP</button>
-      </div>
       <div class="navbar-right">
         <span class="spanny" onclick="openCity(event, 'HOME')">GLOBAL QUESTS</span>
       </div>
@@ -558,13 +556,22 @@ img {vertical-align: middle;}
 
     <div id="HOME" class="tabcontent">
       <center><h1>Global Quests</h1></center>
-            <h2>MEET THE TEAM</h2>
+<!-- Full page picture -->
+  <img src="Background.jpg" alt="" style="width:100%; height:50%">
+
+<br>
+<br>
+<br>
+<center><h2>About Global Quests</h2></center>
+<dd style="font:Verdana;">Global Quests was created to ....</dd>
+            <center><h2>MEET THE TEAM</h2>
       <br>
 
-      <div class="row">
+
+      <div class="row" style="margin-left:40px">
         <div class="column">
           <div class="card">
-            <img src="/w3images/team1.jpg" alt="" style="width:100%">
+            <img src="Akshita.HEIC" alt="" style="width:100%">
             <div class="container">
               <h2 class="title">Akshita Kunala</h2>
               <h2>Co-Coder</h2>
@@ -574,17 +581,17 @@ img {vertical-align: middle;}
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="row"
+
         <div class="column">
           <div class="card">
-            <img src="https://pbs.twimg.com/media/DmiabU-UwAAdwp8.jpg" alt="" style="width:40%">
+            <img src="sophia.jpg" alt="" style="width:100%">
             <div class="container">
-              <h2>Sophia Palomino</h2>
+              <h2 class="title">Sophia Palomino</h2>
+              <h2>Co-Coder</h2>
               <br>I'm a senior at Grady High School.I am really cool!</br>
               <class="title">Co-Coder</class>
-              <p>danasophiap@gmail.com</p>
+              <br>danasophiap@gmail.com</br>
               <br><button class="button">Contact</button><br>
             </div>
           </div>
@@ -593,18 +600,19 @@ img {vertical-align: middle;}
 
           <div class="column">
             <div class="card">
-              <img src="/w3images/team3.jpg" alt="" style="width:100%">
+              <img src="DejaHintzen.jpg" alt="Deja Hintzen" style="width:100%">
               <div class="container">
-                <h2>Deja Hintzen</h2>
-                <class="title">Co-Coder</class>
-              <br>I am a asenior at Duluth High School. I love to play video games and create music!</br>
+              <h2 class="title">Deja Hintzen</h2>
+              <h2>Co-Coder</h2>
+              <br>I am a a senior at Duluth High School. I love to play video games and create music!</br>
               <br>Dhintzen10@gmail.com</br>
               <br><button class="button">Contact</button><br>
               </div>
             </div>
           </div>
-
         </div>
+      </center>
+      </div>
 
 
 
@@ -617,28 +625,91 @@ img {vertical-align: middle;}
 
     <div id="HACKS" class="tabcontent">
       <center><h1>PACKING AND TRAVELLING HACKS</h1></center>
-      <dd><center><iframe width="560" height="315" src="https://www.youtube.com/embed/-PcrLWkxZSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-      <center><h2>1. Wear the heavier clothing on the flight<h2>
-      <h4>Wearing more of your heavier items on the flight will allow you to have more room in your bag<h4>
+      <center><iframe width="560" height="315" src="https://www.youtube.com/embed/-PcrLWkxZSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+      <dd><h2>1. Wear the heavier clothing on the flight<h2></dd>
+      <dd><h4>Wearing more of your heavier items on the flight will allow you to have more room in your bag<h4></dd>
       <center><img src="https://brunettefromwallstreet.com/wp-content/uploads/2018/12/chic-winter-airport-outfit.jpg" style="width:40%"></center>
-
-      <h2>2. Packing cubes<h2>
-      <h4>You can compartimalize your suitcase with packing cubes that will keep your shirts, pants, and accessories separate. You can find some <a href="https://www.amazon.com/CGBE-Travel-Packing-Luggage-Organizer/dp/B07R51DZDW/ref=sr_1_2_sspa?keywords=packing+cubes&qid=1562785022&s=gateway&sr=8-2-spons&psc=1"target="_blank">here</a> on Amazon.<h4>
+      <br>
+      <br>
+      <dd><h2>2. Packing cubes<h2></dd>
+      <dd><h4>You can compartimalize your suitcase with packing cubes that will keep your shirts, pants, and accessories separate. You can find some <a href="https://www.amazon.com/CGBE-Travel-Packing-Luggage-Organizer/dp/B07R51DZDW/ref=sr_1_2_sspa?keywords=packing+cubes&qid=1562785022&s=gateway&sr=8-2-spons&psc=1"target="_blank">here</a> on Amazon.<h4></dd>
       <center><img src="https://cdn.blessthisstuff.com/imagens/stuff/vasco-travel-packing-cubes.jpg" style="width:40%"></center>
-
-      <h2>3. Roll your clothes<h2>
-      <h4>Rolling your clothes rather than folding them allows for more space in your suitcase for more clothes or accessories and will eliminate wrinkles.<h4>
+      <br>
+      <br>
+      <dd><h2>3. Roll your clothes<h2></dd>
+      <dd><h4>Rolling your clothes rather than folding them allows for more space in your suitcase for more clothes or accessories and will eliminate wrinkles.<h4></dd>
       <center><img src="http://organizingedge.com/wp-content/uploads/2018/06/How-to-Roll-Clothes-for-Packing-Cubes.jpg" style="width:40%"></center>
-
-      <h2>4. Always pack an empty water bottle<h2>
-      <h4>Once you get through security, you can fill your water bottle at a water fountain to avoid having to pay money every time you need water.<h4>
-      <center><img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/02/18/16/reusable-water-bottles-istock.jpg?w968h681" style="width:40%"></center></center></dd>
+      <br>
+      <br>
+      <dd><h2>4. Always pack an empty water bottle<h2></dd>
+      <dd><h4>Once you get through security, you can fill your water bottle at a water fountain to avoid having to pay money every time you need water.<h4></dd>
+      <center><img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/02/18/16/reusable-water-bottles-istock.jpg?w968h681" style="width:40%"></center>
 
     </div>
 
     <div id="PROGRAMS" class="tabcontent">
-      <h3>PROGRAMS</h3>
-      <p>London is the capital city of England.</p>
+      <h1><center>PROGRAMS</center></h1>
+      <dd><h2><u>GROUP TRAVELLING</u></h2></dd>
+      <br>
+      <center><img src="https://www.thetravelteam.com/wp-content/uploads/2018/07/group_travel_app.jpg" style="width:45%"></center>
+      <dd><strong>Why Group Travel?</strong></dd>
+      <dd style="font:Verdana;">Group travelling can make travelling to a different place easier and safer. When group travelling, you can save money, you can have as much free time as you want since all of the details are worked out, and you can return home with a new set of friends. Some travelers always choose guided tours, while others prefer to make travel arrangements on their own. There are times, however, when traveling with a tour group might be the better choice. Here are some group travelling programs.</dd>
+      <br>
+      <br>
+      <dd><strong><u>Under 30 Experiences</u></strong></dd>
+      <dd style="font:Verdana;">From accommodations, transportation, meals, and knowledge of the best local spots, tourradar hooks you up with everything you will  need. Before your trip, tourradar will  help you with any questions you may have and share access to resources that will help you make the most of your experience.</dd>
+      <dd style="font:Verdana;">You can check out more about Under 30 Experiences <a href="https://www.under30experiences.com/trips"target="_blank">here</a> and plan your next trip!</dd>
+      <br>
+      <center><img src="https://assets-global.website-files.com/56e9debf633486e330198479/596fd3d7cad2607512e3c1ce_blog-Call-for-Applicants-Career-with-Under30Experiences%20.costarica.jpg" style="width:40%"></center>
+      <br>
+      <br>
+      <br>
+      <dd><strong><u>tourradar</u></strong></dd>
+      <dd style="font:Verdana;">TourRadar is a travel website where travellers and tourists can book multi-day group tours as well read user-generated reviews of individual tours and of the Tour Operators.</dd>
+      <dd style="font:Verdana;">You can check out more about tourradar <a href="https://www.tourradar.com/"target="_blank">here</a> and plan your next trip!</dd>
+      <br>
+      <center><img src="https://cdn.tourradar.com/im/r/pw/why/og_why.jpg" style="width:40%"></center>
+      <br>
+      <br>
+      <br>
+      <dd><strong><u>G Adventures</u></strong></dd>
+      <dd style="font:Verdana;">G Adventures is a small-group adventure travel company and social enterprise founded in Toronto, Ontario, Canada. It offers more than 700 different tours in more than 100 countries, and carries 200,000 travellers from 160 countries each year.</dd>
+      <dd style="font:Verdana;">You can check out more about G Adventures <a href="https://www.gadventures.com/"target="_blank">here</a> and plan your next trip!</dd>
+      <br>
+      <center><img src="https://us.vocuspr.com/Publish/3426651/vcsPRAsset_3426651_69284_50a637c8-19a7-42e8-8b9e-d3d487f4c235_0.jpg" style="width:40%"></center>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <dd><h2><u>STUDYING ABROAD</u></h2></dd>
+      <br>
+      <center><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Daniel_Oerther_posing_with_students_during_a_study_abroad_trip_to_Gujarat%2C_India.jpg" style="width:45%"></center>
+      <dd><strong>Why Study Abroad?</strong></dd>
+      <dd style="font:Verdana;">Studying abroad may be one of the most beneficial experiences for a college student. By studying abroad, students have the opportunity to study in a foreign nation and take in the allure and culture of a new land. Here are some programs for students planning or thinking about studying abroad.</dd>
+      <br>
+      <br>
+      <dd><strong><u>CIEE</u></strong></dd>
+      <dd style="font:Verdana;">A gap year abroad is a unique opportunity to discover the world and find the right path for your future — at your own pace. Whether you choose to focus your experience on language proficiency, community service, or an internship, all CIEE programs combine classroom academics, cultural activities, and independent travel in many extraordinary destinations around the world.</dd>
+      <dd style="font:Verdana;">You can check out more about CIEE <a href="https://www.ciee.org/go-abroad/high-school-study-abroad"target="_blank">here</a>.</dd>
+      <br>
+      <center><img src="https://www.ciee.org/sites/default/files/styles/607h/public/content/gallery/images/excursion_to_teotihuacan_mexico_0.jpg?itok=nd2bjYf3" style="width:40%"></center>
+      <br>
+      <br>
+      <br>
+      <dd><strong><u>IES Abroad</u></strong></dd>
+      <dd style="font:Verdana;">The Institute for the International Education of Students, or IES Abroad, is a non-profit study abroad organization that administers study abroad programs for U.S. college-aged students. IES is passionate about making meaningful academic and cultural education opportunities available to students around the world.</dd>
+      <dd style="font:Verdana;">You can check out more about IES Abroad <a href="https://www.iesabroad.org/"target="_blank">here</a>.</dd>
+      <br>
+      <center><img src="https://www.iesabroad.org/files/styles/hero_desktop/public/programs/cape_town_-_health_culture_development.jpg?itok=3PGQf_Bz&timestamp=1504746161" style="width:40%"></center>
+      <center><h4>A group of IES Abroad Cape Town students at the coast</h4></center>
+      <br>
+      <br>
+      <br>
+
+
+
+
     </div>
 
     <div id="GALLERY" class="tabcontent">
@@ -653,6 +724,13 @@ img {vertical-align: middle;}
           <img src="https://www.fodors.com/wp-content/uploads/2018/03/Ultimate-Things-To-Do-Bahamas-Visit-Atlantis-Resort-Waterpark.jpg" style="width:100%"> <!-- Bahamas Atlantis Resort Waterpark -->
           <img src="https://about-france.com/photos/louvre.jpg" style="width:100%"> <!-- louvre museum in Paris, France -->
           <img src="https://www.touropia.com/gfx/d/world-famous-canals/venice.jpg?v=1" style="width:100%"> <!-- Grand Canal in Venice, Italy -->
+          <img src="https://secretadventures.org/images/secretadventures_img_hero_sail_throught_tower_bridge.jpg" style="width:100%"><!-- tower bridge, london-->
+          <img src="https://coincenter.org/files/2018-10/sofia-2.jpg?2e88c0bd2f" style="width:100%"><!-- sofia, bulgaria-->
+          <img src="https://media.timeout.com/images/100541963/image.jpg" style="width:100%"><!--hollywood sign-->
+          <img src="https://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2013/01/Cartagena_Colombia_cs-b9a2c77a9fe3.jpg" style="width:100%"><!--cartagena, colombia-->
+          <img src="https://www.wondermondo.com/wp-content/uploads/2017/10/MachuPicchu.jpg" style="width:100%"><!--macchu picchu-->
+          <img src="https://d1ljaggyrdca1l.cloudfront.net/wp-content/uploads/2017/04/Argentina-Iguazu-Falls-Walking-Tour1-1600x900.jpg" style="width:100%"><!--Iguazu falls-->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Dawn_on_the_S_rim_of_the_Grand_Canyon_%288645178272%29.jpg" style="width:100%"><!--Grand canyon-->
         </div>
         <div class="column1">
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Statue_of_Liberty_7.jpg" style="width:100%"> <!-- Statue of Libery in New York -->
@@ -662,6 +740,16 @@ img {vertical-align: middle;}
           <img src="https://www.planetware.com/photos-large/F/france-paris-notre-dame.jpg" style="width:100%"> <!-- Notre Dame in Paris, France -->
           <img src="https://www.insidehimalayas.com/wp-content/uploads/2016/04/nepal-everest-1.jpg" style="width:100%"> <!-- Himalayas in Nepal -->
           <img src="https://www.chinadiscovery.com/assets/images/travel-guide/beijing/temple-of-heaven/temple-heaven-768.jpg" style="width:100%"> <!-- Temple of Heaven in Beijing, China -->
+          <img src="https://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1500404183/koh-phi-phi-maya-bay-thailand-SEETHAILAND0717.jpg?itok=xzxvIwLT" style="width:100%"><!--thailand-->
+          <img src="https://253qv1sx4ey389p9wtpp9sj0-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/Bangkok_Thailand_HERO_GettyImages_HERO_1920x1280.jpg" style="width:100%"><!--thailand-->
+          <img src="https://d2ty3p0lzh1wfl.cloudfront.net/safetyhub_images/Turkey/turkey-mosque.jpg" style="width:100%"><!--turkey-->
+          <img src="https://img.jakpost.net/c/2019/03/19/2019_03_19_67991_1552969698._large.jpg" style="width:100%"><!--bali, indonesia-->
+          <img src="https://storage.googleapis.com/karmagroup-d66ca.appspot.com/karmagroupblogcdn/2018/09/mont-st-michel-karma-group-940x630.jpg" style="width:100%"><!--normandy, france-->
+          <img src="https://cdn.japantimes.2xx.jp/wp-content/uploads/2018/02/n-lgbt-z-20180215-870x580.jpg" style="width:100%"><!--Fukuoka, japan-->
+          <img src="https://www.hawaiimagazine.com/sites/default/files/field/image/kaanapali.jpg" style="width:100%"><!--Maui, Hawaii-->
+          <img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20190423174811/Kilchurn-Castle-sunrise-Scotland.jpg" style="width:100%"><!--scotland-->
+
+
         </div>
         <div class="column1">
           <img src="https://www.tripsavvy.com/thmb/Cxhfj8XgxjjYlZhExMSbP_okBto=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/summer-at-the-beach-591648687-5b6b9479c9e77c005054be22.jpg" style="width:100%"> <!-- Golden Gate Bridge in San Fransico, California -->
@@ -715,10 +803,7 @@ img {vertical-align: middle;}
       </form>
     </div>
 
-    <div id="PYT" class="tabcontent">
-      <h3>PLAN YOUR TRIP </h3>
-      <p>London is the capital city of England.</p>
-    </div>
+
 
     <div id="SPAIN" class="tabcontent">
       <h1><center>SPAIN</center></h1>
@@ -769,39 +854,60 @@ img {vertical-align: middle;}
             <dd style="font:Verdana;">The Royal Palace is one of the top tourist attractions in Madrid. It is the official residence for the Royal family, but these days they only use it for state ceremonies. The rest of the time its open to the public. Otherwise known in Spanish as the Palacio Real, the Royal Palace was built during the 18th and 19th centuries, and is a monumental building.
             <a href="https://entradas.patrimonionacional.es/en-GB/informacion-recinto/6/palacio-real-de-madrid#up"target="_blank">Click here to buy tickets!</a>
             <br>
-            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5889953868714!2d-3.7165006847946693!3d40.41795497936503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287e7da4a9c1%3A0x2e7fec79d6ce4851!2sRoyal+Palace+of+Madrid!5e0!3m2!1sen!2sus!4v1562855286021!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe></center></dd>
+            <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5889953868714!2d-3.7165006847946693!3d40.41795497936503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287e7da4a9c1%3A0x2e7fec79d6ce4851!2sRoyal+Palace+of+Madrid!5e0!3m2!1sen!2sus!4v1562855286021!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
+            <div style= "padding-left:200px;"><img src="https://upload.wikimedia.org/wikipedia/commons/3/34/The_Royal_Palace_of_Madrid.png" width="565px" height="450px" frameborder="0" style="border:0;"></div></div></dd>
             <br>
             <dt><strong>Museo del Prado:</strong></dt>
             <dd>The Prado has one of the largest art collections in the world, and is best known for its diverse assortment of works by Velasquez, Goya and El Greco.
             <a href="https://www.museodelprado.es/en/visit-the-museum"target="_blank">Click here to buy tickets!</a>
             <br>
-            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.777402082395!2d-3.694315784794782!3d40.41378177936551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289d66d8a2ed%3A0x1094f07d93ad885a!2sMuseo+Nacional+del+Prado!5e0!3m2!1sen!2sus!4v1562855220418!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
-            <!-- </br> -->
+            <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.777402082395!2d-3.694315784794782!3d40.41378177936551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289d66d8a2ed%3A0x1094f07d93ad885a!2sMuseo+Nacional+del+Prado!5e0!3m2!1sen!2sus!4v1562855220418!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div style= "padding-left:200px;"><img src="https://www.spaintraveltourism.com/wp-content/uploads/2018/01/museo-del-prado-madrid-spain-travel-tourism.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
             </dd>
             <dt><strong>Plaza Mayor:</strong></dt>
             <dd>The Plaza Mayor, a grand arcaded square in the center of Madrid is very popular with tourists and locals alike.The symmetrical rectangular square features a uniform architecture. The name of the plaza has changed over time. Originally it was called the "Plaza del Arrabal" but became known as the "Plaza Mayor". It's free to roam around and there are restaurants around the plaza to eat.</dd>
-            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1518.8527286592712!2d-3.7082802918377653!3d40.41537539484135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287ed85fe0d9%3A0xd202c4f0d67625e8!2sPlaza+Mayor%2C+Madrid%2C+Spain!5e0!3m2!1sen!2sus!4v1562855407683!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+            <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1518.8527286592712!2d-3.7082802918377653!3d40.41537539484135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287ed85fe0d9%3A0xd202c4f0d67625e8!2sPlaza+Mayor%2C+Madrid%2C+Spain!5e0!3m2!1sen!2sus!4v1562855407683!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div style= "padding-left:200px;"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Plaza_Mayor_de_Madrid_06.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
             <dt><strong>Puerta del Sol:</strong></dt>
             <dd>Puerta del Sol’s third and largest statue is found in the centre of the square and depicts King Charles III of Spain on horseback. During his reign, the monarch introduced so many progressive reforms and gave the city such a makeover that he earned the moniker Madrid’s best mayor.The square also contains the famous clock whose bells mark the traditional eating of the Twelve Grapes and the beginning of a new year. It's free to roam and has many stores around the plaza to shop at.
-            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.636541019766!2d-3.7056720847947675!3d40.41690187936512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422880a07d7dc7%3A0x694aee57da1dc679!2sPuerta+del+Sol%2C+Madrid%2C+Spain!5e0!3m2!1sen!2sus!4v1562856847854!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+            <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.636541019766!2d-3.7056720847947675!3d40.41690187936512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422880a07d7dc7%3A0x694aee57da1dc679!2sPuerta+del+Sol%2C+Madrid%2C+Spain!5e0!3m2!1sen!2sus!4v1562856847854!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div style= "padding-left:200px;"><img src="https://e00-elmundo.uecdn.es/elmundo/imagenes/2013/09/29/madrid/1380445268_0.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+            </dd>
             <dt><strong>Seville Cathedral:</strong></dt>
             <dd>The Seville Cathedral is the largest gothic Cathedral in the world. It was built to demonstrate the city's wealth, as it had become a major trading center in the years after the Reconquista in 1248. In July 1401, city leaders decided to build a new cathedral to replace the grand mosque that served as the cathedral until then.
             <a href="https://www.lacatedraldesevilla.org/en/index.html"target="_blank">Click here to buy tickets!</a>
             <br>
-            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.169453696212!2d-5.995295484892488!3d37.385824679832126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1755b54781%3A0xe49da05de71e6de5!2sCatedral+de+Sevilla!5e0!3m2!1sen!2sus!4v1562857103665!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+            <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.169453696212!2d-5.995295484892488!3d37.385824679832126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1755b54781%3A0xe49da05de71e6de5!2sCatedral+de+Sevilla!5e0!3m2!1sen!2sus!4v1562857103665!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div style= "padding-left:200px;"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Sevilla_Cathedral_-_Southeast.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+            </dd>
             <dt><strong>Basilica La Sagrada Familia</strong></dt>
             <dd>The Temple Expiatori de la Sagrada Família is a large unfinished Roman Catholic church in Barcelona. Designed by Catalan architect Antoni Gaudí, his work on the building is part of a UNESCO World Heritage Site. In November 2010, Pope Benedict XVI consecrated the church and proclaimed it a minor basilica. It has been under construction for over a century.
             <a href="https://sagradafamilia.org/en/tickets"target="_blank">Click here to buy tickets!</a>
-            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.6397231988503!2d2.172167115238452!3d41.403629879262674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2dcd83dfb93%3A0x9bd8aac21bc3c950!2sLa+Sagrada+Familia!5e0!3m2!1sen!2sus!4v1562857810025!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+            <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.6397231988503!2d2.172167115238452!3d41.403629879262674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2dcd83dfb93%3A0x9bd8aac21bc3c950!2sLa+Sagrada+Familia!5e0!3m2!1sen!2sus!4v1562857810025!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div style= "padding-left:200px;"><img src="https://archinect.imgix.net/uploads/44/4451792db6258303976e48e90c171963.jpg?auto=compress%2Cformat" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+            </dd>
             <dt><strong>Parque Guell</strong></dt>
             <dd>Park Guell is one of the most beautiful icons of the city. It's a work of Antoni Gaudí located in the upper part of Barcelona, which has wonderful views of the city. You can enjoy a fantastic green walk surrounded by a modernist works. You can also visit Gaudi's House Museum within the park.
             <a href="https://www.tripadvisor.com/Attraction_Review-g187497-d246190-Reviews-Gaudi_House_Museum-Barcelona_Catalonia.html"target="_blank">Click here to visit the museum!</a>
-            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.1392965394143!2d2.1505058152388403!3d41.41449477926169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2ae52d441ab%3A0x899a0ba01aaace58!2sPark+G%C3%BCell!5e0!3m2!1sen!2sus!4v1562858914535!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+            <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.1392965394143!2d2.1505058152388403!3d41.41449477926169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2ae52d441ab%3A0x899a0ba01aaace58!2sPark+G%C3%BCell!5e0!3m2!1sen!2sus!4v1562858914535!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div style= "padding-left:200px;"><img src="https://barcelonando.com/wp-content/uploads/2018/07/park-guell.jpeg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+            </dd>
             <dt><strong>Aqueduct of Segovia</strong></dt>
             <dd>The Aqueduct of Segovia was built during the second half of the 1st century A.D. under the rule of the Roman Empire and supplied water from the Frío River to the city into the 20th century. The remaining portion of the structure stands 28.5 meters tall at its maximum height and nearly 6 additional meters deep in the main section.
-            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.5470313220103!2d-4.119247434776962!3d40.947593679307005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd413edd1a42faab%3A0x1c54c7c2757b5e2c!2sAqueduct+of+Segovia!5e0!3m2!1sen!2sus!4v1562859745943!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+            <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.5470313220103!2d-4.119247434776962!3d40.947593679307005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd413edd1a42faab%3A0x1c54c7c2757b5e2c!2sAqueduct+of+Segovia!5e0!3m2!1sen!2sus!4v1562859745943!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div style= "padding-left:200px;"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzLzgzODk4NDhhNWY2ZjliNmNmY18xMzIyNzE4NjMxM19hZmZiOTdlNjdjX3ouanBnIl0sWyJwIiwidGh1bWIiLCJ4MzkwPiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXV0" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+            </dd>
 
-    </div>
+          </div>
+
 
     <div id="FRANCE" class="tabcontent">
       <h1><center>FRANCE</center></h1>
@@ -854,90 +960,300 @@ img {vertical-align: middle;}
       <dd>In 1889, Paris hosted an World’s Fair to mark the 100-year anniversary of the French Revolution. More than 100 artists submitted competing plans for a monument to be built on the Champ-de-Mars, located in central Paris, and serve as the exposition’s entrance. The commission was granted to Eiffel et Compagnie, a consulting and construction firm owned by the acclaimed bridge builder, architect and metals expert Alexandre-Gustave Eiffel.
       <a href= "https://ticket.toureiffel.fr/index-css5-sete-lgen-pg1.html#_ga=2.174774690.187586482.1562865463-1797234606.1562865463"target="_blank">Click here to visit the tower!</a>
       <br>
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10500.90203941118!2d2.2913514888427806!3d48.85391001859102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6701f7e8337b5%3A0xa2cb58dd28914524!2sEiffel+Tower%2C+Paris%2C+France!5e0!3m2!1sen!2sus!4v1562865569215!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
-      </br></dd>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10500.90203941118!2d2.2913514888427806!3d48.85391001859102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6701f7e8337b5%3A0xa2cb58dd28914524!2sEiffel+Tower%2C+Paris%2C+France!5e0!3m2!1sen!2sus!4v1562865569215!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://afthailande.org/wp-content/uploads/2017/12/paris.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
       <dt><strong>Louvre Museum</strong></dt>
       <dd>The Louvre was originally built as a fortress in 1190, but was reconstructed in the 16th century to serve as a royal palace. It is the world's largest art museum. It is home to the Mona Lisa, the Code of Hammurabi, and the Venus de Milo. It has  a collection that spans work from ancient civilizations to the mid-19th century.
       <a href="https://www.ticketlouvre.fr/louvre/b2c/index.cfm/home"target="_blank">Click here to buy your tickets!</a>
       <br>
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8741023651387!2d2.335455315509727!3d48.86061107928771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sLouvre+Museum!5e0!3m2!1sen!2sus!4v1562866152533!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
-      </br></dd>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8741023651387!2d2.335455315509727!3d48.86061107928771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sLouvre+Museum!5e0!3m2!1sen!2sus!4v1562866152533!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://media.architecturaldigest.com/photos/5900cc370638dd3b70018b33/16:9/w_1280,c_limit/Secrets%2520of%2520Louvre%25201.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <dt><strong>Arc de Triomphe</strong></dt>
       <dd>Arc de Triomphe is a massive triumphal arch and one of the world’s best-known commemorative monuments. It stands at the centre of the Place Charles de Gaulle, the western terminus of the avenue des Champs-Élysées. Napoleon I commissioned the triumphal arch in 1806—after his great victory at the Battle of Austerlitz —to celebrate the military achievements of the French armies. The arch, designed by Jean-François-Thérèse Chalgrin, is 164 feet high and 148 feet wide. It sits in a circular plaza from which 12 grand avenues radiate, forming a star.
       <a href="http://www.paris-arc-de-triomphe.fr/en/Prepare-for-your-visit/Practical-information#tarifs"target="_blank">Prepare for your visit by checking this website out!</a>
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.18344976472!2d2.2928269155102368!3d48.873779279288975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fec746d386b%3A0x8710a9c7965c5fa9!2sL&#39;Arc+de+Triomphe+de+l&#39;Etoile%2C+75017+Paris%2C+France!5e0!3m2!1sen!2sus!4v1562866587672!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.18344976472!2d2.2928269155102368!3d48.873779279288975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fec746d386b%3A0x8710a9c7965c5fa9!2sL&#39;Arc+de+Triomphe+de+l&#39;Etoile%2C+75017+Paris%2C+France!5e0!3m2!1sen!2sus!4v1562866587672!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://cdn-imgix.headout.com/tour/13667/TOUR-IMAGE/795a8471-490e-48a6-8895-fa481f5b6e2e-7504-paris-skip-the-line--arc-de-triomphe-rooftop-tickets-05.jpg?w=900" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <dt><strong>Palace of Versailles</strong></dt>
       <dd>Palace of Versailles, former French royal residence and centre of government, now a national landmark. It is located in the city of Versailles, Yvelines department, Île-de-France region, northern France, 10 miles west-southwest of Paris. As the centre of the French court, Versailles was one of the grandest theatres of European absolutism.
       <a href="http://en.chateauversailles.fr/plan-your-visit/tickets-and-prices"target="_blank">Click here to get your tickets!</a>
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.796371728445!2d2.118166715507564!3d48.804864879282306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67d94d7b14c75%3A0x538fcc15f59ce8f!2sPalace+of+Versailles!5e0!3m2!1sen!2sus!4v1562868045211!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.796371728445!2d2.118166715507564!3d48.804864879282306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67d94d7b14c75%3A0x538fcc15f59ce8f!2sPalace+of+Versailles!5e0!3m2!1sen!2sus!4v1562868045211!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://www.nationalgeographic.com/content/dam/travel/2017-digital/Versailles/Versailles_p262.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <dt><strong>French Rivera</strong></dt>
       <dd>The French Riviera, also known as the Côte d’Azur, is a dreamy French region that extends east along the coast from Menton and Monaco to Théoule sur Mer and up into the Southern Alps. The Riviera contains several cities (Nice and Cannes among them), 14 natural parks, Roman ruins, medieval villages and whale watching just off shore.
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d742263.193202726!2d5.9603083695709165!3d43.38819690991362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cebc738732d97f%3A0x594966412c5651c0!2sFrench+Riviera%2C+France!5e0!3m2!1sen!2sus!4v1562871436695!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d742263.193202726!2d5.9603083695709165!3d43.38819690991362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cebc738732d97f%3A0x594966412c5651c0!2sFrench+Riviera%2C+France!5e0!3m2!1sen!2sus!4v1562871436695!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://experienceluxury.co/wp-content/uploads/2017/06/shutterstock_206806969.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <dt><strong>Mont Blanc</strong></dt>
       <dd> Mont Blanc is the highest mountain in the Alps and the highest in Europe west of the Caucasus peaks of Russia and Georgia. It rises 4,808 m above sea level and is ranked 11th in the world in topographic prominence. The mountain stands in a range called the Graian Alps, between the regions of Aosta Valley, Italy, and Savoie and Haute-Savoie, France.
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11114.936578545392!2d6.879064137027261!3d45.8566198157187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47894f66f2e1ac3d%3A0x90db2377ade4f72a!2sMont+Blanc+du+Tacul!5e0!3m2!1sen!2sus!4v1562871604337!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11114.936578545392!2d6.879064137027261!3d45.8566198157187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47894f66f2e1ac3d%3A0x90db2377ade4f72a!2sMont+Blanc+du+Tacul!5e0!3m2!1sen!2sus!4v1562871604337!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://www.swissinfo.ch/image/45045480/3x2/640/426/437ec96cbbccb989ba644f0cf8936b4c/PM/mt-blanc.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
     </div>
     <div id="ITALY" class="tabcontent">
       <h1><center>ITALY</center></h1>
       <h3 style="font:inherit; align: left;">Italy occupies a peninsula that juts deep into the Mediterranean Sea. Italy is often described as a country shaped like a boot. At its broad top stand the Alps, which are among the world’s most rugged mountains. Italy’s highest points are along Monte Rosa, which peaks in Switzerland, and along Mont Blanc, which peaks in France. The western Alps overlook a landscape of Alpine lakes and glacier-carved valleys that stretch down to the Po River and the Piedmont. Tuscany, to the south of the cisalpine region, is perhaps the country’s best-known region. South of Rome the Apennines narrow and are flanked by two wide coastal plains, one facing the Tyrrhenian Sea and the other the Adriatic Sea. Much of the lower Apennine chain is near-wilderness, hosting a wide range of species rarely seen elsewhere in western Europe, such as wild boars, wolves, asps, and bears. The southern Apennines are also tectonically unstable, with several active volcanoes, including Vesuvius, which from time to time belches ash and steam into the air above Naples and its island-strewn bay. At the bottom of the country, in the Mediterranean Sea, lie the islands of Sicily and Sardinia. </h3>
+
+      <!-- Slideshow-->
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <center><img src = "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F1600x1000%2Fpublic%2F1518550473%2Famalfi-coast-positano-italy-UNESCOITALY0213.jpg%3Fitok%3Dj_2wwa-c&q=85" style="width:100%"></center>
+          <div class="text">Amalfi Coast</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="https://www.roadaffair.com/wp-content/uploads/2017/09/colosseum-rome-italy-shutterstock_433413835-1024x683.jpg" style="width:100%">
+          <div class="text" style="color: black;">The Colosseum</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="https://blog.goway.com/globetrotting/wp-content/uploads/2018/01/Trevi-Fountain-Rome-Italy_268734461.jpg?x95206" style="width:100%;">
+          <div class="text" style="color:black;">Trevi Fountain</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="https://pasadena.edu/academics/study-abroad/images/florencex800.png" style="width:100%;">
+          <div class="text" style="color:black;">Ponte Vecchio</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+      <!-- end of slideshow -->
+
+
+
       <h2><center> TOP THINGS TO DO IN ITALY:</center></h2>
       <dt><strong>St. Peter's Basilica</strong></dt>
       <dd>St. Peter’s Basilica present basilica of St. Peter in Vatican City (an enclave in Rome), begun by Pope Julius II in 1506 and completed in 1615 under Paul V. It is designed as a three-aisled Latin cross with a dome at the crossing, directly above the high altar, which covers the shrine of St. Peter the Apostle. The edifice—the church of the popes—is a major pilgrimage site.
       <a href="http://www.st-peters-basilica-tickets.com/"target="_blank">Click here to visit the museum!</a>
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5939.134158108291!2d12.449559330638865!3d41.90216670000736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6061b7149b59%3A0x724bf077cd875283!2sSt.+Peter&#39;s+Basilica!5e0!3m2!1sen!2sus!4v1562940261101!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5939.134158108291!2d12.449559330638865!3d41.90216670000736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6061b7149b59%3A0x724bf077cd875283!2sSt.+Peter&#39;s+Basilica!5e0!3m2!1sen!2sus!4v1562940261101!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://cache-graphicslib.viator.com/graphicslib/page-images/742x525/300559_Viator_Shutterstock_167340.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <dt><strong>Roman Colosseum</strong></dt>
       <dd> The construction of the Colosseum was begun in 72 CE in the reign of Vespasian on the site that was once the lake and gardens of Emperor Nero’s Golden House. The Roman Colosseum is the most famous monument to have survived from the classical world. It was built nearly two thousand years ago for the purpose of hosting violent gladiator games. Thousands of men and animals fought for their lives in the sandy arena.
       <a href="https://www.coopculture.it/en/colosseo-e-shop.cfm"target="_blank">Click here to buy your tickets!</a>
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.123073808989!2d12.490042215255027!3d41.890210179221135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColosseum!5e0!3m2!1sen!2sus!4v1562940807720!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.123073808989!2d12.490042215255027!3d41.890210179221135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColosseum!5e0!3m2!1sen!2sus!4v1562940807720!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://mymodernmet.com/wp/wp-content/uploads/2019/05/colosseum-facts-3.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <dt><strong>Trevi Fountain</strong></dt>
       <dd>Trevi Fountain is the most beautiful fountain in Rome.Measuring some 20 meters in width by 26 meters in height, Trevi Fountain is also the largest fountain in the city.The origins of the fountain go back to the year 19 B.C., in which period the fountain formed the end of the Aqua Virgo aqueduct.The first fountain was built during the Renaissance, under the direction of Pope Nicholas V.
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.185908852081!2d12.481422671283722!3d41.90081698612629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6053278340d5%3A0xf676f1e1cc02bbb6!2sTrevi+Fountain!5e0!3m2!1sen!2sus!4v1562941006718!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.185908852081!2d12.481422671283722!3d41.90081698612629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6053278340d5%3A0xf676f1e1cc02bbb6!2sTrevi+Fountain!5e0!3m2!1sen!2sus!4v1562941006718!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://www.wantedinrome.com/i/preview/storage/uploads/2018/08/trevi-fountain-tourists-fined-rome.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <dt><strong>Galleria Borghese</strong></dt>
       <dd>The Galleria Borghese is housed in the Villa Borghese.  It is one of the most renowned art museums in the world. The building’s gardens are also a popular attraction and the third largest park in Rome.
       <a href="http://www.borghesegallerytickets.com/"target="_blank">Click here to visit the museum!</a>
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.1416103424676!2d12.480552182962136!3d41.9113144148458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61021d3c538f%3A0xeb3d7c3dff838e44!2sVilla+Borghese!5e0!3m2!1sen!2sus!4v1562942304707!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.1416103424676!2d12.480552182962136!3d41.9113144148458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61021d3c538f%3A0xeb3d7c3dff838e44!2sVilla+Borghese!5e0!3m2!1sen!2sus!4v1562942304707!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Galleria_borghese_facade.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <dt><strong>Roman Forum</strong></dt>
       <dd>The Roman Forum was a site located at the center of the ancient city of Rome and the location of important religious, political and social activities. Historians believe people first began publicly meeting in the open-air Forum around 500 B.C., when the Roman Republic was founded. The rectangular-shaped area, sited on low-lying land between Palatine Hill and Capitoline Hill, was home to many of the ancient city’s most impressive temples and monuments. Today, the Roman Forum is one of the most famous tourist sites in the world, attracting more than 4.5 million.
       <a href="https://www.tripadvisor.com/AttractionProductReview-g187791-d12934912-Explore_Ancient_Rome_Ultimate_Roman_Forum_and_Palatine_Hill-Rome_Lazio.html"target="_blank">Buy your tickets here for a bundle!</a>
-      <center> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.018357929971!2d12.483136315255132!3d41.89246227922098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b383a9cdef%3A0xfa914007c0ec7de6!2sRoman+Forum!5e0!3m2!1sen!2sus!4v1562942646812!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.018357929971!2d12.483136315255132!3d41.89246227922098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b383a9cdef%3A0xfa914007c0ec7de6!2sRoman+Forum!5e0!3m2!1sen!2sus!4v1562942646812!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://theromanguy.com/wp-content/uploads/Roman-Forum.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
       </dd>
       <dt><strong>Sistine Chapel</strong></dt>
       <dd> The chapel’s exterior is drab and unadorned, but its interior walls and ceiling are decorated with frescoes by many Florentine Renaissance masters. The frescoes on the side walls of the chapel were painted from 1481 to 1483.The most important artworks in the chapel are the frescoes by Michelangelo on the ceiling and on the west wall behind the altar. The frescoes on the ceiling, collectively known as the Sistine Ceiling, were commissioned by Pope Julius II in 1508 and were painted by Michelangelo in the years from 1508 to 1512. They depict incidents and personages from the Old Testament. The Last Judgment fresco on the west wall was painted by Michelangelo for Pope Paul III in the period from 1534 to 1541. These two gigantic frescoes are among the greatest achievements of Western painting. A 10-year-long cleaning and restoration of the Sistine Ceiling completed in 1989 removed several centuries’ accumulation of dirt, smoke, and varnish. Cleaning and restoration of the Last Judgment was completed in 1994.
       <a href="https://www.vaticantickets.org/home/?utm_expid=74432767-5.7WylDYttS1OfvqrVvwSozQ.1&utm_referrer=https%3A%2F%2Fwww.bing.com%2Fsearch%3Fq%3Dsistine%2520chapel%2520tickets%26qs%3Dn%26form%3DQBRE%26sp%3D-1%26ghc%3D1%26pq%3Dsistine%2520chapel%2520ticket%26sc%3D8-21%26sk%3D%26cvid%3DE4DE2A289A6A4636B624AA5A74F35057"target="_blank">Click here to get your tickets!</a>
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.530799797718!2d12.45229481525552!3d41.90294677922017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6065c523afdb%3A0xab16c8877fb53e22!2sSistine+Chapel!5e0!3m2!1sen!2sus!4v1562944095705!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.530799797718!2d12.45229481525552!3d41.90294677922017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6065c523afdb%3A0xab16c8877fb53e22!2sSistine+Chapel!5e0!3m2!1sen!2sus!4v1562944095705!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="http://www.museivaticani.va/content/dam/museivaticani/immagini/collezioni/musei/cappella_sistina/00_00_Cappella_Sistina.png/_jcr_content/renditions/cq5dam.web.1280.1280.png" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
       </dd>
       <dt><strong>Piazza San Marco</strong></dt>
       <dd>Piazza San Marco was established during the ninth century, but adopted its current size and form in 1177, and was paved one hundred years later. It is a plaza where one can hear the clock on the hour and see a bunch of pigeons. It is a central point of Venice.
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1399.884569901474!2d12.337533108206078!3d45.43415489477514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1d77a81271d%3A0x36aff9788aefe39!2sPiazza+San+Marco%2C+30100+Venezia+VE%2C+Italy!5e0!3m2!1sen!2sus!4v1562945355885!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1399.884569901474!2d12.337533108206078!3d45.43415489477514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1d77a81271d%3A0x36aff9788aefe39!2sPiazza+San+Marco%2C+30100+Venezia+VE%2C+Italy!5e0!3m2!1sen!2sus!4v1562945355885!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://www.suiteinvenice.com/wp/wp-content/uploads/2014/06/27511022_l.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <dt><strong>Rialto Bridge</strong></dt>
       <dd>Rialto Bridge, stone-arch bridge crossing over the narrowest point of the Grand Canal in the heart of Venice. Built in the closing years of the 16th century, the Rialto Bridge is the oldest bridge across the canal and is renowned as an architectural and engineering achievements of the Renaissance. It was designed and built by Antonio da Ponte and his nephew, Antonio Contino, following a design competition in the city.
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.5791573792612!2d12.333709315380807!3d45.43798417910056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1c7faa33a3b%3A0x732011a1298ecc89!2sRialto+Bridge!5e0!3m2!1sen!2sus!4v1562945717199!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.5791573792612!2d12.333709315380807!3d45.43798417910056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1c7faa33a3b%3A0x732011a1298ecc89!2sRialto+Bridge!5e0!3m2!1sen!2sus!4v1562945717199!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://images.icanvas.com/2d/TEO239.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <dt><strong>Piazzale Michealangelo</strong></dt>
       <dd>This Florentine piazza was designed by architect Giuseppe Poggi and built in 1869 on a hill just south of the historic center, during the redevelopment of Oltrarno, the South bank of the Arno river. It has a panoramic view of the city.
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.4782008981747!2d11.262867415320429!3d43.76293137911762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a53f743663843%3A0xb4f768e1820d5119!2sPiazzale+Michelangelo!5e0!3m2!1sen!2sus!4v1562945955739!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></dd>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.4782008981747!2d11.262867415320429!3d43.76293137911762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a53f743663843%3A0xb4f768e1820d5119!2sPiazzale+Michelangelo!5e0!3m2!1sen!2sus!4v1562945955739!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://oddviser.com/photo/idea/1600/881.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <dt><strong>Florence Accademia Gallery</strong></dt>
       <dd> It houses the "David" of Michelangelo sculpted between 1501-1504 to be an outside decoration of the Cathedral of Florence, it became instead a symbol of the Florentine State commitment to freedom and independence, as well as a symbol of the Medici's defeat in 1494. It still personifies energy, vigor and courage, symbolizing the whole mankind fight for survival. His anatomy, later reproduced by Michelangelo’s contemporaries, was carefully depicted, thanks to the in-depth studies carried out by the great artist.
       <a href="http://www.accademia-tickets.com/"target="_blank">Buy tickets to the museum!</a>
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.808663387183!2d11.256979415320943!3d43.776830479117216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a541b5298099d%3A0x913850ffe35c42ed!2sGalleria+dell&#39;Accademia!5e0!3m2!1sen!2sus!4v1562946423311!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.808663387183!2d11.256979415320943!3d43.776830479117216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a541b5298099d%3A0x913850ffe35c42ed!2sGalleria+dell&#39;Accademia!5e0!3m2!1sen!2sus!4v1562946423311!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://www.visittuscany.com/shared/visittuscany/immagini/accademia-firenze-david-michelangelo.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
       </dd>
       <dt><strong>Piazza dei Miracoli</strong></dt>
       <dd>It is one of the most striking squares in the world, a masterful expression of human creativity. Since 1982 it has been a UNESCO World Heritage Site. It was renamed the Piazza dei Miracoli (“Square of Miracles”) by Gabriele d’Annunzio due to the sheer amount of masterpieces it hosts, all of which are in absolute harmony. Standing beside the greenest of lawns, the Cathedral, the Leaning Tower, the Baptistery and Monumental Cemetery are resplendent in their beauty vaunting a curious architectural perfection that combines the triumphant Pisan Romanesque with classical, early Christian, Lombard and Eastern motifs.
       <a href="http://www.towerofpisa.org/tickets/"target="_blank">Click here to visit the Leaning Tower!</a>
-      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.403114494548!2d10.394408315319009!3d43.72295197911896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d591a6c44e88cd%3A0x32eca9b1d554fc03!2sLeaning+Tower+of+Pisa!5e0!3m2!1sen!2sus!4v1562946675594!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.403114494548!2d10.394408315319009!3d43.72295197911896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d591a6c44e88cd%3A0x32eca9b1d554fc03!2sLeaning+Tower+of+Pisa!5e0!3m2!1sen!2sus!4v1562946675594!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://www.tgtourism.tv/wp-content/uploads/2017/04/Torre-di-Pisa.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
       </dd>
       <dt><strong>Amalfi Coast</strong></dt>
       <dd>The Amalfi Coast is a stretch of coastline on the northern coast of the Salerno Gulf on the Tyrrhenian Sea, located in the Province of Salerno of southern Italy. The Amalfi Coast is a popular tourist destination for the region and Italy as a whole, attracting thousands of tourists annually. In 1997, the Amalfi Coast was listed as a UNESCO World Heritage Site.
       <a href="https://www.tripadvisor.com/Attractions-g187779-Activities-c42-Amalfi_Coast_Province_of_Salerno_Campania.html"target="_blank">Click here to pick a tour!</a>
+      <br>
       <div class="row">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.840487628038!2d14.600590365212502!3d40.63339962934056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b95adc34c71a1%3A0x4ce8cf14c94f4cdc!2sAmalfi+Coast!5e0!3m2!1sen!2sus!4v1562946794727!5m2!1sen!2sus" width="600px" height="450px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
-      <div style= "padding-left:300px;"><img src="https://d1bv4heaa2n05k.cloudfront.net/user-images/1535025032242/shutterstock-1142567063_main_1535025093424.jpeg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+      <div style= "padding-left:100px;"><img src="https://d1bv4heaa2n05k.cloudfront.net/user-images/1535025032242/shutterstock-1142567063_main_1535025093424.jpeg" width="595px" height="450px" frameborder="0" style="border:0;"></div>
       </div>
       </dd>
     </div>
 
 
     <div id="ENGLAND" class="tabcontent">
+      <h1><center>ENGLAND</center></h1>
+      <h3 style="font:inherit; align: left;">England is part of the United Kingdom. It shares land borders with Wales to the west and Scotland to the north. The Irish Sea lies west of England and the Celtic Sea to the southwest. The English Channel separates England from continental Europe.Despite the political, economic, and cultural legacy that has secured the perpetuation of its name, England no longer officially exists as a governmental or political unit—unlike Scotland, Wales, and Northern Ireland, which all have varying degrees of self-government in domestic affairs. Wimbledon is hosted in England. In the early 19th century, England became the epicentre of a worldwide Industrial Revolution and soon the world’s most industrialized country. No place in England is more than 75 miles from the sea, and even the farthest points in the country are no more than a day’s journey by road or rail from London.  </h3>
 
+
+      <!-- Slideshow-->
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <center><img src = "https://www.tripsavvy.com/thmb/Cqb1yFB9_BjfCHYvCCqpauxq5FQ=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/palace-of-westminster-in-london-at-sunset--872038342-5b9b082b46e0fb00501f5ddd.jpg" style="width:100%"></center>
+          <div class="text">Big Ben</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="https://s1.1zoom.me/b5050/232/England_Bridges_Tower_440891_3840x2400.jpg" style="width:100%">
+          <div class="text" style="color: black;">Tower Bridge</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/72/f4/d0.jpg" style="width:100%;">
+          <div class="text" style="color:black;">Buckingham Palace</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="https://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/United%20Kingdom/London/london-aerial-thames-guide-xlarge.jpg" style="width:100%;">
+          <div class="text" style="color:black;">London</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+      <!-- end of slideshow -->
+
+
+
+      <h2><center> TOP THINGS TO DO IN ENGLAND:</center></h2>
+      <dt><strong>National Gallery</strong></dt>
+      <dd>The National Gallery was founded in 1824, it houses a collection of over 2,300 paintings dating from the mid-13th century to 1900. Admission is free.
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.2336666424803!2d-0.1304876843858234!3d51.508928979635314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ce176ac979%3A0x42af85654e23a0b4!2sThe+National+Gallery!5e0!3m2!1sen!2sus!4v1563197334937!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://www.ceeh.es/wp-content/uploads/2018/03/P3598_005_pr_.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <dt><strong>Buckingham Palace</strong></dt>
+      <dd>Buckingham Palace has served as the official London residence of the UK’s sovereigns since 1837 and today is the administrative headquarters of the Monarch. Tours in 2019 are only available July 20th through September 29th. In front of the palace is the Victoria Memorial.
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459680494086!2d-0.1440786843861313!3d51.50136397963411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham+Palace!5e0!3m2!1sen!2sus!4v1563197771361!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/41/bb.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <dt><strong>Tower of London</strong></dt>
+      <dd>The Tower of London is a royal fortress and national landmark. Its buildings and grounds served historically as a royal palace, a political prison, a place of execution, an arsenal, a royal mint, a menagerie, and a public records office. It is located on the north bank of the River Thames, in the extreme western portion of the borough of Tower Hamlets.
+      <a href="https://www.hrp.org.uk/tower-of-london/visit/tickets-and-prices/#gs.pt59dl">Click here to visit the Tower!</a>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.2781743883197!2d-0.0781379843858658!3d51.50811237963528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760349331f38dd%3A0xa8bf49dde1d56467!2sTower+of+London!5e0!3m2!1sen!2sus!4v1563198071325!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/38/d0/fa.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <dt><strong>Natural History Museum</strong></dt>
+      <dd>The Natural History Museum is one of three major museums on Exhibition Road in South Kensington, the others being the Science Museum and the Victoria and Albert Museum.The museum is home to life and earth science specimens comprising some 80 million items within five main collections: botany, entomology, mineralogy, paleontology and zoology. The admission is free.
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.8993225436557!2d-0.17855588438632022!3d51.496714979633346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760542e6182f3f%3A0x7bb7e385c39764c4!2sNatural+History+Museum!5e0!3m2!1sen!2sus!4v1563198469080!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://www.nhm.ac.uk/content/dam/nhmwww/support-us/make-a-donation/building-facade-two-column.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <dt><strong>Windsor Castle</strong></dt>
+      <dd>Windsor Castle is a royal residence. It was the host for the recent royal wedding, Harry and MeghanThe castle occupies 13 acres of ground above the south bank of the River Thames. Windsor Castle comprises two quadrilateral-shaped building complexes, or courts, that are separated by the Round Tower.
+      <a href="https://www.windsor.gov.uk/things-to-do/windsor-castle-p43983">Click here to visit the castle!</a>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.59793816088!2d-0.6065913843868481!3d51.483893979631254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876113b36b5e89b%3A0xce2f4846c5f7e1e5!2sWindsor+Castle!5e0!3m2!1sen!2sus!4v1563199004836!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Windsor_Castle_at_Sunset_-_Nov_2006.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <dt><strong>Big Ben</strong></dt>
+      <dd>Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London and is usually extended to refer to both the clock and the clock tower. It is currently under construction and is set to be done by 2021.
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.68056342787!2d-0.12681408438615419!3d51.50072917963407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c38c8cd1d9%3A0xb78f2474b9a45aa9!2sBig+Ben!5e0!3m2!1sen!2sus!4v1563199788584!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="http://fastphillysports.com/wp-content/uploads/2017/08/big-ben.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <dt><strong>Westminster Abbey</strong></dt>
+      <dd>Westminster Abbey was formally titled the Collegiate Church of Saint Peter at Westminster. It is a large, mainly Gothic abbey church in the City of Westminster, London, England, just to the west of the Palace of Westminster. It is one of the United Kingdom's most notable religious buildings and the traditional place of coronation and burial site for English and, later, British monarchs.</dd>
+      <a href="https://www.westminster-abbey.org/visit-us/prices-entry-times">Click here to get your tickets!</a>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.8770029582683!2d-0.12866924173563749!3d51.49938154490848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c4ba43352f%3A0xda8effa2059b537a!2sWestminster+Abbey!5e0!3m2!1sen!2sus!4v1563200008149!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://assets.londonist.com/uploads/2016/12/i875/westminster_abbey_jamie_koster.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
+      <dt><strong>Tower Bridge</strong></dt>
+      <dd>Tower Bridge is a combined bascule and suspension bridge in London, built between 1886 and 1894. The bridge crosses the River Thames close to the Tower of London and has become an iconic symbol of London.
+      <a href="https://www.towerbridge.org.uk/opening-hours/">Click here to get your tickets!</a>
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.4229328064635!2d-0.07754518438597274!3d51.50545637963479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487603438b65db49%3A0x9e78421a085a6f2d!2sTower+Bridge!5e0!3m2!1sen!2sus!4v1563200107540!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:100px;"><img src="https://secretadventures.org/images/secretadventures_img_hero_sail_throught_tower_bridge.jpg" width="595px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
     </div>
 
 
@@ -961,24 +1277,33 @@ img {vertical-align: middle;}
       <br>
       <dd><h2><u>TOP PLACES TO GO IN NEW YORK CITY</u></h2></dd>
       <dd><strong>Central Park:</strong></dd>
-      <dd style="font:Verdana;">Central Park is an urban park in Manhattan, New York City. It is located between the Upper West Side and Upper East Side, roughly bounded by Fifth Avenue on the east, Central Park West on the west, Central Park South on the south, and Central Park North on the north. Visiting Central Park was one of the highlights of a to New York City. Even the overcast skies and occasional drops of rain couldn’t detract from the beauty of New York City’s largest outdoor park space.</dd>
+      <dd style="font:Verdana;">Central Park is an urban park in Manhattan, New York City. It is located between the Upper West Side and Upper East Side, roughly bounded by Fifth Avenue on the east, Central Park West on the west, Central Park South on the south, and Central Park North on the north. Visiting Central Park was one of the highlights of a to New York City. Even the overcast skies and occasional drops of rain couldn’t detract from the beauty of New York City’s largest outdoor park space.
       <br>
-      <center><img src="https://www.planetware.com/photos-large/USNY/new-york-city-central-park-1.jpg" style="width:40%"></center>
-      <center><h4><a href="https://www.google.com/maps/place/Central+Park/@40.7828647,-73.9675438,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2589a018531e3:0xb9df1f7387a94119!8m2!3d40.7828647!4d-73.9653551"target="_blank">New York, NY</a></h4></center>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.0521000937397!2d-73.9675437845983!3d40.78286874121387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2589a018531e3%3A0xb9df1f7387a94119!2sCentral+Park!5e0!3m2!1sen!2sus!4v1563202483702!5m2!1sen!2sus" width="600px" height="475px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+  <div style= "padding-left:200px;"><img src="https://www.planetware.com/photos-large/USNY/new-york-city-central-park-1.jpg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+      </div>
+      </dd>
       <br>
       <br>
       <dd><strong>Times Square:</strong></dd>
-      <dd style="font:Verdana;">The Theater District is the teeming heart of Midtown West. In the pedestrian plazas of Times Square, costumed characters beckon to energetic crowds under the pulsing lights of towering digital billboards. Times Square in NYC is world renowned for tourist attractions for so many reasons. From fine dining and shopping to fantastic entertainment, there is something for everyone.</dd>
+      <dd style="font:Verdana;">The Theater District is the teeming heart of Midtown West. In the pedestrian plazas of Times Square, costumed characters beckon to energetic crowds under the pulsing lights of towering digital billboards. Times Square in NYC is world renowned for tourist attractions for so many reasons. From fine dining and shopping to fantastic entertainment, there is something for everyone.
       <br>
-      <center><img src="https://wp.zillowstatic.com/streeteasy/2/GettyImages-613081510-b35a8b.jpg" style="width:40%"></center>
-      <center><h4>Theater District</h4></center>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6044.278439595827!2d-73.98935742328277!3d40.75896259401721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855b8fb3083%3A0xa0f9aef176042a5c!2sTheater+District%2C+New+York%2C+NY!5e0!3m2!1sen!2sus!4v1563204112786!5m2!1sen!2sus" width="600px" height="475px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://wp.zillowstatic.com/streeteasy/2/GettyImages-613081510-b35a8b.jpg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+      </div>
+      </dd>
       <br>
       <br>
       <dd><strong>Statue of Liberty:</strong></dd>
-      <dd style="font:Verdana;">Central Park is an urban park in Manhattan, New York City. It is located between the Upper West Side and Upper East Side, roughly bounded by Fifth Avenue on the east, Central Park West on the west, Central Park South on the south, and Central Park North on the north. Visiting Central Park was one of the highlights of a to New York City. Even the overcast skies and occasional drops of rain couldn’t detract from the beauty of New York City’s largest outdoor park space.</dd>
+      <dd style="font:Verdana;">The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York, in the United States.
       <br>
-      <center><img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Statue_of_Liberty%2C_NY.jpg" style="width:40%"></center>
-      <center><h4><a href="https://www.google.com/maps/place/Statue+of+Liberty+National+Monument/@40.6892494,-74.0466891,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25090129c363d:0x40c6a5770d25022b!8m2!3d40.6892494!4d-74.0445004"target="_blank">New York, NY 10004</a></h4></center>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.3062027568185!2d-74.04668908460071!3d40.68925344694361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25090129c363d%3A0x40c6a5770d25022b!2sStatue+of+Liberty+National+Monument!5e0!3m2!1sen!2sus!4v1563205063392!5m2!1sen!2sus" width="600px" height="475px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Statue_of_Liberty%2C_NY.jpg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+      </div>
+      </dd>
       <br>
       <br>
       <dd><h2><u>THE RESTAURANTS</u></h2></dd>
@@ -1017,292 +1342,335 @@ img {vertical-align: middle;}
       <center><h4>You can check out more cultural events in NYC <a href="https://www.eventbrite.com/d/ny--new-york/cultural-events/"target="_blank">here</a></h4></center>
       <br>
       <br>
-      </div>
+    </div>
 <!-- New York City end -->
 
 <!-- New Orleans Start -->
-  <div id="NEW ORLEANS" class="tabcontent">
-    <h1><center>NEW ORLEANS</center></h1>
-    <h3>New Orleans is a city filled with friendly people, amazing food, awesome live music and memorable attractions. It’s a city where anyone can find something to enjoy, and adventures are constantly underway</h3>
-    <center><img src="https://myalternatelife.com/wp-content/uploads/2014/09/travel-fund-new-orleans.jpg" style="width:45%"></center>
-    <br>
-    <br>
-    <dd><h2><u>THE FLAVORFUL FOOD</u></h2></dd>
-    <dd><h4>One of the best things about New Orleans is the amazing and flavorful foods there. Some of the best restaurants New Orleans has to offer include:</h4></dd>
-    <dd><strong>GW Fins:</strong></dd>
-    <dd style="font:Verdana;">The energy in GW Fins’ dining room is constantly palpable.  The contemporary space is at once relaxed and exhilarating, creating a magnificent dining experience. </dd>
-    <br>
-    <center><img src="https://gwfins.com/wp-content/uploads/2016/01/contact-sm.jpg" style="width:40%"></center>
-    <center><h4><a href="https://www.google.com/maps/place/GW+Fins/@29.9555463,-90.0710273,17z/data=!3m1!4b1!4m5!3m4!1s0x8620a60c15e16df1:0x1ac94cc330cae640!8m2!3d29.9555463!4d-90.0688386"target="_blank">808 Bienville St, New Orleans, LA 70112</a></h4></center>
-    <br>
-    <br>
-    <dd><strong>Doris Metropolitan:</strong></dd>
-    <dd style="font:Verdana;">Doris Metropolitan is in the heart of New Orlean’s iconic French Quarter and have expertly prepared menus using flavors and techniques that play on Middle Eastern heritage to shine a spotlight on dry aged beef and the highest quality meats, which are offered alongside vegetable-forward appetizers, exotic and local seafood, a thoughtfully sourced caviar menu, and seasonal sides.</dd>
-    <center><img src="https://i.pinimg.com/originals/4a/fe/c0/4afec064b285f3aabc33aef08131e3c7.jpg" style="width:40%"></center>
-    <center><h4><a href="https://www.google.com/maps/place/Doris+Metropolitan+New+Orleans/@29.9570095,-90.0661965,17z/data=!3m1!4b1!4m5!3m4!1s0x8620a6118b52e2c3:0xc6d32f9a31ffed3!8m2!3d29.9570095!4d-90.0640078"target="_blank">620 Chartres St, New Orleans, LA 70130</a></h4></center>
-    <br>
-    <br>
-    <dd><strong>High Hat Cafe:</strong></dd>
-    <dd style="font:Verdana;">The High Hat Cafe is a casual neighborhood spot serving food from the Mississippi Delta and Louisiana. Catfish is the star of the menu with strong support from Smoked Roasted Chicken, Delta Tamales, BBQ Shrimp, Slow Roasted Pork, and Fresh Gulf Fish.</dd>
-    <center><img src="https://www.epicurious.com/images/articlesguides/diningtravel/restaurants/high-hat-cafe_612.jpg" style="width:40%"></center>
-    <center><h4><a href="https://www.google.com/maps/place/The+High+Hat+Cafe/@29.935089,-90.1064875,17z/data=!3m1!4b1!4m5!3m4!1s0x8620a5ae425f2cf9:0x4b7bed152f837a33!8m2!3d29.935089!4d-90.1042988"target="_blank">4500 Freret St, New Orleans, LA 70115</a></h4></center>
-    <br>
-    <br>
-    <br>
-    <dd><h2><u>THE LIVE MUSIC</u></h2></dd>
-    <dd><h4>There's live music all over the city at all hours of the day. Known as “the birthplace of jazz,” the city is home to a number of intimate concert venues (that generally charge cheap admission fees), plus there’s almost always a festival of some sort happening.</dd></h4>
-    <center><img src="https://i0.wp.com/www.suncountryview.com/wp-content/uploads/2018/05/New-Orleans-Music_Header_1200x800.jpg?fit=1200%2C800" style="width:40%"></center>
-    <br>
-    <br>
-  </div>
+      <div id="NEW ORLEANS" class="tabcontent">
+        <h1><center>NEW ORLEANS</center></h1>
+        <h3>New Orleans is a city filled with friendly people, amazing food, awesome live music and memorable attractions. It’s a city where anyone can find something to enjoy, and adventures are constantly underway</h3>
+        <center><img src="https://myalternatelife.com/wp-content/uploads/2014/09/travel-fund-new-orleans.jpg" style="width:45%"></center>
+        <br>
+        <br>
+        <dd><h2><u>THE FLAVORFUL FOOD</u></h2></dd>
+        <dd><h4>One of the best things about New Orleans is the amazing and flavorful foods there. Some of the best restaurants New Orleans has to offer include:</h4></dd>
+        <dd><strong>GW Fins:</strong></dd>
+        <dd style="font:Verdana;">The energy in GW Fins’ dining room is constantly palpable. The contemporary space is at once relaxed and exhilarating, creating a magnificent dining experience.
+        <br>
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.8307594598714!2d-90.07102728494608!3d29.955546281914764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a60c15e16df1%3A0x1ac94cc330cae640!2sGW+Fins!5e0!3m2!1sen!2sus!4v1563211940029!5m2!1sen!2sus" width="600px" height="475px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://gwfins.com/wp-content/uploads/2016/01/contact-sm.jpg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+        </div>
+        </dd>
+        <br>
+        <br>
+        <dd><strong>Doris Metropolitan:</strong></dd>
+        <dd style="font:Verdana;">Doris Metropolitan is in the heart of New Orlean’s iconic French Quarter and have expertly prepared menus using flavors and techniques that play on Middle Eastern heritage to shine a spotlight on dry aged beef and the highest quality meats, which are offered alongside vegetable-forward appetizers, exotic and local seafood, a thoughtfully sourced caviar menu, and seasonal sides.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.7797198896396!2d-90.0661964848423!3d29.95701412965225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a6118b52e2c3%3A0xc6d32f9a31ffed3!2sDoris+Metropolitan+New+Orleans!5e0!3m2!1sen!2sus!4v1563205828681!5m2!1sen!2sus" width="600px" height="475px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://i.pinimg.com/originals/4a/fe/c0/4afec064b285f3aabc33aef08131e3c7.jpg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+        </div>
+        </dd>
+        <br>
+        <br>
+        <dd><strong>High Hat Cafe:</strong></dd>
+        <dd style="font:Verdana;">The High Hat Cafe is a casual neighborhood spot serving food from the Mississippi Delta and Louisiana. Catfish is the star of the menu with strong support from Smoked Roasted Chicken, Delta Tamales, BBQ Shrimp, Slow Roasted Pork, and Fresh Gulf Fish.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.5416969744333!2d-90.10648748484271!3d29.935093630684832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a5ae425f2cf9%3A0x4b7bed152f837a33!2sThe+High+Hat+Cafe!5e0!3m2!1sen!2sus!4v1563206012540!5m2!1sen!2sus" width="600px" height="475px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://www.epicurious.com/images/articlesguides/diningtravel/restaurants/high-hat-cafe_612.jpg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+        </div>
+        </dd>
+        <br>
+        <br>
+        <br>
+        <dd><h2><u>THE LIVE MUSIC</u></h2></dd>
+        <dd><h4>There's live music all over the city at all hours of the day. Known as “the birthplace of jazz,” the city is home to a number of intimate concert venues (that generally charge cheap admission fees), plus there’s almost always a festival of some sort happening.</dd></h4>
+        <center><img src="https://i0.wp.com/www.suncountryview.com/wp-content/uploads/2018/05/New-Orleans-Music_Header_1200x800.jpg?fit=1200%2C800" style="width:40%"></center>
+        <br>
+        <br>
+      </div>
 
 
 
-<!-- Start of Egypt -->
-  <div id="Egypt" class="tabcontent">
-    <h1><center>EGYPT</center></h1>
-    <h3>Egypt is known for its ancient treasures and outstanding history; however, there is more to Egypt than you might expect. From surreal waters and wide beaches with golden sand to remarkable architecture and natural therapies, Egypt is definitely a bucket-list worthy country.</h3>
-    <br>
-    <center><img src="https://www.travelweekly.com/uploadedImages/TW_Elearn/Sales/Strategic_Content/Hero_CentralHolidays_TL.jpg?width=780&height=440&scale=both&mode=crop" style="width:50%"></center>
-    <br>
-    <br>
-    <dd><h2><u>TOP PLACES TO GO IN EGYPT</u></h2></dd>
-    <dd><strong>Cairo:</strong></dd>
-    <dd style="font:Verdana;">Cairo can be overwhelming, as there's so much to see and do everywhere you turn. From Islamic Cairo's bustling Khan El-Khalili bazaar to the ancient Pyramids of Giza to the picturesque Nile River, you'll be immersed in this Egyptian city's history and culture. One of the biggest things that attracts millions of tourists to Cairo are the pyramids. No trip to Cairo is complete without a stop at one of the many pyramids that are found scattered across the Egyptian desert A visit to Cairo will put you deep into Arab culture. This includes learning and experiencing everything from their cuisine to hospitality to their arts and lifestyles first-hand.</dd>
-    <br>
-    <center><img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Great_Pyramid_of_Giza.jpg" style="width:40%"></center>
-    <center><h4>Pyramids of Giza</h4></center>
-    <br>
-    <br>
-    <dd><strong>Alexandria:</strong></dd>
-    <dd style="font:Verdana;">Today, Alexandria is Egypt’s second largest city and boasts a thriving port along its 32 kilometres of coastline. It is home to the medieval Citadel of Qaitbay, the royal Montazah palace, Bibliotheca library and lots of other gems to explore.</dd>
-    <br>
-    <center><img src="https://images.adsttc.com/media/images/54c2/8545/e58e/ced7/eb00/0081/large_jpg/Bibliotheca_Alexandrina_plaza_003.jpg?1422034240" style="width:40%"></center>
-    <center><h4>Bibliotheca Alexandrina</h4></center>
-    <dd><h2><u>WHERE TO EAT IN EGYPT</u></h2></dd>
-    <dd><strong>Samakmak:</strong></dd>
-    <br>
-    <center><img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/57/fe/5c/simples-e-limpo.jpg" style="width:40%"></center>
-    <center><h4><a href="https://www.google.com/maps/place/Samakmak/@30.0656663,31.1987106,17z/data=!3m1!4b1!4m5!3m4!1s0x1458411660fed801:0xcbe629efdf3305d5!8m2!3d30.0656663!4d31.2008993"target="_blank">60 Sidi Yakout, As Sayalah Gharb, Qesm Al Gomrok, Alexandria Governorate, Egypt</a></h4></center>
-    <br>
-    <br>
-    <dd><strong>Chez Gabi:</strong></dd>
-    <br>
-    <center><img src="https://img2.10bestmedia.com/Images/Photos/353276/Dining-Room--2-_54_990x660.jpg" style="width:40%"></center>
-    <center><h4><a href="https://www.google.com/maps/place/Chez+Gaby+au+Ritrovo/@31.1968944,29.9002649,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5c3ecf2b0f575:0xac381826bc8a96e6!8m2!3d31.1968944!4d29.9024536"target="_blank">22 El Horreya Rd, 21599 Alexandria, Egypt</a></h4></center>
-  </div>
+    <!-- Start of Egypt -->
+      <div id="Egypt" class="tabcontent">
+        <h1><center>EGYPT</center></h1>
+        <h3>Egypt is known for its ancient treasures and outstanding history; however, there is more to Egypt than you might expect. From surreal waters and wide beaches with golden sand to remarkable architecture and natural therapies, Egypt is definitely a bucket-list worthy country.</h3>
+        <br>
+        <center><img src="https://www.travelweekly.com/uploadedImages/TW_Elearn/Sales/Strategic_Content/Hero_CentralHolidays_TL.jpg?width=780&height=440&scale=both&mode=crop" style="width:50%"></center>
+        <br>
+        <br>
+        <dd><h2><u>TOP PLACES TO GO IN EGYPT</u></h2></dd>
+        <dd><strong>Cairo:</strong></dd>
+        <dd style="font:Verdana;">Cairo can be overwhelming, as there's so much to see and do everywhere you turn. From Islamic Cairo's bustling Khan El-Khalili bazaar to the ancient Pyramids of Giza to the picturesque Nile River, you'll be immersed in this Egyptian city's history and culture. One of the biggest things that attracts millions of tourists to Cairo are the pyramids. No trip to Cairo is complete without a stop at one of the many pyramids that are found scattered across the Egyptian desert A visit to Cairo will put you deep into Arab culture. This includes learning and experiencing everything from their cuisine to hospitality to their arts and lifestyles first-hand.
+        <br>
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.006641535991!2d31.132013215158068!3d29.979239128604927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584587ac8f291b%3A0x810c2f3fa2a52424!2sThe+Great+Pyramid+of+Giza!5e0!3m2!1sen!2sus!4v1563206169135!5m2!1sen!2sus" width="600px" height="475px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Great_Pyramid_of_Giza.jpg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+        </div>
+        </dd>
+        <br>
+        <br>
+        <dd><strong>Alexandria:</strong></dd>
+        <dd style="font:Verdana;">Today, Alexandria is Egypt’s second largest city and boasts a thriving port along its 32 kilometres of coastline. It is home to the medieval Citadel of Qaitbay, the royal Montazah palace, Bibliotheca library and lots of other gems to explore.
+        <br>
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109179.94647944746!2d29.88484573885224!3d31.22423867285628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c49126710fd3%3A0xb4e0cda629ee6bb9!2sAlexandria%2C+Alexandria+Governorate%2C+Egypt!5e0!3m2!1sen!2sus!4v1563206314862!5m2!1sen!2sus" width="600px" height="475px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://images.adsttc.com/media/images/54c2/8545/e58e/ced7/eb00/0081/large_jpg/Bibliotheca_Alexandrina_plaza_003.jpg?1422034240" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+        </div>
+        </dd>
+        <dd><h2><u>WHERE TO EAT IN EGYPT</u></h2></dd>
+        <dd><strong>Samakmak:</strong></dd>
+        <br>
+        <dd>
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.9952400501934!2d31.198710615159726!3d30.065670924524447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458411660fed801%3A0xcbe629efdf3305d5!2sSamakmak!5e0!3m2!1sen!2sus!4v1563211400133!5m2!1sen!2sus" width="600px" height="475px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/57/fe/5c/simples-e-limpo.jpg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+        </div>
+      </dd>
+        <br>
+        <br>
+        <dd><strong>Chez Gabi:</strong></dd>
+        <br>
+        <dd>
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.859854368098!2d29.900264915181708!3d31.196898970164483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c3ecf2b0f575%3A0xac381826bc8a96e6!2sChez+Gaby+au+Ritrovo!5e0!3m2!1sen!2sus!4v1563211146348!5m2!1sen!2sus" width="600px" height="475px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://img2.10bestmedia.com/Images/Photos/353276/Dining-Room--2-_54_990x660.jpg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+        </div>
+      </dd>
+        <br>
+        <br>
+      </div>
 
-<!-- End of Egypt -->
 
-<!-- Start of South Africa -->
-<div id="South Africa" class="tabcontent">
-  <h1><center>SOUTH AFRICA</center></h1>
-  <h3>South Africa is a country on the southernmost tip of the African continent, marked by several distinct ecosystems. Inland safari destination Kruger National Park is populated by big game. The Western Cape offers beaches, lush winelands around Stellenbosch and Paarl, craggy cliffs at the Cape of Good Hope, forest and lagoons along the Garden Route, and the city of Cape Town, beneath flat-topped Table Mountain. Located in the extreme southern part of the African continent, South Africa makes a unique tourist destination. Home to one of the most diverse landscapes, abundant wildlife and world renowned cities, these are some great reasons to visit South Africa, any visitor will be amazed by what the country has to offer.</h3>
-  <br>
-  <center><img src="https://dak95nwic4sny.cloudfront.net/73/south-africa-43313807-1533658538-ImageGalleryLightboxLarge.jpg" style="width:40%"></center>
-  <br>
-  <br>
-  <dd><h2><u>THE MUSEUMS</u></h2></dd>
-  <dd><h4>South Africa offers visitors a wide variety of museums they must visit on their journey. You will never be short of museums and galleries to visit. Some popular museums in South Africa include:</h4></dd>
-  <dd><strong>Zeitz MOCAA:</strong></dd>
-  <dd style="font:Verdana;">The Zeitz Museum of Contemporary Art Africa is a contemporary art museum located at the V&A Waterfront in Cape Town, South Africa. It is the largest museum of contemporary African art in the world.</dd>
-  <br>
-  <center><img src="https://images.graph.cool/v1/cj6c28vh912680101ozc2paxj/cjnkj9t5c35gl0105ho42rbnb/0x0:1600x1132/960x960/306_mu_mb_zeitz_mocaa_exterior_03.jpg" style="width:40%"></center>
-  <center><h4><a href="https://www.google.com/maps/place/Zeitz+Museum+of+Contemporary+Art+Africa/@-33.9083737,18.420793,17z/data=!3m1!4b1!4m5!3m4!1s0x1dcc67596cf4d0dd:0x8f7985bd761d1118!8m2!3d-33.9083737!4d18.4229817"target="_blank">V&A Waterfront, Silo District, S Arm Rd, Waterfront, Cape Town, 8001, South Africa</a></h4></center>
-  <br>
-  <br>
-  <dd><strong>South African National Art Museum:</strong></dd>
-  <dd style="font:Verdana;">Situated in the Martin Melck House in the Cape Town City Centre, this museum is home to a large collection of African gold items, including ancient gold artefacts and objects from West Africa and other old civilisations of Southern Africa. Guided tours of this magnificent museum can be arranged by appointment. Interesting goldsmith workshops are also on offer to visitors. The museum also boasts its own shop filled with unique items and treasures.</dd>
-  <br>
-  <center><img src="https://static.tripexpert.com/images/venue_photos/profile/3339277.jpg?1469806357" style="width:40%"></center>
-  <center><h4><a href="https://www.google.com/maps/place/rain+South+Africa/@-33.919168,18.4174714,17z/data=!3m1!4b1!4m5!3m4!1s0x1dcc6766e4ef039b:0x45f7faef70c6453d!8m2!3d-33.919168!4d18.4196601"target="_blank">96 Strand St, Cape Town City Centre, Cape Town, 8000, South Africa</a></h4></center>
-  <br>
-  <br>
-  <br>
-  <dd><h2><u>TOP PLACES TO GO IN SOUTH AFRICA</u></h2></dd>
-  <dd><strong>Cape Town:</strong></dd>
-  <dd style="font:Verdana;">Whichever time you decide to visit, every single season is amazing in this part of the world. The city caters to a diversity of tastes, preferences, people, and budgetsThe city of Cape Town is home to some of the most amazing views on the planet. From its picturesque Winelands all the way to its rugged coastline at Cape Point, its flawless beaches, and magnificent sunsets, Cape Town’s beautiful scenery will leave you in awe.</dd>
-  <br>
-  <center><img src="https://www.irishtimes.com/polopoly_fs/1.3343154.1514906878!/image/image.jpg_gen/derivatives/box_620_330/image.jpg" style="width:40%"></center>
-  <center><h4><a href="https://www.google.com/maps/place/Chez+Gaby+au+Ritrovo/@31.1968944,29.9002649,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5c3ecf2b0f575:0xac381826bc8a96e6!8m2!3d31.1968944!4d29.9024536"target="_blank">Table Mountain</a></h4></center>
-  <br>
-  <br>
-  <dd><strong>Johannesburg:</strong></dd>
-  <dd style="font:Verdana;">Johannesburg, or Jo’burg, is the economic heart of Africa and the most common entry point into Southern Africa. With more than 3 million people it is also the second largest city on the continent. Historically it is where money is made and fortunes found. It has been stereotyped as a cruel, concrete jungle, plagued by crime, but residents defend it fiercely as a city of opportunity and raw energy.</dd>
-  <br>
-  <center><img src="https://upload.wikimedia.org/wikipedia/en/6/6c/Johannesburg_Skyline.jpg" style="width:40%"></center>
-  <center><h4>Johannesburg Skyline</h4></center>
-  <br>
-  <br>
-  <dd><strong>Addo Elephant National Park:</strong></dd>
-  <dd style="font:Verdana;">Located in the Eastern Cape region of South Africa, the Addo Elephant National Park is one of the country’s larger parks. The Park is famous for its elephant population that has a special, brownish skin color due to the red soil. Amongst the elephants other animals, like ostriches, antelopes and warthogs can be seen.</dd>
-  <br>
-  <center><img src="https://www.zawebsdata.co.za/image/large/addo_ellies.jpg" style="width:40%"></center>
-  <center><h4><a href="https://www.sanparks.org/parks/addo/"target="_blank">Addo Elephant National Park</a></h4></center>
-</div>
-<!-- End of South Africa -->
 
-<!-- Start of Ethiopia -->
-<div id="Ethiopia" class="tabcontent">
-  <h1><center>Ethiopia</center></h1>
-  <h3>Ethiopia, in the Horn of Africa, is a rugged, landlocked country split by the Great Rift Valley. With archaeological finds dating back more than 3 million years, it’s a place of ancient culture. Among its important sites are Lalibela with its rock-cut Christian churches from the 12th–13th centuries.Showcasing ancient history, picturesque landscapes, joyful festivals, and much more, Ethiopia has plenty of choices in store for the curious traveler. Its unique calendar, old alphabet, and numerical system are some of the things that set the country apart.</h3>
-  <br>
-  <center><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Blue_Nile_Falls_Ethiopia.jpg" style="width:40%"></center>
-  <br>
-  <br>
-  <dd><h2><u>THE MUSIC</u></h2></dd>
-  <dd><h4>In the 60s and 70s, Ethiopia became known for its own brand of jazz, but the music scene was entirely shut down during the communist regime that lasted from 1974 until the early 90s. Since then it's made a comeback, and Addis is now an excellent place to hear jazz and other live music.</h4></dd>
-  <br>
-  <center><img src="https://www.musicinafrica.net/sites/default/files/styles/article_slider_large/public/images/article/201604/selam-2016.jpg?itok=GP56HwwU" style="width:40%"></center>
-  <br>
-  <br>
-  <dd><h2><u>GREAT SHOPPING</u></h2></dd>
-  <dd><h4>Ethiopia has a long tradition of beautiful handicrafts including high-quality hand-woven and embroidered materials. You can also find leather goods like sandals and hats. Addis is such a fashionable place that it recently hosted a fashion week, <a href="http://www.hubfashionweekafrica.com/"target="_blank">Hub of Africa</a>, showcasing the works of Ethiopian and other African-born designers.</h4></dd>
-  <br>
-  <center><img src="https://www.fashionghana.com/wp-content/uploads/2015/11/hoafw3.jpg" style="width:40%"></center>
-  <br>
-  <br>
+    <!-- End of Egypt -->
 
-</div>
-<!-- End of Ethiopia -->
+    <!-- Start of South Africa -->
+    <div id="South Africa" class="tabcontent">
+      <h1><center>SOUTH AFRICA</center></h1>
+      <h3>South Africa is a country on the southernmost tip of the African continent, marked by several distinct ecosystems. Inland safari destination Kruger National Park is populated by big game. The Western Cape offers beaches, lush winelands around Stellenbosch and Paarl, craggy cliffs at the Cape of Good Hope, forest and lagoons along the Garden Route, and the city of Cape Town, beneath flat-topped Table Mountain. Located in the extreme southern part of the African continent, South Africa makes a unique tourist destination. Home to one of the most diverse landscapes, abundant wildlife and world renowned cities, these are some great reasons to visit South Africa, any visitor will be amazed by what the country has to offer.</h3>
+      <br>
+      <center><img src="https://dak95nwic4sny.cloudfront.net/73/south-africa-43313807-1533658538-ImageGalleryLightboxLarge.jpg" style="width:40%"></center>
+      <br>
+      <br>
+      <dd><h2><u>THE MUSEUMS</u></h2></dd>
+      <dd><h4>South Africa offers visitors a wide variety of museums they must visit on their journey. You will never be short of museums and galleries to visit. Some popular museums in South Africa include:</h4></dd>
+      <dd><strong>Zeitz MOCAA:</strong></dd>
+      <dd style="font:Verdana;">The Zeitz Museum of Contemporary Art Africa is a contemporary art museum located at the V&A Waterfront in Cape Town, South Africa. It is the largest museum of contemporary African art in the world.
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.2757510016786!2d18.421033315154677!3d-33.90830188064529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc676262b95555%3A0xaf2795baed3dcaae!2sZeitz+MOCAA+Events!5e0!3m2!1sen!2sus!4v1563212234348!5m2!1sen!2sus" width="600px" height="450px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://images.graph.cool/v1/cj6c28vh912680101ozc2paxj/cjnkj9t5c35gl0105ho42rbnb/0x0:1600x1132/960x960/306_mu_mb_zeitz_mocaa_exterior_03.jpg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+      </div>
+      </dd>
+      <br>
+      <dd><strong>South African National Art Museum:</strong></dd>
+      <dd style="font:Verdana;">Situated in the Martin Melck House in the Cape Town City Centre, this museum is home to a large collection of African gold items, including ancient gold artefacts and objects from West Africa and other old civilisations of Southern Africa. Guided tours of this magnificent museum can be arranged by appointment. Interesting goldsmith workshops are also on offer to visitors. The museum also boasts its own shop filled with unique items and treasures.
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.4680665668243!2d18.4151465151552!3d-33.929087580639525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc677a9482f6d7%3A0xb76b7be602ef2e80!2sSouth+African+National+Gallery!5e0!3m2!1sen!2sus!4v1563212617910!5m2!1sen!2sus" width="600px" height="450px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://static.tripexpert.com/images/venue_photos/profile/3339277.jpg?1469806357" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+      </div>
+      </dd>
+      <br>
+      <br>
+      <br>
+      <dd><h2><u>TOP PLACES TO GO IN SOUTH AFRICA</u></h2></dd>
+      <dd><strong>Cape Town:</strong></dd>
+      <dd style="font:Verdana;">Whichever time you decide to visit, every single season is amazing in this part of the world. The city caters to a diversity of tastes, preferences, people, and budgetsThe city of Cape Town is home to some of the most amazing views on the planet. From its picturesque Winelands all the way to its rugged coastline at Cape Point, its flawless beaches, and magnificent sunsets, Cape Town’s beautiful scenery will leave you in awe.
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d847627.2471124856!2d18.095609696971266!3d-33.91426882093706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc500f8826eed7%3A0x687fe1fc2828aa87!2sCape+Town%2C+South+Africa!5e0!3m2!1sen!2sus!4v1563213909788!5m2!1sen!2sus" width="600px" height="450px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://www.irishtimes.com/polopoly_fs/1.3343154.1514906878!/image/image.jpg_gen/derivatives/box_620_330/image.jpg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+      </div>
+    </dd>
+      <br>
+      <br>
+      <dd><strong>Johannesburg:</strong></dd>
+      <dd style="font:Verdana;">Johannesburg, or Jo’burg, is the economic heart of Africa and the most common entry point into Southern Africa. With more than 3 million people it is also the second largest city on the continent. Historically it is where money is made and fortunes found. It has been stereotyped as a cruel, concrete jungle, plagued by crime, but residents defend it fiercely as a city of opportunity and raw energy.
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114584.90393004757!2d27.969984477042725!3d-26.17135048683683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9d9b1d34041!2sJohannesburg%2C+South+Africa!5e0!3m2!1sen!2sus!4v1563214057489!5m2!1sen!2sus" width="600px" height="450px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://upload.wikimedia.org/wikipedia/en/6/6c/Johannesburg_Skyline.jpg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+      </div>
+    </dd>
+      <br>
+      <br>
+      <dd><strong>Addo Elephant National Park:</strong></dd>
+      <dd style="font:Verdana;">Located in the Eastern Cape region of South Africa, the Addo Elephant National Park is one of the country’s larger parks. The Park is famous for its elephant population that has a special, brownish skin color due to the red soil. Amongst the elephants other animals, like ostriches, antelopes and warthogs can be seen.
+      <br>
+      <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1657.0971899034432!2d26.27854050822702!3d-33.83309746715377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e6505804ebd1c07%3A0xb822f56b53b3320f!2sAddo+Elephant+Island!5e0!3m2!1sen!2sus!4v1563214164909!5m2!1sen!2sus" width="600px" height="450px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://www.zawebsdata.co.za/image/large/addo_ellies.jpg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+      </div>
+    </dd>
+    </div>
+    <!-- End of South Africa -->
 
-<!-- Start of Morocco -->
-<div id="Morocco" class="tabcontent">
-  <h1><center>MOROCCO</center></h1>
-  <h3>Morocco, a North African country bordering the Atlantic Ocean and Mediterranean Sea, is distinguished by its Berber, Arabian and European cultural influences. North Africa’s Morocco is a popular destination, attracting culture lovers, backpackers, adventure travelers, couples, families, foodies, and more.</h3>
-  <br>
-  <center><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Picture_of_Morocco.jpg" style="width:45%"></center>
-  <br>
-  <br>
-  <dd><h2><u>THE CULTURE</u></h2></dd>
-  <dd><h4>In Essaouira, a city in Morocco you will hear the call of prayer from the Mosque, see the men dressed in traditional clothing, the women too. You may not understand the menu and exactly what people are saying (unless you speak French), you will probably see sights in the food markets that perhaps you don’t want to see but this is all part of indulging in the Culture and observing everyday life.</h4></dd>
-  <br>
-  <center><img src="https://photos.travelblog.org/Photos/12229/252721/f/2049068-Main-mosque-Essaouira-1.jpg" style="width:40%"></center>
-  <br>
-  <br>
-  <dd><h2><u>THE ARCHITECTURE</u></h2><dd>
-  <dd><h4>The cultural diversity of Morocco is reflected in the varied architectural beauties that can be found all across the nation. From majestic mosques to traditional riads and from brilliant palaces to sublime centers of religious study, Morocco has many fabulous buildings to admire. Many buildings feature the traditional tilework, known as zellige, as well as decorative carvings, woodwork, and plasterwork.</h4></dd>
-  <br>
-  <center><img src="https://i2.wp.com/blog.tripfez.com/wp-content/uploads/2017/10/5-must-visit-moroccan-architecture.jpg?resize=660%2C400&ssl=1" style="width:40%"></center>
-  <br>
-  <br>
-  <dd><h2><u>TOP PLACES TO GO IN MOROCCO</u></h2></dd>
-  <dd><strong>The Ramparts:</strong></dd>
-  <dd style="font:Verdana;">The symbol of the red city, the ramparts which construction, commissioned by ali Ben Youssef, began in 1126, surround the old town today: the medina. it took decades to build the ramparts so that the adobe and clay-made walls would reach more than 10 km. Those walls are interspersed by 202 square –shaped towers and 10 imposing gates give access to the town.</dd>
-  <br>
-  <center><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Ramparts_of_Essaouira.JPG" style="width:40%"></center>
-  <center><h4><a href="http://www.darzaman.co.uk/guide/ramparts-marrakech/"target="_blank">Check out more about the Ramparts here</a></h4></center>
-  <br>
-  <br>
-  <dd><strong>La Sqala</strong></dd>
-  <dd style="font:Verdana;">La Sqala is one of the loveliest places to get a taste of the ocean. Diners sit in a leafy gazebo garden near the 18th-century Portuguese sea walls, and order the catch of the day for lunch. It's also possible to while away an hour over coffee and fresh juices.</dd>
-  <br>
-  <center><img src="https://img.theculturetrip.com/wp-content/uploads/2017/09/7330357858_db948409d0_k.jpg" style="width:40%"></center>
-  <center><h4><a href="https://www.google.com/maps/place/La+Sqala/@33.602898,-7.6213107,17z/data=!3m1!4b1!4m5!3m4!1s0xda7d286bded69f1:0x14366c0dc062234f!8m2!3d33.602898!4d-7.619122"target="_blank">Boulevard des Almohades, Casablanca 20250, Morocco</a></h4></center>
-</div>
+    <!-- Start of Ethiopia -->
+    <div id="Ethiopia" class="tabcontent">
+      <h1><center>Ethiopia</center></h1>
+      <h3>Ethiopia, in the Horn of Africa, is a rugged, landlocked country split by the Great Rift Valley. With archaeological finds dating back more than 3 million years, it’s a place of ancient culture. Among its important sites are Lalibela with its rock-cut Christian churches from the 12th–13th centuries.Showcasing ancient history, picturesque landscapes, joyful festivals, and much more, Ethiopia has plenty of choices in store for the curious traveler. Its unique calendar, old alphabet, and numerical system are some of the things that set the country apart.</h3>
+      <br>
+      <center><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Blue_Nile_Falls_Ethiopia.jpg" style="width:40%"></center>
+      <br>
+      <br>
+      <dd><h2><u>THE MUSIC</u></h2></dd>
+      <dd><h4>In the 60s and 70s, Ethiopia became known for its own brand of jazz, but the music scene was entirely shut down during the communist regime that lasted from 1974 until the early 90s. Since then it's made a comeback, and Addis is now an excellent place to hear jazz and other live music.</h4></dd>
+      <br>
+      <center><img src="https://www.musicinafrica.net/sites/default/files/styles/article_slider_large/public/images/article/201604/selam-2016.jpg?itok=GP56HwwU" style="width:40%"></center>
+      <br>
+      <br>
+      <dd><h2><u>GREAT SHOPPING</u></h2></dd>
+      <dd><h4>Ethiopia has a long tradition of beautiful handicrafts including high-quality hand-woven and embroidered materials. You can also find leather goods like sandals and hats. Addis is such a fashionable place that it recently hosted a fashion week, <a href="http://www.hubfashionweekafrica.com/"target="_blank">Hub of Africa</a>, showcasing the works of Ethiopian and other African-born designers.</h4></dd>
+      <br>
+      <center><img src="https://www.fashionghana.com/wp-content/uploads/2015/11/hoafw3.jpg" style="width:40%"></center>
+      <br>
+      <br>
+
+    </div>
+    <!-- End of Ethiopia -->
+
+    <!-- Start of Morocco -->
+    <div id="Morocco" class="tabcontent">
+      <h1><center>MOROCCO</center></h1>
+      <h3>Morocco, a North African country bordering the Atlantic Ocean and Mediterranean Sea, is distinguished by its Berber, Arabian and European cultural influences. North Africa’s Morocco is a popular destination, attracting culture lovers, backpackers, adventure travelers, couples, families, foodies, and more.</h3>
+      <br>
+      <center><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Picture_of_Morocco.jpg" style="width:45%"></center>
+      <br>
+      <br>
+      <dd><h2><u>THE CULTURE</u></h2></dd>
+      <dd><h4>In Essaouira, a city in Morocco you will hear the call of prayer from the Mosque, see the men dressed in traditional clothing, the women too. You may not understand the menu and exactly what people are saying (unless you speak French), you will probably see sights in the food markets that perhaps you don’t want to see but this is all part of indulging in the Culture and observing everyday life.</h4></dd>
+      <br>
+      <center><img src="https://photos.travelblog.org/Photos/12229/252721/f/2049068-Main-mosque-Essaouira-1.jpg" style="width:40%"></center>
+      <br>
+      <br>
+      <dd><h2><u>THE ARCHITECTURE</u></h2><dd>
+      <dd><h4>The cultural diversity of Morocco is reflected in the varied architectural beauties that can be found all across the nation. From majestic mosques to traditional riads and from brilliant palaces to sublime centers of religious study, Morocco has many fabulous buildings to admire. Many buildings feature the traditional tilework, known as zellige, as well as decorative carvings, woodwork, and plasterwork.</h4></dd>
+      <br>
+      <center><img src="https://i2.wp.com/blog.tripfez.com/wp-content/uploads/2017/10/5-must-visit-moroccan-architecture.jpg?resize=660%2C400&ssl=1" style="width:40%"></center>
+      <br>
+      <br>
+      <dd><h2><u>TOP PLACES TO GO IN MOROCCO</u></h2></dd>
+      <dd><strong>The Ramparts:</strong></dd>
+      <dd style="font:Verdana;">The symbol of the red city, the ramparts which construction, commissioned by ali Ben Youssef, began in 1126, surround the old town today: the medina. it took decades to build the ramparts so that the adobe and clay-made walls would reach more than 10 km. Those walls are interspersed by 202 square –shaped towers and 10 imposing gates give access to the town.
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26441.66545750813!2d-4.990571853088662!3d34.06417720855448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd9ff357f8485b33%3A0xe56f78fac206cf2b!2sFes+El+Bali%2C+Fes%2C+Morocco!5e0!3m2!1sen!2sus!4v1563214522989!5m2!1sen!2sus" width="600px" height="450px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Ramparts_of_Essaouira.JPG" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+      </div>
+    </dd>
+      <br>
+      <br>
+      <dd><strong>La Sqala</strong></dd>
+      <dd style="font:Verdana;">La Sqala is one of the loveliest places to get a taste of the ocean. Diners sit in a leafy gazebo garden near the 18th-century Portuguese sea walls, and order the catch of the day for lunch. It's also possible to while away an hour over coffee and fresh juices.
+      <br>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.0925734932425!2d-7.621310684768832!3d33.602902448722354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d286bded69f1%3A0x14366c0dc062234f!2sLa+Sqala!5e0!3m2!1sen!2sus!4v1563214619728!5m2!1sen!2sus" width="600px" height="450px" frameborder="0" style="border:0; padding:20px" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://img.theculturetrip.com/wp-content/uploads/2017/09/7330357858_db948409d0_k.jpg" width="600px" height="450px" frameborder="0" style="border:0;"></div>
+      </div>
+    </dd>
+    </div>
 <!-- End of Morocco -->
 
-
-    <div id="ITALY" class="tabcontent"></div>
-    <div id="ENGLAND" class="tabcontent"></div>
-    <div id="ITALY" class="tabcontent"></div>
 
 
     <div id="CHINA" class="tabcontent">
       <h1><center>CHINA</center></h1>
       <h3 style="font:inherit; align: left;">China is considered to be the oldest civilization with some historians marking 6000 BC as the beginning of the Chinese civilization. Also, it has the world's longest used written language. As of July 2012, China has the largest population in the world with over 1.3 billion people.</h3>
       <br>
+      <center><img src="https://www.topchinatravel.com/pic/city/shangri-la/attractions/songzanlin-lamasery-9.jpg" style="width:40%"></center>
+      <br>
       <h2 style= "font-family: simplifica"><center> Where to visit in China:</center></h2>
       <br>
       <dt><strong> The Great Wall of China:</strong></dt>
-      <dd style="font:Verdana;">The Great Wall of China stretches more than 6,000 kilometers from the fortress of Shanhaiguan in the east all the way to Jiayuguan in the west, passing through Hebei, Tientsin, Beijing, Inner Mongolia, Ningxia, and Gansu.</dd>
-      <br>
-      <center><img src="http://hyperallergic.com/wp-content/uploads/2015/04/20090529_Great_Wall_8185.jpg" height= "450" width="650"></center>
+      <dd style="font:Verdana;">The Great Wall of China stretches more than 6,000 kilometers from the fortress of Shanhaiguan in the east all the way to Jiayuguan in the west, passing through Hebei, Tientsin, Beijing, Inner Mongolia, Ningxia, and Gansu.
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9589583960046!2d116.56818621539638!3d40.43190767936339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f121d7687f2ccf%3A0xd040259b950522df!2sGreat+Wall+of+China!5e0!3m2!1sen!2sus!4v1563206240184!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="http://hyperallergic.com/wp-content/uploads/2015/04/20090529_Great_Wall_8185.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <br>
 
       <dt><strong> The Forbidden City and the Imperial Palace, Beijing:</strong></dt>
-      <dd style="font:Verdana;">China's largest and most important building, the Forbidden City — also known as the Imperial Palace — is situated in the very heart of Beijing and is a must-see when visiting the country. The Temple of Heaven is also located in this vicinity, it is known that the emperors were also known as the sons of heaven as it was believed that emperors received their power from Heaven.</dd>
-      <br>
-      <center><img src="https://cache-graphicslib.viator.com/graphicslib/page-images/742x525/385300_Viator_iStockPhoto_18858.jpg" height= "450" width="650"></center>
+      <dd style="font:Verdana;">China's largest and most important building, the Forbidden City — also known as the Imperial Palace — is situated in the very heart of Beijing and is a must-see when visiting the country. The Temple of Heaven is also located in this vicinity, it is known that the emperors were also known as the sons of heaven as it was believed that emperors received their power from Heaven.
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.1193745836986!2d116.39496591532847!3d39.916344679426416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f052dd9bcd81ab%3A0xde43eaed9b106064!2sThe+Palace+Museum!5e0!3m2!1sen!2sus!4v1563209305082!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://cache-graphicslib.viator.com/graphicslib/page-images/742x525/385300_Viator_iStockPhoto_18858.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <br>
 
       <dt><strong> The Li River:</strong></dt>
-      <dd style="font:Verdana;">The Li River is located on the Northeast corner of Guangxi, known to be China’s most beautiful countryside. The best way to enjoy the river is by taking a cruise.</dd>
-      <br>
-      <center><img src="https://www.planetware.com/photos-large/CHN/china-guilin-li-river-cruise.jpg" height= "450" width="650"></center>
+      <dd style="font:Verdana;">The Li River is located on the Northeast corner of Guangxi, known to be China’s most beautiful countryside. The best way to enjoy the river is by taking a cruise.
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.312119974053!2d110.31092361486509!3d25.26008383534541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36a4f5e4018a9e79%3A0x5a249de1a1a041ab!2sLi+River+Cruise+Ticket+Office!5e0!3m2!1sen!2sus!4v1563211352616!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://www.planetware.com/photos-large/CHN/china-guilin-li-river-cruise.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <br>
 
       <dt><strong> The Classic Gardens of Suzhou:</strong></dt>
-      <dd style="font:Verdana;">Known to be the world’s most important historic gardens. The magnificent gardens were established in the 11th century, at a time when the city was experiencing unprecedented growth.</dd>
-      <br>
-      <center><img src="https://cache-graphicslib.viator.com/graphicslib/page-images/742x525/420168_Suzhou_ClassicalGardens_bridge_shutterstock_425547664.jpg" height= "450" width="650"></center>
+      <dd style="font:Verdana;">Known to be the world’s most important historic gardens. The magnificent gardens were established in the 11th century, at a time when the city was experiencing unprecedented growth.
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.2588036752204!2d120.62778031508757!3d31.32422498143495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b3a6cfc28acf29%3A0x1150db0d1bff0354!2sSuzhou+Gardens!5e0!3m2!1sen!2sus!4v1563211415506!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://cache-graphicslib.viator.com/graphicslib/page-images/742x525/420168_Suzhou_ClassicalGardens_bridge_shutterstock_425547664.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <br>
 
       <dt><strong> Hong Kong Skyline:</strong></dt>
-      <dd style="font:Verdana;">Hong Kong is known to have the highest concentrations of skyscrapers in the world. One of the best views are from Victoria Peak on Hong Kong Island, where the skyscrapers frame the city’s huge harbor.</dd>
-      <br>
-      <center><img src="https://www.tripsavvy.com/thmb/AdjWUlrz7SShzh53ArnO1-GKTJg=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-586892388-5c7b646fc9e77c0001d19d3b.jpg" height= "450" width=650></center>
-      <br>
-      <h2><center> Where to eat in China:</center></h2>
-      <dt><strong> Wooloomooloo Steakhouse; also known as Wan Chai:</strong></dt>
-      <dd style="font:Verdana;"> Wan Chai is located in Hong Kong, China. It is known to be one of the best high classed restaurants in Hong Kong.</dd>
-      <br>
-      <center><img src="https://www.restaurantandbarhk.com/rbhk/wp-content/uploads/2017/02/RIDA16033b.jpg" height= "250" width="450"></center>
+      <dd style="font:Verdana;">Hong Kong is known to have the highest concentrations of skyscrapers in the world. One of the best views are from Victoria Peak on Hong Kong Island, where the skyscrapers frame the city’s huge harbor.
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.7233552423595!2d114.20337831489206!3d22.326299985310125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340406cd300f5f81%3A0x2b0fe013b4fa85f6!2sSkyline+Tower!5e0!3m2!1sen!2sus!4v1563211466059!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://www.tripsavvy.com/thmb/AdjWUlrz7SShzh53ArnO1-GKTJg=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-586892388-5c7b646fc9e77c0001d19d3b.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <br>
 
-      <dt><strong> Sawasdee Thai Restaurant:</strong></dt>
-      <dd style="font:Verdana;">Sawasdee is located in Hangzhou, China. They are really famous for their Thai Custard. Best of all, it is known to be a moderately priced restaurant. </dd>
-      <br>
-      <center><img src="http://4.bp.blogspot.com/_Liz-VpvKDvo/TSToIlqfc9I/AAAAAAAAFZc/Hz5V5EyvQ08/s576/Thai%2BCustard%2BCover.jpg" height= "250" width="450"></center>
-      <br>
     </div>
     <div id="JAPAN" class="tabcontent">
       <h1><center>Japan</center></h1>
       <h3 style="font:inherit; align: left;">Japan is an island country in East Asia. Located in the Pacific Ocean, it lies off the eastern coast of the Asian continent and stretches from the Sea of Okhotsk in the north to the East China Sea and the Philippine Sea in the south. </h3>
       <br>
+      <center><img src="https://www.pandotrip.com/wp-content/uploads/2018/09/Seigantoji-Pagoda-and-Nachi-Falls-in-Nacho-Japan.jpg" style="width:40%"></center>
+      <br>
       <h2 style= "font-family: simplifica"><center> Where to visit in Japan:</center></h2>
       <br>
       <dt><strong> Mount Fuji:</strong></dt>
-      <dd style="font:Verdana;">It is known to be the country’s highest mountain peak, towering 3,776 meters over a largely flat landscape to the south and east. Mount Fuji is climbed by more than a million people each summer as an act of pilgrimage. </dd>
-      <br>
-      <center><img src="https://www.planetware.com/photos-large/JPN/japan-mount-fuji-water-reflection.jpg" height= "450" width="650"></center>
+      <dd style="font:Verdana;">It is known to be the country’s highest mountain peak, towering 3,776 meters over a largely flat landscape to the south and east. Mount Fuji is climbed by more than a million people each summer as an act of pilgrimage.
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52060.7932365356!2d138.6923439032438!3d35.36061994903945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019629a42fdc899%3A0xa6a1fcc916f3a4df!2sMount+Fuji!5e0!3m2!1sen!2sus!4v1563211553838!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://www.planetware.com/photos-large/JPN/japan-mount-fuji-water-reflection.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <br>
 
       <dt><strong> Hiroshima Peace Memorial Park:</strong></dt>
-      <dd style="font:Verdana;">It was built to commemorate those who died due to the atomic bombing of Hiroshima and Nagasaki in August 1945. It is visited by more than a million people each year, many who are from overseas.</dd>
-      <br>
-      <center><img src="https://www.hiroshima-navi.or.jp/en/post/assets_c/2017/05/heiwa_koen001_1-thumb-1200x800-5964.jpg" height= "450" width="650"></center>
+      <dd style="font:Verdana;">It was built to commemorate those who died due to the atomic bombing of Hiroshima and Nagasaki in August 1945. It is visited by more than a million people each year, many who are from overseas.
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.387214927834!2d132.4509691151677!3d34.39150268051504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355aa212cbda2bb7%3A0xf13067716a928180!2sHiroshima+Peace+Memorial+Museum!5e0!3m2!1sen!2sus!4v1563211596990!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style= "padding-left:200px;"><img src="https://www.hiroshima-navi.or.jp/en/post/assets_c/2017/05/heiwa_koen001_1-thumb-1200x800-5964.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <br>
 
       <dt><strong> Temple City(Historic Nara):</strong></dt>
-      <dd style="font:Verdana;">The city of Nara is known to be home to a large number of historic buildings, along with important nation treasures and works of art. It consists of Seven Great Temples, one known to be called Todai-ji (Great East Temple). Todai-ji is famous for its Great South Gate and the Hall of the Great Buddha. </dd>
-      <br>
-      <center><img src="https://i.pinimg.com/736x/23/0e/ee/230eeebcfac9ff3fddde7147b5b4ab79.jpg" height= "450" width="650"></center>
+      <dd style="font:Verdana;">The city of Nara is known to be home to a large number of historic buildings, along with important nation treasures and works of art. It consists of Seven Great Temples, one known to be called Todai-ji (Great East Temple). Todai-ji is famous for its Great South Gate and the Hall of the Great Buddha.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840172.3163884211!2d135.3316184782585!3d34.65664468656603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600137c578a70cc1%3A0x4afed9b0b9492622!2sNara%2C+Japan!5e0!3m2!1sen!2sus!4v1563211712699!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://i.pinimg.com/736x/23/0e/ee/230eeebcfac9ff3fddde7147b5b4ab79.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <br>
 
       <dt><strong> Osaka Castle:</strong></dt>
-      <dd style="font:Verdana;">Built in 1586 by a famous warrior and politician Toyotomi Hideyoshi. It was the largest and most important fortress in the country. A popular interest in the Osaka Castle Park is the Hokoku Shrine as it is known to Japan’s first Buddhist temple. The shrine features a five-story pagoda along with a number of exquisitely decorated buildings including the Golden Pavilion. </dd>
-      <br>
-      <center><img src="https://www.japan-guide.com/g18/4000_top.jpg" height= "450" width="650"></center>
+      <dd style="font:Verdana;">Built in 1586 by a famous warrior and politician Toyotomi Hideyoshi. It was the largest and most important fortress in the country. A popular interest in the Osaka Castle Park is the Hokoku Shrine as it is known to Japan’s first Buddhist temple. The shrine features a five-story pagoda along with a number of exquisitely decorated buildings including the Golden Pavilion.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.7074113693356!2d135.5237668151757!3d34.68733328043795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0cd5c283afd%3A0xf01d07d5ca11e41!2sOsaka+Castle!5e0!3m2!1sen!2sus!4v1563211752575!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://www.japan-guide.com/g18/4000_top.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <br>
 
       <dt><strong> Mount Yoshino:</strong></dt>
-      <dd style="font:Verdana;">Covered in over 30,000 cherry trees, Mount Yoshino is known to be Japan’s most popular cherry blossom viewing spots for centuries. The best time to visit and view the cherry blossom is from April to early May. </dd>
-      <br>
-      <center><img src="https://www.jrailpass.com/blog/wp-content/uploads/2018/01/cherry-blossom-viewing-spots-japan.jpg" height= "450" width="650"></center>
-      <br>
-
-      <h2><center> Where to eat in Japan:</center></h2>
-      <dt><strong> Wooloomooloo Steakhouse; also known as Wan Chai:</strong></dt>
-      <dd style="font:Verdana;"> Wan Chai is located in Hong Kong, China. It is known to be one of the best high classed restaurants in Hong Kong.</dd>
-      <br>
-      <center><img src="https://www.restaurantandbarhk.com/rbhk/wp-content/uploads/2017/02/RIDA16033b.jpg" height= "250" width="450"></center>
-      <br>
-
-      <dt><strong> Sawasdee Thai Restaurant:</strong></dt>
-      <dd style="font:Verdana;">Sawasdee is located in Hangzhou, China. They are really famous for their Thai Custard. Best of all, it is known to be a moderately priced restaurant. </dd>
-      <br>
-      <center><img src="https://www.restaurantandbarhk.com/rbhk/wp-content/uploads/2017/02/RIDA16033b.jpg" height= "250" width="450"></center>
+      <dd style="font:Verdana;">Covered in over 30,000 cherry trees, Mount Yoshino is known to be Japan’s most popular cherry blossom viewing spots for centuries. The best time to visit and view the cherry blossom is from April to early May.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52700.259473871025!2d135.8355974960626!3d34.356427514056165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6006c7b2a3a994d3%3A0xd8ab9041137873a0!2sMount+Yoshino!5e0!3m2!1sen!2sus!4v1563211795388!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://www.jrailpass.com/blog/wp-content/uploads/2018/01/cherry-blossom-viewing-spots-japan.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <br>
 
     </div>
@@ -1310,41 +1678,266 @@ img {vertical-align: middle;}
       <h1><center>Thailand</center></h1>
       <h3 style="font:inherit; align: left;">Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha. In Bangkok, the capital, an ultramodern cityscape rises next to quiet canalside communities and the iconic temples of Wat Arun, Wat Pho and the Emerald Buddha Temple (Wat Phra Kaew). Nearby beach resorts include bustling Pattaya and fashionable Hua Hin.</h3>
       <br>
+      <center><img src="https://www.touropia.com/gfx/d/laid-back-islands-without-cars/ko_phi_phi.jpg?v=c13e14960913683000917dec6bbf2670" style="width:40%"></center>
+      <br>
       <h2 style= "font-family: simplifica"><center> Where to visit in Thailand:</center></h2>
       <br>
       <dt><strong> Railay Beach:</strong></dt>
-      <dd style="font:Verdana;">Considered to be one of the best beaches in the country. Many hikers and rock-climbers come to experience the climb of a towering limestone cliff. Among the many other active things to do, you can go elephant trekking, whitewater rafting, kayaking, and snorkeling. </dd>
-      <br>
-      <center><img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/be/e8/6f/railay-beach.jpg" height= "450" width="650"></center>
+      <dd style="font:Verdana;">Considered to be one of the best beaches in the country. Many hikers and rock-climbers come to experience the climb of a towering limestone cliff. Among the many other active things to do, you can go elephant trekking, whitewater rafting, kayaking, and snorkeling.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.8768765130526!2d98.83468266471199!3d8.011631444230523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3051ea9e0792e58b%3A0x61d88bb17c215081!2sRailay+Beach!5e0!3m2!1sen!2sus!4v1563211841520!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/be/e8/6f/railay-beach.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <br>
 
       <dt><strong> The Grand Palace:</strong></dt>
-      <dd style="font:Verdana;">This is located in Bangkok, Thailand. It is the number one sightseeing attraction in the city, staggering in historical significance and craftsmanship. One of the most important relics in the Grand Palace is the Wat Phra Kaeo, Temple of the Emerald Buddha.</dd>
-      <br>
-      <center><img src="http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/attraction-palace/grand-palace/pagePropertiesImage/bangkok-grand-palace.jpg.jpg" height= "450" width="650"></center>
+      <dd style="font:Verdana;">This is located in Bangkok, Thailand. It is the number one sightseeing attraction in the city, staggering in historical significance and craftsmanship. One of the most important relics in the Grand Palace is the Wat Phra Kaeo, Temple of the Emerald Buddha.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.4768248214845!2d100.48911531476422!3d13.750094290348595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2990f1400adc9%3A0xc7c8e2e28e73a435!2sThe+Grand+Palace!5e0!3m2!1sen!2sus!4v1563211879397!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/attraction-palace/grand-palace/pagePropertiesImage/bangkok-grand-palace.jpg.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <br>
 
       <dt><strong> Sunday Walking Street:</strong></dt>
-      <dd style="font:Verdana;">On this certain day of the week, street vendors sell all kinds of treats: pad Thai, Chicken Satay, Samosas, Crab Cakes, Fried Bananas, Sweet Rotees, and Fresh fruit shakes. This is usually held during the night and one of the best ways to taste many kinds of food in a cheap way. </dd>
-      <br>
-      <center><img src="http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/magazine/silom-walking-street/allParagraphs/BucketComponent/ListingContainer/04/image/silom-walking-street-8.jpg" height= "450" width="650"></center>
+      <dd style="font:Verdana;">On this certain day of the week, street vendors sell all kinds of treats: pad Thai, Chicken Satay, Samosas, Crab Cakes, Fried Bananas, Sweet Rotees, and Fresh fruit shakes. This is usually held during the night and one of the best ways to taste many kinds of food in a cheap way.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.6691125489556!2d99.98504911472463!3d9.709255693050911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3054fe80eb2cdc43%3A0x59bdedabc5e829dc!2sSaturday+Walking+Street+Market!5e0!3m2!1sen!2sus!4v1563211955983!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/magazine/silom-walking-street/allParagraphs/BucketComponent/ListingContainer/04/image/silom-walking-street-8.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <br>
 
       <dt><strong> Khao Yai National Park:</strong></dt>
-      <dd style="font:Verdana;">Elephants are auspicious in Thailand as statues and paintings of elephants can be seen everywhere you go. The park allows you to view the elephants in their natural habitat, trek with them, bathe them, and feed them. The most memorable part of this trip would be experiencing the sunrise over the lush landscape. </dd>
-      <br>
-      <center><img src="https://blog.airpaz.com/wp-content/uploads/Khao-Yai-National-Park-from-Bangkok-1.png" height= "450" width="650"></center>
+      <dd style="font:Verdana;">Elephants are auspicious in Thailand as statues and paintings of elephants can be seen everywhere you go. The park allows you to view the elephants in their natural habitat, trek with them, bathe them, and feed them. The most memorable part of this trip would be experiencing the sunrise over the lush landscape.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.7915230463663!2d101.3702962147723!3d14.43917478990547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c4b73684d7e89%3A0xe07df113b98de1f7!2sKhao+Yai+National+Park!5e0!3m2!1sen!2sus!4v1563212048237!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://blog.airpaz.com/wp-content/uploads/Khao-Yai-National-Park-from-Bangkok-1.png" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <br>
 
       <dt><strong> Floating Markets:</strong></dt>
-      <dd style="font:Verdana;">This is the most fun way to do some shopping and eating while supporting local vendors and observing the local commerce in action. You’d need to wake up early to visit a floating market as vendors are out in the morning with their goods, fresh fruits, vegetables, spices, and tasty dishes.</dd>
+      <dd style="font:Verdana;">This is the most fun way to do some shopping and eating while supporting local vendors and observing the local commerce in action. You’d need to wake up early to visit a floating market as vendors are out in the morning with their goods, fresh fruits, vegetables, spices, and tasty dishes.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969329.8061932432!2d98.53137801818468!3d13.700354052071688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c3b4b1ac50f53%3A0xe2671f256f97b2d1!2sKhaoyai+Floating+Market!5e0!3m2!1sen!2sus!4v1563212099419!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/magazine/5-floating-markets/pagePropertiesImage/best-floating-market.jpg.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
       <br>
-      <center><img src="http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/magazine/5-floating-markets/pagePropertiesImage/best-floating-market.jpg.jpg" height= "450" width="650"></center>
-      <br>
+
     </div>
     <div id="KOREA" class="tabcontent">
       <h1><center>Korea</center></h1>
-      <h3 style="font:inherit; align: left;">Italy occupies a peninsula that juts deep into the Mediterranean Sea. Italy is often described as a country shaped like a boot. At its broad top stand the Alps, which are among the world’s most rugged mountains. Italy’s highest points are along Monte Rosa, which peaks in Switzerland, and along Mont Blanc, which peaks in France. The western Alps overlook a landscape of Alpine lakes and glacier-carved valleys that stretch down to the Po River and the Piedmont. Tuscany, to the south of the cisalpine region, is perhaps the country’s best-known region. South of Rome the Apennines narrow and are flanked by two wide coastal plains, one facing the Tyrrhenian Sea and the other the Adriatic Sea. Much of the lower Apennine chain is near-wilderness, hosting a wide range of species rarely seen elsewhere in western Europe, such as wild boars, wolves, asps, and bears. The southern Apennines are also tectonically unstable, with several active volcanoes, including Vesuvius, which from time to time belches ash and steam into the air above Naples and its island-strewn bay. At the bottom of the country, in the Mediterranean Sea, lie the islands of Sicily and Sardinia. </h3>
+      <h3 style="font:inherit; align: left;">Korea is a region in East Asia. Since 1948 it has been divided between two distinct sovereign states, North Korea and South Korea. Korea consists of the Korean Peninsula, Jeju Island, and several minor islands near the peninsula.</h3>
+      <br>
+      <center><img src="https://media.cntraveler.com/photos/5a70f9cf700d4b48069a5735/master/w_420,c_limit/Yeojwacheon-Stream-Jinhae-GettyImages-903589994.jpg" style="width:40%"></center>
+      <br>
+      <h2 style= "font-family: simplifica"><center> Where to visit in Korea:</center></h2>
+      <br>
+      <dt><strong> Seongsan Sunrise Peak:</strong></dt>
+      <dd style="font:Verdana;">It is located on Jeju Island, which was formed 5,000 years ago due to hydrovolcanic eruptions. Seongsan Sunrise Peak is best known for the magnificent sight of the sun rising over it. It is a UNESCO world heritage site famous for many things, including its numerous rare plant species.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.6486744228627!2d126.94007731514261!3d33.45845858077184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350d14b9712b7577%3A0x636ffe4d7eccbc05!2sSeongsan+Sunrise+Peak!5e0!3m2!1sen!2sus!4v1563212154135!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://drwyjmricaxm7.cloudfront.net/repository/Seongsan-Sunrise-Peak-Highlight--Web-Ready-311691470308906_crop_960_390.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> Andong:</strong></dt>
+      <dd style="font:Verdana;">Andong is referred to as the Capital City of Korean Spiritual Culture. The main attraction in the city is the Andong Hahoe Folk Village, where local cultural heritage has been preserved and is shared with visitors. However, the most famous event in the city has to do with food. The city boasts all kinds of local specialities, starting from famed chicken and noodle dish (Jjimdak) to their special type of alcohol called soju.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205097.4225092015!2d128.5867152498392!3d36.562618062044976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3566a13fee42c953%3A0xabee2e1f04958e6c!2sAndong%2C+Gyeongsangbuk-do%2C+South+Korea!5e0!3m2!1sen!2sus!4v1563212195844!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="http://www.wannatrip.com/image/picmain?item_id=2035" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> Seoul:</strong></dt>
+      <dd style="font:Verdana;">Seoul is the largest city in South Korea and a major destination in East Asia. Seoul is known to be the most toured city in South Korea as there are endless attractions. Top tourist picks include the incredible Gyeongbok-gung and the 15th century Changdeok-gung. Lastly, be sure to be famished by some the best cuisine in all of Asia.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809633.3324744592!2d126.42910493402657!3d37.563775369497044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca28b61c565cd%3A0x858aedb4e4ea83eb!2sSeoul%2C+South+Korea!5e0!3m2!1sen!2sus!4v1563212240397!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://img.theculturetrip.com/768x432/wp-content/uploads/2013/07/lotte-world-tower-1791802_1280.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> Busan:</strong></dt>
+      <dd style="font:Verdana;">Busan is known to be the second largest city of South Korea. Busan is located on the south-east coast of South Korea, hence it is famous for its mountains and beaches. One of the most visited beaches in Busan is Haeundae Beach.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417497.4688996804!2d128.79161167373172!3d35.16412744526914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb6de823cd35%3A0x35d8cb74247108a7!2sBusan%2C+South+Korea!5e0!3m2!1sen!2sus!4v1563212281749!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://img.theculturetrip.com/x/smart/wp-content/uploads/2016/01/shutterstock_258334436.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> Pyeongchang:</strong></dt>
+      <dd style="font:Verdana;">If you love astonishing scenery and hiking, then Pyeongchang is the place for you. It is a mountain region sitting 2,300 feet above sea level. It’s known to be the perfect location for the Winter Olympics as it has a lot of seasonal snow.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809867.774399943!2d127.94353338273166!3d37.54219818455918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35622de887f205d7%3A0x388aeb08e26897f9!2sPyeongchang-gun%2C+Gangwon-do%2C+South+Korea!5e0!3m2!1sen!2sus!4v1563212327466!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://fsmedia.imgix.net/62/36/89/e0/ea20/4c87/8d61/9211e417afc9/the-nickname-of-pyeongchang-of-the-happy-700.jpeg?rect=0%2C73%2C1024%2C512&auto=format%2Ccompress&dpr=2&w=650" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+    </div>
+
+    <div id="SYDNEY" class="tabcontent">
+      <h1><center>Sydney</center></h1>
+      <h3 style="font:inherit; align: left;">Sydney, capital of New South Wales and one of Australia's largest cities, is best known for its harbourfront Sydney Opera House, with a distinctive sail-like design. Massive Darling Harbour and the smaller Circular Quay port are hubs of waterside life, with the arched Harbour Bridge and esteemed Royal Botanic Garden nearby. Sydney Tower’s outdoor platform, the Skywalk, offers 360-degree views of the city and suburbs.</h3>
+      <br>
+      <center><img src="https://i.ytimg.com/vi/LpgoeCpxU1M/maxresdefault.jpg" style="width:40%"></center>
+      <br>
+      <h2 style= "font-family: simplifica"><center> Where to visit in Sydney:</center></h2>
+      <br>
+
+      <dt><strong> Sydney Harbour Bridge:</strong></dt>
+      <dd style="font:Verdana;">Sydney Harbour Bridge, also known as “Coathanger” is the city’s best-known landmark prior to construction of the Sydney Opera House. It was built in 1932 and remains the world’s largest steel arch bridge. Experience a breathtaking panorama view of the city and harbor on the bridge.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.4494424172985!2d151.20859841515318!3d-33.85230628066084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae5d25ead5e3%3A0x68948eb717c0c43e!2sSydney+Harbour+Bridge!5e0!3m2!1sen!2sus!4v1563212379617!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Sydney_harbour_bridge_new_south_wales.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> Sydney Opera House:</strong></dt>
+      <dd style="font:Verdana;">Known to be one of the world’s great icons. The building is shaped like shells or billowing sails, perches on a finger of land surrounded by water. Snap a photo while gliding by on a harbor cruise, relax at one of the restaurants, or take an organized tour of the magnificent structure. It encompasses theaters, studios, exhibition rooms, a concert hall, and a cinema.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.2757235953163!2d151.21310801515327!3d-33.8567843806595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae665e892fdd%3A0x3133f8d75a1ac251!2sSydney+Opera+House!5e0!3m2!1sen!2sus!4v1563212418705!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://www.icsydney.com.au/sites/default/files/styles/blog_detail_image/public/Blog_Blogimage_SydneyOpera.jpg?itok=ClyPJIa0" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> Harbor Cruises from Circular Quay:</strong></dt>
+      <dd style="font:Verdana;">Circular Quay is home to the city’s main ferry terminal. One of the best ways to appreciate Sydney’s sparkling waterfront setting is to hop aboard on a harbor cruise. Ferries depart from the harbor to prime spots, such as Manly, Watsons Bay, and Taronga Park Zoo. During the winter season, Sydney Whale-Watching Cruise takes passengers past Sydney Heads to view the magnificent creatures.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6626.419727322656!2d151.2065142757252!3d-33.85848197263626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae69d26aafad%3A0x7f9b21ebd5b57ce0!2sCircular+Quay%2C+Sydney+NSW+2000%2C+Australia!5e0!3m2!1sen!2sus!4v1563212462320!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/fb/c1/51.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> Taronga Zoo:</strong></dt>
+      <dd style="font:Verdana;">At the Taronga Zoo, enjoy close-up encounters with iconic Aussie wildlife and other animals from around the world, and spectacular views of the Sydney skyline. The zoo is located along the north side of the harbor, known to be prime in the posh suburb of Mosman. Highlights at the zoo include Lemur Walk-Through, Koala Encounter, and Seal Show. To reach the Zoo you can either hop on a bus at Wynyard or hop aboard a ferry at Circular Quay.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.7891715725855!2d151.23915311515302!3d-33.8435472806632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ac245aaaaaab%3A0xaeb9849c7a29e226!2sTaronga+Zoo+Sydney!5e0!3m2!1sen!2sus!4v1563212605752!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://cdn.newsapi.com.au/image/v1/4db2983837072a4fa66dc282fb15028f?width=1024" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+    </div>
+
+    <div id="MELBOURNE" class="tabcontent">
+      <h1><center>Melbourne</center></h1>
+      <h3 style="font:inherit; align: left;">Melbourne is the coastal capital of the southeastern Australian state of Victoria. At the city's centre is the modern Federation Square development, with plazas, bars, and restaurants by the Yarra River. In the Southbank area, the Melbourne Arts Precinct is the site of Arts Centre Melbourne – a performing arts complex – and the National Gallery of Victoria, with Australian and indigenous art.</h3>
+      <br>
+      <center><img src="https://www.rnrmelbourne.com.au/wp-content/uploads/2018/02/melbourne-scenery.jpg" style="width:40%"></center>
+      <br>
+      <h2 style= "font-family: simplifica"><center> Where to visit in Melbourne:</center></h2>
+      <br>
+
+      <dt><strong>Royal Botanic Gardens:</strong></dt>
+      <dd style="font:Verdana;">Known to be the heart of green parkland extending south of the Yarra River. It was established in 1846, the gardens encompass two locations: MMelbourne and Cranbourne. The Melbourne Gardens covers an area of 38 hectares with more than 8,500 species of plants.The Aboriginal Heritage Walk is held to look into the rich heritage of indigenous Australians. It is a popular spot for a picnic by the lake or a traditional high tea at The Terrace Cafe.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.2783556409626!2d144.97741691531922!3d-37.83036887974938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad64296fb298d3b%3A0xf0456760531d7c0!2sRoyal+Botanic+Gardens+Victoria+-+Melbourne+Gardens!5e0!3m2!1sen!2sus!4v1563212700856!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/RBGV_MG_Ornamental_Lake2017.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> Federation Square:</strong></dt>
+      <dd style="font:Verdana;">It was opened in 2002 to commemorate 100 years of federation. It has become an integral part of the city and a great place for tourists to start their sightseeing. As it holds more than 2,000 events annually, you can find entertainment in the central outdoor performance space and intimate indoor venues. Federation Square houses the Ian Potter Centre: NGV Australia (dedicated to Australian Art) and the Australian Centre for Moving Images (ACMI).
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6303.637597297895!2d144.96471082617253!3d-37.81771306900629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b6e9fcc44f%3A0x38e74745ead60eab!2sFederation+Square!5e0!3m2!1sen!2sus!4v1563212755513!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://www.ytravelblog.com/wp-content/uploads/2014/03/melbourne-5-050.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> Melbourne Cricket Ground and the National Sports Museum:</strong></dt>
+      <dd style="font:Verdana;">Melbourne is the sporting capital of Australia. The Melbourne Cricket Ground (MCG) has a capacity of 100,000 and a history dating back to 1853. MCG was the main stadium for the 1956 Olympic Games and the 2006 Commonwealth Games, the birthplace of Test Cricket, and the home of Australian Rules Football.The daily 75-minute tours take visitors for a trip down a memory lane of great moments in sporting history and incorporate the National Sports Museum.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50416.668538630736!2d144.92783087170125!3d-37.835907665426056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad64295571a6281%3A0x63575fd647a0b2f9!2sMelbourne+Cricket+Ground!5e0!3m2!1sen!2sus!4v1563212828690!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://www.planetware.com/photos-large/AUS/australia-melbourne-melbourne-cricket-ground.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> National Gallery Of Victoria:</strong></dt>
+      <dd style="font:Verdana;">National Gallery of Victoria is the oldest public art gallery in Australia. It holds more than 70,000 works of art in two city locations. It originally opened in 1968 and extensively renovated in 2003. The building is renowned for The Great Hall, where visitors are encouraged to lie on the floor and gaze at the colorful stained glass ceiling.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.6103780516596!2d144.96673911526517!3d-37.822594179750745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b1b46283b9%3A0x33718f02306f1e54!2sNational+Gallery+of+Victoria!5e0!3m2!1sen!2sus!4v1563212874338!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://media.cntraveler.com/photos/5b87051374e73e0a25548f16/4:5/w_767,c_limit/NGV%2520International_2018_BUIL003080_RGB.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+    </div>
+
+    <div id="CAIRNS" class="tabcontent">
+      <h1><center>Cairns</center></h1>
+      <h3 style="font:inherit; align: left;">Cairns, considered the gateway to Australia's Great Barrier Reef, is a city in tropical Far North Queensland. Its Tjapukai Aboriginal Cultural Park tells the stories of indigenous Aboriginal and Torres Strait Islander people with music and dance. Cairns Esplanade, lined with bars and restaurants, has a swimming lagoon. Northwest of the city, Daintree National Park spans mountainous rainforest, gorges and beaches.</h3>
+      <br>
+      <center><img src="https://www.cairnsholidayspecialists.com.au/shared_resources/media/cooktown-20052_1280x852.jpg" style="width:40%"></center>
+      <br>
+      <h2 style= "font-family: simplifica"><center> Where to visit in Cairns:</center></h2>
+      <br>
+
+      <dt><strong> Great Barrier Reef Cruises:</strong></dt>
+      <dd style="font:Verdana;">Take a cruise to one of Australia;s greatest treasures, the World Heritage-listed Great Barrier Reef. It stretches for more than 2,300 kilometers, the reed is one of the planet’s richest ecosystems, with a dazzling diversity of hard and soft corals and countless species of fish, molluscs, and other marine animals, including dolphins, turtles, and sharks.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.1489848134192!2d145.77214651480455!3d-16.917941588361483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6978668e7efe4a13%3A0x50133e7a04f392f0!2sGreat+Barrier+Reef+Cruise!5e0!3m2!1sen!2sus!4v1563212930065!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://www.australia.com/content/australia/en/places/cairns-and-surrounds/guide-to-the-great-barrier-reef/jcr:content/image.adapt.1200.HIGH.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> Cairns Esplanade:</strong></dt>
+      <dd style="font:Verdana;">Cairns Esplanade is a fabulous place to enjoy a sunrise to Sunset Stroll and soak up the video of this friendly social hub. The Esplanade encomapsses lish tropical parks, playgrounds, a swimming lagoon, and foreshore promenade. Birdlife is abundant in the fringing mangroves and tidal flats. Among the treasure of free attractions are a bouldering park, beach volleyball courts, bike paths, a skate park, exercise equipment, water-themed playgrounds, and more.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.249692888884!2d145.76755611480445!3d-16.91297108836457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x697866debb911333%3A0x500672c748cdd277!2sEsplanade%2C+Cairns+QLD+4870%2C+Australia!5e0!3m2!1sen!2sus!4v1563212973277!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://image.winudf.com/v2/image/Y29tLndDYWlybnNDaXR5RXNwbGFuYWRlTGFnb29uTWFwX3NjcmVlbnNob3RzXzBfN2U0NmI0MmQ/screen-0.jpg?fakeurl=1&type=.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> Cairns Botanic Gardens:</strong></dt>
+      <dd style="font:Verdana;">Cairns Botanic Gardens boasts one of the finest collections of tropical plants in Australia. Botanists can take a self-guided tour through several kaleidoscopic gardens showcasing more than 4,00 different species of plants. You can also stroll along the Rainforest Boardwalk to Centenary Lakes, a heaven for birds with both freshwater and saltwater habitats.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.5231342460215!2d145.74572561480434!3d-16.899468088372824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x697865d1efb23419%3A0xf00eef262623e40!2sCairns+Botanic+Gardens!5e0!3m2!1sen!2sus!4v1563213023470!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://www.remotetraveler.com/wp-content/uploads/2015/07/Lovely-greenery-of-Cairns-Botanical-Gardens-Source-weekendnotes.com_.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> Day Trip to Green Island:</strong></dt>
+      <dd style="font:Verdana;">Cloaked in rainforest and ringes by coral reefs, Green Island is a tropical island paradise a short boat ride from Cairns. Snorkeling, scuba diving, and swimming are the main activities, but for those who prefer to stay dry can enjoy the view of the marine life from a glass-bottomed boat or underwater observatory.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281.40939990797!2d145.96514462749212!3d-16.759136615325982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x69784773c169ec31%3A0x25d586aa4f5a8df7!2sGreen+Island!5e0!3m2!1sen!2sus!4v1563213070253!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://www.greenislandresort.com.au/wp-content/uploads/2013/11/Green-Island-panorama-500x250.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+    </div>
+
+    <div id="GOLDCOAST" class="tabcontent">
+      <h1><center>Gold Coast</center></h1>
+      <h3 style="font:inherit; align: left;">The Gold Coast is a metropolitan region south of Brisbane on Australia’s east coast. It's famed for its long sandy beaches, surfing spots and elaborate system of inland canals and waterways. It’s also home to theme parks such as Dreamworld, Sea World and Wet’n’Wild. Inland, hiking trails crisscross Lamington National Park’s mountain ridges and valleys, home to rare birds and rainforest.</h3>
+      <br>
+      <center><img src="https://www.australia.com/content/australia/en/places/gold-coast-and-surrounds/guide-to-the-gold-coast/jcr:content/image.adapt.1200.HIGH.jpg" style="width:40%"></center>
+      <br>
+      <h2 style= "font-family: simplifica"><center> Where to visit in Gold Coast:</center></h2>
+      <br>
+
+      <dt><strong> Surfers Paradise Beach:</strong></dt>
+      <dd style="font:Verdana;">Perfect vacation spot for your family. Kids can splash around in the shallows of build sandcastles in the soft white sand. Surfers can ride the typically gentle swells, and if you want a break from the sun, you can seek shelter in one of the many nearby shops, cafes, and restaurants.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14091.52860760088!2d153.42260003079656!3d-27.99750172276028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91057374bb8237%3A0x67437f8b978317a9!2sSurfers+Paradise+Beach!5e0!3m2!1sen!2sus!4v1563213129859!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://www.destinationgoldcoast.com/AtdwImages/9229100/201805191238/123817_1600x900_539a933030f457a149d6e426a21bfe66.jpeg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> SkyPoint, Surfer’s Paradise:</strong></dt>
+      <dd style="font:Verdana;">SkyPoint is Australia’s tallest residential tower and offers giddy views of the entire Gold Coast. The SkyPoint Observation Deck on level 77 affords 360-degree panoramas of the Gold Coast, the sea, and the distant green hinterland.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3522.593083252796!2d153.42754306500836!3d-28.00634338266904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91050dbb263e61%3A0xbddff0023b586a04!2sSkyPoint+Observation+Deck!5e0!3m2!1sen!2sus!4v1563213187585!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/48/f9/4c/230m-above-sea-level.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> Currumbin Wildlife Sanctuary:</strong></dt>
+      <dd style="font:Verdana;">Currumbin Wildlife Sanctuary is a well-known wildlife park owned by the non-profit National Trust of Queensland. Bird lovers are in for a treat here. Hundreds of brightly colored rainbow lorikeets eat from visitors’ hands and even rech on their heads. Other highlights include the free-flight bird show, a Tarzan-worthy Adventure Park High Ropes Course, Segway tours, and a little train that will delight toddlers. In addition, you can commune with kangaroos, cuddle koalas and other fun activities with animals.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28146.581924842918!2d153.46842293379132!3d-28.136661637410132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91018814bc4041%3A0xd27dd89eb29e4bb6!2sCurrumbin+Wildlife+Sanctuary!5e0!3m2!1sen!2sus!4v1563213228340!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://www.holidayholiday.com.au/wp-content/uploads/Currumbin-Wildlife-Sanctuary-900x540.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
+
+      <dt><strong> Sea World:</strong></dt>
+      <dd style="font:Verdana;">Sea World on the Gold COast is the largest marine park in Australia. Young and old alike enjoy the exhibits and busy agenda of shows here, with favorites like performing dolphins, sea lions, and Jet-Ski stunts. Other highlights include the polar bears, penguins feeding presentation, as well as the tropical fish, sharks, and rays exhibit. In addition, the park offers sea-themed rides like roller coasters.
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14097.31659757719!2d153.41700763071472!3d-27.95320418843128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b910fbcb65bf0db%3A0xfac5c569854751a0!2sSea+World!5e0!3m2!1sen!2sus!4v1563213292153!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style= "padding-left:200px;"><img src="https://www.planetware.com/photos-large/AUS/australia-queensland-gold-coast-sea-world.jpg" width="565px" height="450px" frameborder="0" style="border:0;"></div></div>
+      </dd>
+      <br>
     </div>
 
 <!-- slideshow JS-->
@@ -1364,8 +1957,8 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {slideIndex = 1;}
+  if (n < 1) {slideIndex = slides.length;}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
